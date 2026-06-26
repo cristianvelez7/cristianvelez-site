@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Cristian Velez is a licensed Realtor serving Dallas-Fort Worth with experience in residential representation, investment property acquisitions, and off-market opportunities across DFW." />
+<meta name="keywords" content="Cristian Velez realtor DFW, real estate agent Plano TX, McKinney realtor, investment property Dallas, off-market real estate DFW, buyer agent Collin County, listing agent Plano, Garland realtor" />
+<title>Cristian Velez, Licensed Realtor · Dallas-Fort Worth</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9GZKXBCQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T9GZKXBCQQ');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0e0e0c;
+    --bg-card: #161614;
+    --bg-elevated: #1e1e1b;
+    --text: #f0ead8;
+    --text-muted: #9a9488;
+    --text-faint: #5a5650;
+    --gold: #c9a96e;
+    --gold-light: #e8d5a3;
+    --gold-dim: #7a6540;
+    --border: #2a2a26;
+    --border-gold: #3d3526;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Montserrat', system-ui, sans-serif;
+    --radius: 8px;
+    --radius-lg: 14px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(14,14,12,0.95);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    height: 62px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-logo { font-family: var(--serif); font-size: 20px; font-weight: 400; letter-spacing: 0.02em; color: var(--text); }
+  .nav-logo span { color: var(--gold); font-style: italic; }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a { font-size: 11px; color: var(--text-muted); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-btn { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 20px; border: 1px solid var(--gold-dim); border-radius: 2px; color: var(--gold); transition: all 0.2s; }
+  .nav-btn:hover { background: var(--gold); color: var(--bg); border-color: var(--gold); }
+
+  /* MOBILE TAB BAR */
+  .mobile-tabs { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200; background: rgba(14,14,12,0.97); border-top: 1px solid var(--border); height: 60px; }
+  .mobile-tabs-inner { display: flex; height: 100%; }
+  .mobile-tab { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; cursor: pointer; color: var(--text-faint); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; transition: color 0.2s; border: none; background: none; }
+  .mobile-tab svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  .mobile-tab.active, .mobile-tab:hover { color: var(--gold); }
+
+  /* HERO */
+  .hero { max-width: 1100px; margin: 0 auto; padding: 7rem 2rem 6rem; display: grid; grid-template-columns: 1fr 300px; gap: 5rem; align-items: center; }
+  .hero-eyebrow { display: flex; align-items: center; gap: 12px; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.75rem; font-weight: 600; }
+  .hero-eyebrow::after { content: ''; flex: 1; max-width: 40px; height: 1px; background: var(--gold-dim); }
+  .hero h1 { font-family: var(--serif); font-size: clamp(38px, 4.5vw, 58px); line-height: 1.08; font-weight: 300; margin-bottom: 1.5rem; letter-spacing: 0.01em; }
+  .hero h1 em { font-style: italic; color: var(--gold); }
+  .hero-sub { font-size: 13px; color: var(--text-muted); line-height: 1.9; margin-bottom: 2.5rem; max-width: 460px; font-weight: 300; letter-spacing: 0.03em; }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn-gold { padding: 13px 30px; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; background: var(--gold); color: var(--bg); border-radius: 2px; transition: opacity 0.2s; border: 1px solid var(--gold); }
+  .btn-gold:hover { opacity: 0.85; }
+  .btn-ghost { padding: 13px 30px; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid var(--border-gold); border-radius: 2px; color: var(--text-muted); transition: all 0.2s; }
+  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+  .hero-photo { position: relative; }
+  .hero-photo img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: center top; border-radius: var(--radius); display: block; filter: brightness(0.92) contrast(1.05); }
+  .hero-photo::before { content: ''; position: absolute; inset: -1px; border-radius: var(--radius); border: 1px solid var(--border-gold); pointer-events: none; }
+  .hero-photo-badge { position: absolute; bottom: -1px; left: -1px; right: -1px; background: linear-gradient(to top, rgba(14,14,12,0.97) 0%, rgba(14,14,12,0.7) 70%, transparent 100%); border-radius: 0 0 var(--radius) var(--radius); padding: 2rem 1.25rem 1.25rem; }
+  .hero-photo-badge strong { display: block; font-family: var(--serif); font-size: 18px; font-weight: 400; color: var(--text); margin-bottom: 2px; }
+  .hero-photo-badge span { font-size: 10px; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; }
+
+  /* DIVIDER */
+  .divider { height: 1px; background: var(--border); margin: 0 2rem; }
+  .footer-gold-line { height: 1px; background: linear-gradient(to right, transparent, var(--gold-dim), transparent); max-width: 1100px; margin: 0 auto; }
+
+  /* SECTIONS */
+  .section { max-width: 1100px; margin: 0 auto; padding: 5.5rem 2rem; }
+  .section-eyebrow { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; font-weight: 600; }
+  .section-title { font-family: var(--serif); font-size: clamp(28px, 3.2vw, 42px); font-weight: 300; line-height: 1.15; margin-bottom: 1rem; letter-spacing: 0.01em; }
+  .section-intro { font-size: 13px; color: var(--text-muted); line-height: 1.85; max-width: 520px; font-weight: 300; margin-bottom: 3.5rem; letter-spacing: 0.02em; }
+
+  /* SERVICES */
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
+  .service-card { background: var(--bg-card); padding: 2rem 1.75rem; transition: background 0.2s; position: relative; }
+  .service-card::after { content: ''; position: absolute; bottom: 0; left: 1.75rem; width: 24px; height: 1px; background: var(--gold-dim); transition: width 0.3s; }
+  .service-card:hover { background: var(--bg-elevated); }
+  .service-card:hover::after { width: 48px; background: var(--gold); }
+  .service-num { font-size: 10px; color: var(--gold-dim); letter-spacing: 0.15em; margin-bottom: 1.25rem; display: block; font-weight: 600; }
+  .service-card h3 { font-family: var(--serif); font-size: 19px; font-weight: 400; margin-bottom: 0.6rem; color: var(--text); }
+  .service-card p { font-size: 12px; color: var(--text-muted); line-height: 1.75; font-weight: 300; letter-spacing: 0.02em; }
+
+  /* DIFFERENTIATORS */
+  .diff-list { display: flex; flex-direction: column; }
+  .diff-row { display: grid; grid-template-columns: 60px 1fr; gap: 2rem; padding: 2rem 0; border-bottom: 1px solid var(--border); align-items: start; }
+  .diff-row:last-child { border-bottom: none; }
+  .diff-num { font-family: var(--serif); font-size: 32px; color: var(--gold-dim); font-weight: 300; line-height: 1; }
+  .diff-row h4 { font-family: var(--serif); font-size: 20px; font-weight: 400; margin-bottom: 6px; color: var(--text); }
+  .diff-row p { font-size: 13px; color: var(--text-muted); line-height: 1.8; font-weight: 300; letter-spacing: 0.02em; }
+
+  /* TRANSACTIONS */
+  .transactions-grid { display: flex; flex-direction: column; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
+  .transaction-row { background: var(--bg-card); padding: 1.75rem 2rem; display: grid; grid-template-columns: 180px 80px 1fr; gap: 1.5rem; align-items: start; transition: background 0.15s; }
+  .transaction-row:hover { background: var(--bg-elevated); }
+  .transaction-address { font-family: var(--serif); font-size: 16px; font-weight: 400; color: var(--text); line-height: 1.3; }
+  .transaction-location { font-size: 11px; color: var(--text-faint); margin-top: 3px; letter-spacing: 0.04em; }
+  .transaction-type { display: inline-block; font-size: 9px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border-radius: 2px; white-space: nowrap; }
+  .type-listing { color: var(--gold); border: 1px solid var(--gold-dim); }
+  .type-buyer { color: var(--text-muted); border: 1px solid var(--border); }
+  .transaction-detail { font-size: 12px; color: var(--text-muted); line-height: 1.7; font-weight: 300; letter-spacing: 0.02em; }
+  .transaction-note { font-size: 11px; color: var(--text-faint); margin-top: 5px; letter-spacing: 0.04em; font-style: italic; }
+  .transactions-footer { background: var(--bg-elevated); padding: 1.25rem 2rem; font-size: 12px; color: var(--text-faint); font-weight: 300; letter-spacing: 0.03em; line-height: 1.7; border-top: 1px solid var(--border); }
+
+  /* ABOUT */
+  .about-grid { display: grid; grid-template-columns: 220px 1fr; gap: 5rem; align-items: start; }
+  .about-photo-wrap { position: relative; }
+  .about-photo { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: center top; border-radius: var(--radius); display: block; filter: brightness(0.9) contrast(1.05); }
+  .about-photo-wrap::before { display: none; }
+  .about-content { padding-top: 0.5rem; }
+  .about-content p { font-size: 13px; color: var(--text-muted); line-height: 1.9; font-weight: 300; margin-bottom: 1rem; letter-spacing: 0.02em; }
+  .about-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+  .about-meta-item label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold); display: block; margin-bottom: 5px; font-weight: 600; }
+  .about-meta-item span { font-size: 12px; color: var(--text-muted); font-weight: 300; }
+  .about-meta-item a { color: var(--text-muted); border-bottom: 1px solid var(--border-gold); padding-bottom: 1px; }
+  .about-meta-item a:hover { color: var(--gold); border-color: var(--gold); }
+  .tags-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.75rem; }
+  .tag-pill { font-size: 10px; padding: 4px 12px; border: 1px solid var(--border-gold); border-radius: 2px; color: var(--text-faint); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; }
+
+  /* INVENTORY */
+  .inventory-placeholder { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 5rem 2rem; text-align: center; }
+  .inventory-badge { display: inline-block; font-size: 9px; padding: 4px 14px; border: 1px solid var(--gold-dim); border-radius: 2px; color: var(--gold); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 1.5rem; font-weight: 600; }
+  .inventory-placeholder h3 { font-family: var(--serif); font-size: 28px; font-weight: 300; margin-bottom: 0.75rem; color: var(--text); }
+  .inventory-placeholder p { font-size: 13px; color: var(--text-muted); font-weight: 300; max-width: 440px; margin: 0 auto 2rem; line-height: 1.8; letter-spacing: 0.02em; }
+
+  /* BLOG */
+  .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+  .blog-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: border-color 0.2s, transform 0.2s; cursor: pointer; }
+  .blog-card:hover { border-color: var(--border-gold); transform: translateY(-3px); }
+  .blog-card-body { padding: 1.75rem; }
+  .blog-meta { font-size: 10px; color: var(--gold); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 1rem; font-weight: 600; }
+  .blog-card h3 { font-family: var(--serif); font-size: 22px; font-weight: 400; line-height: 1.3; margin-bottom: 0.75rem; color: var(--text); }
+  .blog-card p { font-size: 12px; color: var(--text-muted); line-height: 1.75; font-weight: 300; margin-bottom: 1.5rem; letter-spacing: 0.02em; }
+  .blog-read-more { font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; gap: 8px; }
+  .blog-read-more::after { content: '→'; transition: transform 0.2s; }
+  .blog-card:hover .blog-read-more::after { transform: translateX(5px); }
+  .blog-coming { background: var(--bg-card); border: 1px dashed var(--border); border-radius: var(--radius-lg); padding: 2.5rem; display: flex; align-items: center; justify-content: center; font-size: 12px; color: var(--text-faint); text-align: center; line-height: 1.7; letter-spacing: 0.06em; }
+
+  /* CONTACT */
+  .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+  .contact-left h2 { font-family: var(--serif); font-size: 36px; font-weight: 300; line-height: 1.2; margin-bottom: 1rem; }
+  .contact-left p { font-size: 13px; color: var(--text-muted); line-height: 1.85; font-weight: 300; margin-bottom: 2.5rem; letter-spacing: 0.02em; }
+  .contact-direct { display: flex; flex-direction: column; gap: 10px; }
+  .contact-direct a { display: flex; align-items: center; gap: 14px; font-size: 12px; color: var(--text-muted); padding: 13px 16px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); transition: border-color 0.2s, color 0.2s; letter-spacing: 0.04em; font-weight: 300; }
+  .contact-direct a:hover { border-color: var(--border-gold); color: var(--gold); }
+  .contact-direct svg { width: 15px; height: 15px; stroke: var(--gold-dim); fill: none; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; transition: stroke 0.2s; }
+  .contact-direct a:hover svg { stroke: var(--gold); }
+  .contact-form { display: flex; flex-direction: column; gap: 14px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .form-group { display: flex; flex-direction: column; gap: 7px; }
+  .form-group label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold); font-weight: 600; }
+  .form-group input, .form-group select, .form-group textarea { font-family: var(--sans); font-size: 13px; font-weight: 300; padding: 11px 14px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-card); color: var(--text); transition: border-color 0.2s; outline: none; width: 100%; letter-spacing: 0.03em; }
+  .form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-faint); }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--gold-dim); }
+  .form-group select option { background: var(--bg-card); }
+  .form-group textarea { height: 110px; resize: vertical; }
+  .form-submit { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; padding: 14px; background: var(--gold); color: var(--bg); border: none; border-radius: 2px; cursor: pointer; transition: opacity 0.2s; margin-top: 4px; }
+  .form-submit:hover { opacity: 0.85; }
+
+  /* FOOTER */
+  .footer-wrap { border-top: 1px solid var(--border); margin-top: 2rem; }
+  footer { max-width: 1100px; margin: 0 auto; padding: 2.5rem 2rem; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1.5rem; }
+  .footer-left { font-size: 11px; color: var(--text-faint); line-height: 2; font-weight: 300; letter-spacing: 0.04em; }
+  .footer-left strong { color: var(--text-muted); font-weight: 500; }
+  .footer-left a { color: var(--text-faint); }
+  .footer-left a:hover { color: var(--gold); }
+  .footer-right { font-size: 11px; color: var(--text-faint); letter-spacing: 0.04em; }
+
+  /* BLOG MODALS */
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(8,8,6,0.85); backdrop-filter: blur(8px); z-index: 300; padding: 2rem 1rem; overflow-y: auto; }
+  .modal-overlay.open { display: flex; align-items: flex-start; justify-content: center; }
+  .modal { background: var(--bg-card); border: 1px solid var(--border-gold); border-radius: var(--radius-lg); max-width: 680px; width: 100%; padding: 3rem; position: relative; margin: auto; }
+  .modal-close { position: absolute; top: 1.25rem; right: 1.25rem; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 2px; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 14px; color: var(--text-muted); font-family: var(--sans); transition: border-color 0.2s; }
+  .modal-close:hover { border-color: var(--gold-dim); color: var(--gold); }
+  .modal-eyebrow { font-size: 10px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold); margin-bottom: 1rem; font-weight: 600; }
+  .modal h2 { font-family: var(--serif); font-size: 28px; font-weight: 300; line-height: 1.25; margin-bottom: 0.5rem; }
+  .modal-byline { font-size: 11px; color: var(--text-faint); margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); letter-spacing: 0.04em; }
+  .modal-body { font-size: 14px; line-height: 1.9; color: var(--text-muted); font-weight: 300; letter-spacing: 0.02em; }
+  .modal-body p { margin-bottom: 1.25rem; }
+  .modal-body h3 { font-family: var(--serif); font-size: 22px; font-weight: 400; color: var(--text); margin: 2rem 0 0.75rem; }
+  .modal-body strong { font-weight: 500; color: var(--text); }
+  .modal-cta { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+  .modal-cta p { font-size: 13px; color: var(--text-muted); font-weight: 300; }
+  .modal-cta a { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 10px 24px; background: var(--gold); color: var(--bg); border-radius: 2px; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 768px) {
+    .mobile-tabs { display: flex; }
+    body { padding-bottom: 60px; }
+    nav { padding: 0 1.25rem; }
+    .nav-links, .nav-btn { display: none; }
+    .hero { grid-template-columns: 1fr; gap: 2.5rem; padding: 3rem 1.25rem 4rem; }
+    .hero-content { order: 2; }
+    .hero-photo { order: 1; max-width: 230px; margin: 0 auto; }
+    .hero h1 { font-size: 38px; }
+    .section { padding: 4rem 1.25rem; }
+    .services-grid { grid-template-columns: 1fr; }
+    .transaction-row { grid-template-columns: 1fr; gap: 0.75rem; }
+    .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .about-photo { max-width: 220px; aspect-ratio: 1/1; border-radius: 50%; }
+    .contact-wrapper { grid-template-columns: 1fr; gap: 3rem; }
+    .form-row { grid-template-columns: 1fr; }
+    .modal { padding: 1.75rem; }
+    .divider { margin: 0 1.25rem; }
+    footer { padding: 2rem 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Cristian <span>Velez</span></div>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#transactions">Transactions</a>
+    <a href="#about">About</a>
+    <a href="#inventory">Inventory</a>
+    <a href="#blog">Insights</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="#contact" class="nav-btn">Get in touch</a>
+</nav>
+
+<div class="mobile-tabs">
+  <div class="mobile-tabs-inner">
+    <button class="mobile-tab active" onclick="navScrollTo('#services', this)">
+      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      Services
+    </button>
+    <button class="mobile-tab" onclick="navScrollTo('#transactions', this)">
+      <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      Deals
+    </button>
+    <button class="mobile-tab" onclick="navScrollTo('#about', this)">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      About
+    </button>
+    <button class="mobile-tab" onclick="navScrollTo('#blog', this)">
+      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      Insights
+    </button>
+    <button class="mobile-tab" onclick="navScrollTo('#contact', this)">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.18 6.18l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Contact
+    </button>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-eyebrow">Licensed Realtor · Dallas-Fort Worth</p>
+    <h1>DFW Real Estate for <em>Buyers, Sellers,</em> and Investors.</h1>
+    <p class="hero-sub">Realtor focused on investment-minded analysis, accurate pricing strategy, and off-market opportunities across the Dallas-Fort Worth market. Licensed with Corey Simpson & Associates. Principal of Elite Offer Group.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-gold">Start a conversation</a>
+      <a href="#services" class="btn-ghost">What I do</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="cristian-photo.jpeg" alt="Cristian Velez, Licensed Realtor in Dallas-Fort Worth" />
+    <div class="hero-photo-badge">
+      <strong>Cristian Velez</strong>
+      <span>Realtor · Investor · DFW</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <p class="section-eyebrow">Services</p>
+  <h2 class="section-title">Full-service representation across the DFW market</h2>
+  <p class="section-intro">Residential and investment representation from a licensed agent with hands-on experience across both sides of the market.</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-num">01</span>
+      <h3>Buyer Representation</h3>
+      <p>Buyer representation for residential and investment acquisitions. Comparative market analysis, offer strategy, negotiation management, and contract-to-close coordination across DFW.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-num">02</span>
+      <h3>Seller Representation</h3>
+      <p>Listing representation with accurate pricing strategy, market positioning, and negotiation through closing. Including situations with deferred maintenance, difficult showings, or prior listing history.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-num">03</span>
+      <h3>Investment Property Advisory</h3>
+      <p>Acquisition analysis for value-add, BRRRR, house hack, and small multifamily strategies. Familiar with investor underwriting, hold analysis, and entry pricing across DFW submarkets.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-num">04</span>
+      <h3>Off-Market Opportunities</h3>
+      <p>Access to off-market and distressed properties through the Elite Offer Group acquisition pipeline. Motivated sellers, high-DOM opportunities, and FSBO sourcing across the Metroplex.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-num">05</span>
+      <h3>Commercial</h3>
+      <p>Commercial property representation and capital deployment on select projects. Investor-grade underwriting applied beyond the residential market.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-num">06</span>
+      <h3>Investor Network</h3>
+      <p>Direct access to an active investor network across DFW. Deal flow, buyer-seller introductions, and capital partnership opportunities for qualified operators.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TRANSACTIONS -->
+<section class="section" id="transactions">
+  <p class="section-eyebrow">Selected transactions</p>
+  <h2 class="section-title">Closed across DFW</h2>
+  <p class="section-intro">A representative sample of residential and investment transactions closed across the Dallas-Fort Worth market.</p>
+  <div class="transactions-grid">
+
+    <div class="transaction-row">
+      <div>
+        <div class="transaction-address">1440 Baffin Bay Dr</div>
+        <div class="transaction-location">Plano, TX · Briarmeade</div>
+      </div>
+      <span class="transaction-type type-listing">Listing</span>
+      <div>
+        <div class="transaction-detail">4 bed, 3 bath, 3,813 sqft. Property needed cosmetic updates and required a creative pricing approach to attract qualified buyers. Executed a VA assumable loan strategy that preserved seller proceeds and expanded the buyer pool beyond conventional financing.</div>
+        <div class="transaction-note">Seller received stronger net proceeds than a cash offer would have produced.</div>
+      </div>
+    </div>
+
+    <div class="transaction-row">
+      <div>
+        <div class="transaction-address">2301 Club Creek Ct</div>
+        <div class="transaction-location">Garland, TX · Club Creek</div>
+      </div>
+      <span class="transaction-type type-listing">Listing</span>
+      <div>
+        <div class="transaction-detail">4 bed, 3.5 bath, 3,056 sqft. Property had been listed twice previously within the same year with two separate agents without success. Repositioned the listing with a revised pricing strategy and targeted marketing. Sold and closed.</div>
+        <div class="transaction-note">Third agent to take the listing. Closed where others did not.</div>
+      </div>
+    </div>
+
+    <div class="transaction-row">
+      <div>
+        <div class="transaction-address">640 Three Tee Ct</div>
+        <div class="transaction-location">Grand Prairie, TX</div>
+      </div>
+      <span class="transaction-type type-listing">Listing</span>
+      <div>
+        <div class="transaction-detail">Property had light cosmetic issues that complicated showings and limited buyer interest. Managed a difficult showing process and positioned the property competitively to attract serious buyers. Closed at top dollar for its condition.</div>
+        <div class="transaction-note">Seller had previously considered a cash offer. Listing produced a stronger outcome.</div>
+      </div>
+    </div>
+
+    <div class="transaction-row">
+      <div>
+        <div class="transaction-address">3820 Big Horn Trl</div>
+        <div class="transaction-location">Plano, TX · High Place</div>
+      </div>
+      <span class="transaction-type type-buyer">Buyer</span>
+      <div>
+        <div class="transaction-detail">3 bed, 3 bath, 2,366 sqft mid-century modern in Central Plano. Negotiated below list price with seller concessions on behalf of the buyer. Contract-to-close coordination in the Plano ISD submarket.</div>
+        <div class="transaction-note">Closed below asking with concessions secured for buyer.</div>
+      </div>
+    </div>
+
+    <div class="transaction-row">
+      <div>
+        <div class="transaction-address">303 Swords Bnd</div>
+        <div class="transaction-location">Stafford, TX · Kingsway</div>
+      </div>
+      <span class="transaction-type type-buyer">Buyer</span>
+      <div>
+        <div class="transaction-detail">3 bed, 3.5 bath, 2,301 sqft in the Kingsway community of Stafford. Property went under contract in 1 day and would have sold at list price. Moved quickly with a competitive offer structured below asking, and secured seller concessions before additional interest could develop.</div>
+        <div class="transaction-note">Closed below list with concessions on a property that sold in 1 day.</div>
+      </div>
+    </div>
+
+    <div class="transaction-row">
+      <div>
+        <div class="transaction-address">420 Santa Rosa</div>
+        <div class="transaction-location">Garland, TX</div>
+      </div>
+      <span class="transaction-type type-buyer">Buyer</span>
+      <div>
+        <div class="transaction-detail">First-time homebuyer representation. Navigated the full purchase process for buyers new to real estate transactions. Negotiated a meaningful discount from list price along with seller concessions to reduce out-of-pocket costs at closing.</div>
+        <div class="transaction-note">First-time buyers closed below asking with concessions.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="transactions-footer">
+    In addition to the transactions listed above, Cristian has been involved in a significant volume of off-market acquisitions, dispositions, and investor transactions across Dallas-Fort Worth as owner and operator of Elite Offer Group and as an acquisitions specialist through Whitecap Holdings.
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <p class="section-eyebrow">About</p>
+  <div class="about-grid">
+    <div class="about-photo-wrap">
+      <img src="cristian-photo.jpeg" alt="Cristian Velez, Licensed Realtor DFW" class="about-photo" />
+    </div>
+    <div class="about-content">
+      <h2 class="section-title">Cristian Velez</h2>
+      <p>I'm a licensed Realtor with Corey Simpson & Associates and the principal of Elite Offer Group, a DFW-based real estate acquisition company. I work across both the retail and investment sides of the market, which gives me a practical perspective on pricing, negotiation, and deal structure that most agents operating in one lane don't have.</p>
+      <p>My transaction experience covers buyer and seller representation, pricing strategy, negotiation management, assumable financing, and working through listings that have struggled previously. On the investment side, I have direct experience sourcing and analyzing value-add and off-market opportunities throughout the Metroplex.</p>
+      <p>I grew up in Plano and McKinney. I know Collin County, the surrounding DFW submarkets, and how this market actually moves. That is not a tagline. It is context that shows up in how I price, how I negotiate, and what I know to look for.</p>
+      <p>I hold a finance degree from Texas Tech University and a certification in commercial real estate, which informs how I approach pricing, underwriting, and investment analysis across both residential and commercial transactions.</p>
+      <div class="about-meta">
+        <div class="about-meta-item">
+          <label>License</label>
+          <span>TX #0833260</span>
+        </div>
+        <div class="about-meta-item">
+          <label>Brokerage</label>
+          <span>Corey Simpson & Associates</span>
+        </div>
+        <div class="about-meta-item">
+          <label>Markets</label>
+          <span>DFW · Plano · McKinney · Garland · Grand Prairie</span>
+        </div>
+        <div class="about-meta-item">
+          <label>Also operates</label>
+          <span><a href="https://www.eliteoffergroup.com" target="_blank">Elite Offer Group</a></span>
+        </div>
+      </div>
+      <div class="tags-row">
+        <span class="tag-pill">Buyer representation</span>
+        <span class="tag-pill">Seller representation</span>
+        <span class="tag-pill">Investment acquisitions</span>
+        <span class="tag-pill">Off-market</span>
+        <span class="tag-pill">Negotiation</span>
+        <span class="tag-pill">Pricing strategy</span>
+        <span class="tag-pill">Contract-to-close</span>
+        <span class="tag-pill">Commercial</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- INVENTORY -->
+<section class="section" id="inventory">
+  <p class="section-eyebrow">Market snapshot · June 2026</p>
+  <h2 class="section-title">Dallas-Fort Worth market at a glance</h2>
+  <p class="section-intro">Current figures across the DFW metro. Updated regularly. Data sourced from active market reporting.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:2rem;">
+    <div style="background:var(--bg-card);padding:2rem 1.75rem;">
+      <div style="font-family:var(--serif);font-size:36px;font-weight:300;color:var(--gold);margin-bottom:0.5rem;">$400K</div>
+      <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text);margin-bottom:0.4rem;">Median Home Price</div>
+      <div style="font-size:12px;color:var(--text-faint);font-weight:300;">DFW metro · stabilized from 2022 peak</div>
+    </div>
+    <div style="background:var(--bg-card);padding:2rem 1.75rem;">
+      <div style="font-family:var(--serif);font-size:36px;font-weight:300;color:var(--gold);margin-bottom:0.5rem;">38</div>
+      <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text);margin-bottom:0.4rem;">Median Days on Market</div>
+      <div style="font-size:12px;color:var(--text-faint);font-weight:300;">Well-priced homes still moving in under 2 weeks</div>
+    </div>
+    <div style="background:var(--bg-card);padding:2rem 1.75rem;">
+      <div style="font-family:var(--serif);font-size:36px;font-weight:300;color:var(--gold);margin-bottom:0.5rem;">97.5%</div>
+      <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text);margin-bottom:0.4rem;">Sale-to-List Ratio</div>
+      <div style="font-size:12px;color:var(--text-faint);font-weight:300;">Sellers capturing close to full asking price on average</div>
+    </div>
+    <div style="background:var(--bg-card);padding:2rem 1.75rem;">
+      <div style="font-family:var(--serif);font-size:36px;font-weight:300;color:var(--gold);margin-bottom:0.5rem;">6.25%</div>
+      <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text);margin-bottom:0.4rem;">30-Year Fixed Rate</div>
+      <div style="font-size:12px;color:var(--text-faint);font-weight:300;">As of May 2026 · Freddie Mac</div>
+    </div>
+    <div style="background:var(--bg-card);padding:2rem 1.75rem;">
+      <div style="font-family:var(--serif);font-size:36px;font-weight:300;color:var(--gold);margin-bottom:0.5rem;">+40%</div>
+      <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text);margin-bottom:0.4rem;">Inventory vs. Last Year</div>
+      <div style="font-size:12px;color:var(--text-faint);font-weight:300;">More options for buyers than any point since pre-pandemic</div>
+    </div>
+    <div style="background:var(--bg-card);padding:2rem 1.75rem;">
+      <div style="font-family:var(--serif);font-size:36px;font-weight:300;color:var(--gold);margin-bottom:0.5rem;">#1</div>
+      <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text);margin-bottom:0.4rem;">Corporate Relocation Metro</div>
+      <div style="font-size:12px;color:var(--text-faint);font-weight:300;">DFW led the US in HQ relocations 2018 to 2024</div>
+    </div>
+  </div>
+  <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem;font-size:12px;color:var(--text-faint);font-weight:300;line-height:1.7;">
+    The current DFW market favors buyers with expanded inventory and stabilized pricing, while correctly priced listings in strong submarkets like Plano, McKinney, and Frisco continue to move quickly and attract competitive offers. Pricing strategy matters more now than it did during the 2021 to 2022 run-up.
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CASH OFFER -->
+<section class="section" id="cashoffer">
+  <p class="section-eyebrow">Need to sell fast?</p>
+  <h2 class="section-title">Get a cash offer on your DFW property</h2>
+  <p class="section-intro">No repairs, no showings, no waiting on financing. If your situation calls for speed and certainty, I can put a cash offer in front of you directly through Elite Offer Group.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:2.5rem;">
+    <div style="background:var(--bg-card);padding:1.75rem;">
+      <div style="font-size:10px;color:var(--gold);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;margin-bottom:0.75rem;">No repairs needed</div>
+      <p style="font-size:13px;color:var(--text-muted);line-height:1.75;font-weight:300;">Sell in any condition. You do not need to fix anything or clean anything up before we look at it.</p>
+    </div>
+    <div style="background:var(--bg-card);padding:1.75rem;">
+      <div style="font-size:10px;color:var(--gold);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;margin-bottom:0.75rem;">No showings</div>
+      <p style="font-size:13px;color:var(--text-muted);line-height:1.75;font-weight:300;">Skip the listing process entirely. No open houses, no strangers walking through your home, no disruption to your schedule.</p>
+    </div>
+    <div style="background:var(--bg-card);padding:1.75rem;">
+      <div style="font-size:10px;color:var(--gold);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;margin-bottom:0.75rem;">Close on your timeline</div>
+      <p style="font-size:13px;color:var(--text-muted);line-height:1.75;font-weight:300;">We can close in as little as two weeks or on a date that works for your situation. You set the timeline.</p>
+    </div>
+    <div style="background:var(--bg-card);padding:1.75rem;">
+      <div style="font-size:10px;color:var(--gold);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;margin-bottom:0.75rem;">Both options available</div>
+      <p style="font-size:13px;color:var(--text-muted);line-height:1.75;font-weight:300;">As a licensed agent I can also show you what a traditional listing would produce so you can compare both paths before deciding.</p>
+    </div>
+  </div>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;">
+    <a href="#contact" class="btn-gold">Request a cash offer</a>
+    <a href="https://www.eliteoffergroup.com" target="_blank" class="btn-ghost">Visit Elite Offer Group</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- BLOG -->
+<section class="section" id="blog">
+  <p class="section-eyebrow">Insights</p>
+  <h2 class="section-title">Market analysis and practical guidance</h2>
+  <p class="section-intro">Real estate covered plainly. No hype, no generic advice. Written for buyers, sellers, and investors who want to understand the DFW market clearly.</p>
+  <div class="blog-grid">
+    <div class="blog-card" onclick="document.getElementById('blog-modal-1').classList.add('open')">
+      <div class="blog-card-body">
+        <p class="blog-meta">May 2026 · Sellers · DFW Market</p>
+        <h3>Should I list or take a cash offer? A DFW agent's honest breakdown</h3>
+        <p>Most sellers frame this as an either/or decision. It does not have to be, and understanding both options changes what you can negotiate.</p>
+        <span class="blog-read-more">Read more</span>
+      </div>
+    </div>
+    <div class="blog-card" onclick="document.getElementById('blog-modal-2').classList.add('open')">
+      <div class="blog-card-body">
+        <p class="blog-meta">May 2026 · Investors · DFW Market</p>
+        <h3>How to house hack in DFW in 2026: a practical guide for first-time investors</h3>
+        <p>House hacking is one of the most accessible ways to start building real estate wealth in Dallas-Fort Worth. Here is how it actually works and what to look for in this market.</p>
+        <span class="blog-read-more">Read more</span>
+      </div>
+    </div>
+    <div class="blog-card" onclick="document.getElementById('blog-modal-3').classList.add('open')">
+      <div class="blog-card-body">
+        <p class="blog-meta">May 2026 · Investors · DFW Market</p>
+        <h3>The BRRRR strategy in DFW: what the numbers actually look like in 2026</h3>
+        <p>BRRRR works in theory. Whether it works in practice depends entirely on the numbers at each stage. Here is how to evaluate a BRRRR deal in the current Dallas-Fort Worth market.</p>
+        <span class="blog-read-more">Read more</span>
+      </div>
+    </div>
+    <div class="blog-card" onclick="document.getElementById('blog-modal-4').classList.add('open')">
+      <div class="blog-card-body">
+        <p class="blog-meta">May 2026 · Investors · Collin County</p>
+        <h3>How to underwrite a value-add deal in Collin County</h3>
+        <p>Value-add investing in Collin County requires a different lens than other DFW submarkets. Here is how to evaluate whether a deal actually works before you commit capital.</p>
+        <span class="blog-read-more">Read more</span>
+      </div>
+    </div>
+    <div class="blog-card" onclick="document.getElementById('blog-modal-4').classList.add('open')">
+      <div class="blog-card-body">
+        <p class="blog-meta">May 2026 · Buyers · DFW Market</p>
+        <h3>First-time homebuyer guide for DFW: the process is simpler than you think</h3>
+        <p>Most first-time buyers assume buying a home is complicated. The process is actually straightforward once you understand what happens at each step and in what order.</p>
+        <span class="blog-read-more">Read more</span>
+      </div>
+    </div>
+    <div class="blog-card" onclick="document.getElementById('blog-modal-5').classList.add('open')">
+      <div class="blog-card-body">
+        <p class="blog-meta">June 2026 · Market Insight · Plano</p>
+        <h3>Plano's corporate boom and what it means for real estate in 2026</h3>
+        <p>Plano is not just growing. It is becoming one of the most significant corporate relocation destinations in the country. Here is what that means for buyers, sellers, and investors in the market right now.</p>
+        <span class="blog-read-more">Read more</span>
+      </div>
+    </div>
+    <div class="blog-card" onclick="document.getElementById('blog-modal-6').classList.add('open')">
+      <div class="blog-card-body">
+        <p class="blog-meta">June 2026 · Sellers · DFW Market</p>
+        <h3>How to sell a home that needs work in the DFW market</h3>
+        <p>Selling a property that is not in perfect condition is not as difficult as most sellers assume. The approach matters more than the condition.</p>
+        <span class="blog-read-more">Read more</span>
+      </div>
+    </div>
+    <div class="blog-card" onclick="document.getElementById('blog-modal-7').classList.add('open')">
+      <div class="blog-card-body">
+        <p class="blog-meta">June 2026 · Sellers · DFW Market</p>
+        <h3>How to get a cash offer on your DFW home and whether you should take it</h3>
+        <p>Cash offers are fast and certain. They are also not always the right move. Here is how the process works and how to know which path makes sense for your situation.</p>
+        <span class="blog-read-more">Read more</span>
+      </div>
+    </div>
+    <div class="blog-card" onclick="document.getElementById('blog-modal-8').classList.add('open')">
+      <div class="blog-card-body">
+        <p class="blog-meta">June 2026 · Investors · DFW Market</p>
+        <h3>Off-market real estate in DFW: how it actually works</h3>
+        <p>Off-market deals are not a myth. They are a sourcing problem. Here is how properties end up off-market in DFW and how serious buyers actually access them.</p>
+        <span class="blog-read-more">Read more</span>
+      </div>
+    </div>
+    <div class="blog-card" onclick="document.getElementById('blog-modal-9').classList.add('open')">
+      <div class="blog-card-body">
+        <p class="blog-meta">June 2026 · Investors · DFW Market</p>
+        <h3>How to buy your first investment property in DFW with limited capital</h3>
+        <p>You do not need a large bankroll to get into real estate investing in Dallas-Fort Worth. You need the right strategy, the right entry point, and a clear understanding of how the numbers work.</p>
+        <span class="blog-read-more">Read more</span>
+      </div>
+    </div>
+    <div class="blog-card" onclick="document.getElementById('blog-modal-10').classList.add('open')">
+      <div class="blog-card-body">
+        <p class="blog-meta">June 2026 · Sellers · Plano · Frisco</p>
+        <h3>Thinking about selling your home in Plano or Frisco? What the market actually looks like right now</h3>
+        <p>The $400K to $700K segment in North DFW is more nuanced in 2026 than it was two years ago. Here is an honest read on what sellers in this price range should expect and how to position correctly.</p>
+        <span class="blog-read-more">Read more</span>
+      </div>
+    </div>
+    <div class="blog-coming">
+      <div>
+        <p style="font-size:11px;margin-bottom:6px;font-weight:600;color:var(--text-muted);letter-spacing:0.1em;text-transform:uppercase;">More coming soon</p>
+        <p style="font-size:12px;">Market analysis, investment strategy, and DFW-specific insights.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <p class="section-eyebrow">Contact</p>
+  <div class="contact-wrapper">
+    <div class="contact-left">
+      <h2>Let's talk about your situation</h2>
+      <p>Buying, selling, investing, or looking for off-market deal flow, tell me what you are working with and I will give you a straight answer on how I can help.</p>
+      <div class="contact-direct">
+        <a href="tel:9453499179">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.18 6.18l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (945) 349-9179
+        </a>
+        <a href="mailto:cris@eliteoffergroup.com">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          cris@eliteoffergroup.com
+        </a>
+        <a href="https://www.linkedin.com/in/cristianevelez" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://www.eliteoffergroup.com" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Elite Offer Group
+        </a>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <div class="form-group"><label>First name</label><input type="text" placeholder="First name" required /></div>
+        <div class="form-group"><label>Last name</label><input type="text" placeholder="Last name" required /></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Phone</label><input type="tel" placeholder="Your number" /></div>
+        <div class="form-group"><label>Email</label><input type="email" placeholder="Your email" required /></div>
+      </div>
+      <div class="form-group">
+        <label>I'm looking to...</label>
+        <select>
+          <option>Buy a home</option>
+          <option>Sell a property</option>
+          <option>Find an investment deal</option>
+          <option>Deploy capital / partner on a project</option>
+          <option>Get a cash offer (Elite Offer Group)</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Tell me about your situation</label>
+        <textarea placeholder="Property address, timeline, what you're trying to accomplish..."></textarea>
+      </div>
+      <button type="submit" class="form-submit">Send message</button>
+    </form>
+  </div>
+</section>
+
+<div class="footer-wrap">
+  <div class="footer-gold-line"></div>
+  <footer>
+    <div class="footer-left">
+      <strong>Cristian Velez</strong><br>
+      Licensed Realtor · TX License #0833260<br>
+      Corey Simpson & Associates · Dallas-Fort Worth, TX<br>
+      <a href="mailto:cris@eliteoffergroup.com">cris@eliteoffergroup.com</a> · <a href="tel:9453499179">(945) 349-9179</a><br>
+      <a href="https://www.eliteoffergroup.com" target="_blank">eliteoffergroup.com</a>
+    </div>
+    <div class="footer-right">2026 Cristian Velez. All rights reserved.</div>
+  </footer>
+</div>
+
+<!-- BLOG MODAL 1 -->
+<div class="modal-overlay" id="blog-modal-1" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('blog-modal-1').classList.remove('open')">x</button>
+    <p class="modal-eyebrow">May 2026 · Sellers · DFW Market</p>
+    <h2>Should I list or take a cash offer? A DFW agent's honest breakdown</h2>
+    <p class="modal-byline">By Cristian Velez · Licensed Realtor, Corey Simpson & Associates · Principal, Elite Offer Group</p>
+    <div class="modal-body">
+      <p>If you own property in the Dallas-Fort Worth area and are thinking about selling, you have probably been approached by a cash buyer. "We buy houses fast. No repairs, no showings, close in two weeks." At the same time, you have likely heard that listing on the MLS is how you get top dollar.</p>
+      <p>So which one is right? The honest answer is that it depends on your property and your situation. Most people giving you advice only offer one of the two options. I operate on both sides, which puts me in a position to give you a straight comparison without a predetermined outcome.</p>
+      <h3>What a cash offer actually means</h3>
+      <p>A cash offer from an investor is designed for speed and certainty. You skip repairs, showings, and the 30-to-45-day escrow that comes with a financed buyer. You get a set number and close, often in two to three weeks.</p>
+      <p>The tradeoff is price. Investors price in their risk, their rehab costs, and their margin. In most DFW submarkets today, a cash offer will come in <strong>10 to 25 percent below what a well-priced listing could produce</strong>. That gap is the cost of speed and certainty.</p>
+      <p>A cash offer makes sense when: you need to close quickly, the property needs significant work, you are dealing with a difficult personal situation, or the cost of holding and preparing the property outweighs the upside of listing.</p>
+      <h3>What listing on the MLS actually means</h3>
+      <p>A well-executed listing puts your property in front of the widest buyer pool, including financed buyers who can often pay more than investors because they are not pricing in a renovation margin or a profit requirement.</p>
+      <p>In Collin County submarkets like Plano, McKinney, and Frisco, a correctly priced and well-presented listing can still move in days. The process takes longer, typically 45 to 60 days from list to close, and requires preparation: repairs, staging, professional photography, and active showings.</p>
+      <p>Listing makes sense when: the property is in reasonable condition, you have time to run the process, and maximizing net proceeds is the priority.</p>
+      <h3>The option most sellers do not know they have</h3>
+      <p>Because I work on both sides, I can give sellers a genuine comparison with no agenda attached to either outcome. In some cases the right move is to get a cash offer number as a floor, then list and let the market respond. If the MLS produces stronger offers, you take the best one. If it does not, you have a cash offer ready. You are never without an exit.</p>
+      <p>In other cases, the cash offer is legitimately the better path because the property or the timeline does not support a retail listing.</p>
+      <h3>The bottom line</h3>
+      <p>There is no universal right answer. What matters is understanding your actual options, the real numbers behind each one, and what your specific situation calls for. If you are thinking about selling a property in DFW and want a clear picture of both paths, reach out directly. No pressure, just a straightforward conversation about your situation.</p>
+    </div>
+    <div class="modal-cta">
+      <p>Ready to talk through your options?</p>
+      <a href="#contact" onclick="document.getElementById('blog-modal-1').classList.remove('open')">Get in touch</a>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG MODAL 2 -->
+<div class="modal-overlay" id="blog-modal-2" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('blog-modal-2').classList.remove('open')">x</button>
+    <p class="modal-eyebrow">May 2026 · Investors · DFW Market</p>
+    <h2>How to house hack in DFW in 2026: a practical guide for first-time investors</h2>
+    <p class="modal-byline">By Cristian Velez · Licensed Realtor, Corey Simpson & Associates · Principal, Elite Offer Group</p>
+    <div class="modal-body">
+      <p>House hacking is one of the most effective ways to enter real estate without a large capital base. The concept is straightforward: you buy a property, live in part of it, and rent out the rest. Your tenants offset a portion of your mortgage, sometimes all of it, while you build equity and generate cash flow at the same time.</p>
+      <p>In a market like Dallas-Fort Worth, where home prices have appreciated significantly over the past several years but rental demand remains strong, house hacking still makes sense in 2026 if you approach it with the right criteria.</p>
+      <h3>What house hacking looks like in DFW</h3>
+      <p>The most common structure is a duplex or small multifamily property. You occupy one unit and rent the other. Rental income from the second unit offsets your mortgage payment, and in some cases covers it entirely depending on purchase price and local rent levels.</p>
+      <p>A second approach is buying a single family home with extra bedrooms and renting unused rooms. This works in submarkets with strong demand from young professionals, particularly near major employment corridors in Dallas, Frisco, and Allen.</p>
+      <p>A third option is a property with an accessory dwelling unit. You live in the main structure and rent the ADU. These are increasingly common in Collin County and inner Dallas suburbs and often trade at prices that make the numbers work.</p>
+      <h3>The numbers you need to understand</h3>
+      <p>House hacking works when rental income meaningfully offsets your housing cost. Before you buy, you need three figures: your all-in monthly payment including principal, interest, taxes, and insurance; the realistic market rent for the unit or rooms you plan to rent; and the gap between the two.</p>
+      <p>In North DFW submarkets like Plano, McKinney, and Frisco, a well-selected duplex or ADU property can reduce your effective housing cost by $800 to $1,500 per month depending on the property and current rental rates.</p>
+      <p>The financing structure matters too. Owner-occupied properties qualify for conventional loans with as little as 3 to 5 percent down, and FHA financing allows as little as 3.5 percent down on properties up to four units. You get investment-level access to a rental property while financing it at residential rates.</p>
+      <h3>What to look for when buying a house hack in DFW</h3>
+      <p>Rental demand in the immediate area. Strong demand means low vacancy and stable income. Look for proximity to employment centers, medical facilities, universities, or major corridors. In DFW that includes the Telecom Corridor in Richardson, the Legacy business park area in Plano, and the medical district in Frisco.</p>
+      <p>Unit separation. The best house hacks have clear physical separation between the units. Shared walls work fine. Shared entrances and living spaces do not. Privacy for both parties makes the arrangement sustainable.</p>
+      <p>Condition relative to price. A turnkey duplex at a slightly higher price is often better than a distressed property that requires a renovation while you are living there. Factor all-in acquisition and repair costs when evaluating entry price.</p>
+      <p>Rent-to-price ratio. Finding properties where rental income covers 70 to 100 percent of your mortgage payment is achievable in DFW but requires looking beyond the most competitive retail listings. Off-market properties, high-DOM listings, and light cosmetic value-add opportunities tend to offer the best entry points.</p>
+      <h3>The house hack as a repeatable strategy</h3>
+      <p>After 12 months of owner-occupancy, you can convert the property to a full rental, move into a new house hack, and repeat the process. Each cycle builds your portfolio with minimal capital outlay and favorable owner-occupied financing terms.</p>
+      <p>In a market like DFW, where long-term population growth and employment expansion continue to support rental demand, properties acquired through this method tend to appreciate while generating income. The combination of reduced living costs, equity growth, and rental income makes house hacking one of the highest return-on-capital entries available to someone early in their real estate journey.</p>
+      <h3>How I can help</h3>
+      <p>I work with buyers at every stage of this process, from identifying the right property type for their situation to running the numbers on specific acquisitions. Because I source deals through both the MLS and the Elite Offer Group pipeline, I can identify opportunities that most buyers working with a traditional agent would not see. If you are considering house hacking in DFW, reach out directly for a straightforward conversation about what makes sense for your situation.</p>
+    </div>
+    <div class="modal-cta">
+      <p>Ready to find your first house hack?</p>
+      <a href="#contact" onclick="document.getElementById('blog-modal-2').classList.remove('open')">Get in touch</a>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG MODAL 3 -->
+<div class="modal-overlay" id="blog-modal-3" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('blog-modal-3').classList.remove('open')">x</button>
+    <p class="modal-eyebrow">May 2026 · Investors · DFW Market</p>
+    <h2>The BRRRR strategy in DFW: what the numbers actually look like in 2026</h2>
+    <p class="modal-byline">By Cristian Velez · Licensed Realtor, Corey Simpson & Associates · Principal, Elite Offer Group</p>
+    <div class="modal-body">
+      <p>BRRRR gets a lot of attention in real estate investing circles. Buy, Rehab, Rent, Refinance, Repeat. The concept is sound: acquire a distressed property below market value, improve it, stabilize it with a tenant, pull your capital back out through a cash-out refinance, and redeploy into the next acquisition. Done correctly, it is one of the few strategies that allows you to recycle the same capital across multiple properties.</p>
+      <p>Done incorrectly, it ties up capital, produces negative cash flow, and leaves you holding a property you cannot refinance at the number you need. In a market like Dallas-Fort Worth, where prices have moved significantly over the past several years, executing a clean BRRRR requires discipline at every stage of the process.</p>
+
+      <h3>How the BRRRR cycle actually works</h3>
+      <p>The strategy has five stages and each one has to underwrite before you commit to the next.</p>
+      <p><strong>Buy:</strong> You acquire a distressed or undervalued property, typically off-market or through a motivated seller situation. The purchase price has to account for your rehab budget, your holding costs, and leave enough margin to refinance out at or near your all-in cost.</p>
+      <p><strong>Rehab:</strong> You improve the property to a rentable and lendable standard. The scope matters. A cosmetic rehab on a structurally sound property is a different risk profile than a full gut renovation. In DFW, labor and material costs have increased meaningfully since 2020, which means rehab budgets need to be conservative and well-documented before you close.</p>
+      <p><strong>Rent:</strong> You place a qualified tenant at market rent. The rental income needs to cover your debt service on the eventual refinance plus expenses, with positive cash flow remaining. If the stabilized rent does not support the refinanced loan payment, the deal does not work regardless of how well the rehab went.</p>
+      <p><strong>Refinance:</strong> Once the property is stabilized, typically after 6 to 12 months of seasoning depending on the lender, you do a cash-out refinance based on the new appraised value. The goal is to pull out enough capital to cover your original down payment and ideally most of your rehab costs.</p>
+      <p><strong>Repeat:</strong> You take the recycled capital and move into the next acquisition.</p>
+
+      <h3>The numbers that determine whether a DFW BRRRR works</h3>
+      <p>The single most important variable is the spread between your all-in cost and the after-repair value. In practice, most lenders will refinance at 70 to 75 percent of ARV. That means if the ARV is $300,000, the most you can pull out through a refinance is $210,000 to $225,000. Your all-in cost, purchase price plus rehab plus holding costs, needs to come in at or below that number for the strategy to return your capital.</p>
+      <p>In the current DFW market, finding properties with enough distress discount to make those numbers work on the MLS is difficult. The deals that pencil out are typically sourced off-market, through direct seller contact, or through acquisition pipelines with consistent deal flow. Properties with deferred maintenance, estate situations, or sellers who need speed over price tend to offer the best entry points.</p>
+      <p>Current DFW rental rates in Collin County and surrounding submarkets range broadly depending on property type and location, but single family homes in the $200,000 to $300,000 ARV range are generally generating gross rents between $1,600 and $2,400 per month. Those rents need to support a refinanced loan payment plus taxes, insurance, property management, vacancy reserve, and maintenance budget while still producing positive monthly cash flow.</p>
+
+      <h3>Where BRRRR deals are still happening in DFW</h3>
+      <p>The most viable BRRRR opportunities in the current market are concentrated in areas with a combination of lower entry prices, strong rental demand, and value-add potential. South Dallas, parts of Garland, Grand Prairie, and select pockets of Fort Worth continue to produce deals that work at scale. Collin County properties at the right price point can also work, particularly in areas with strong rental demand from the employment growth along the 121 and 75 corridors.</p>
+      <p>The key is sourcing. Retail MLS listings rarely produce the margin needed for a clean BRRRR in today's market. The deals that work come through motivated seller situations, off-market sourcing, high days-on-market properties that have been ignored, and direct acquisition pipelines.</p>
+
+      <h3>The mistakes that kill a BRRRR deal</h3>
+      <p>Overestimating ARV. The refinance appraisal is based on comparable sales, not your renovation receipts. If comparable sales in the area do not support your projected ARV, the refinance will not return your capital regardless of how well you improved the property.</p>
+      <p>Underestimating rehab costs. In DFW's current labor market, conservative rehab budgets are essential. Scope creep and unforeseen structural issues can eliminate the margin that makes the deal work.</p>
+      <p>Ignoring cash flow. Some investors focus entirely on the refinance number and ignore whether the stabilized property actually produces positive cash flow. A property that breaks even on cash flow after refinancing is a fragile hold, not a performing asset.</p>
+      <p>Buying at retail. The BRRRR strategy depends on a below-market entry. Paying full price and hoping appreciation solves the math is speculation, not investment.</p>
+
+      <h3>How I can help</h3>
+      <p>I work with investors at every stage of the BRRRR process, from sourcing acquisition candidates through the Elite Offer Group pipeline to running the numbers on specific deals and managing the purchase and refinance process. If you are looking for BRRRR opportunities in the DFW market and want a clear-eyed look at what is actually available and what the numbers support, reach out directly.</p>
+    </div>
+    <div class="modal-cta">
+      <p>Looking for BRRRR opportunities in DFW?</p>
+      <a href="#contact" onclick="document.getElementById('blog-modal-3').classList.remove('open')">Get in touch</a>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG MODAL 4 -->
+<div class="modal-overlay" id="blog-modal-4" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('blog-modal-4').classList.remove('open')">x</button>
+    <p class="modal-eyebrow">May 2026 · Investors · Collin County</p>
+    <h2>How to underwrite a value-add deal in Collin County</h2>
+    <p class="modal-byline">By Cristian Velez · Licensed Realtor, Corey Simpson & Associates · Principal, Elite Offer Group</p>
+    <div class="modal-body">
+      <p>Collin County has been one of the most active real estate markets in the country over the past decade. Population growth, corporate relocations, and consistent employment expansion along the 121 and 75 corridors have driven both home values and rental rates upward in Plano, McKinney, Frisco, Allen, and the surrounding submarkets.</p>
+      <p>That growth is a double-edged sword for value-add investors. On one side, strong rental demand and appreciation support long-term holds. On the other, compressed entry prices make it harder to find the margin that makes a value-add deal worth executing. Getting a deal to pencil out in Collin County in 2026 requires disciplined underwriting at every stage.</p>
+
+      <h3>What value-add actually means in this context</h3>
+      <p>A value-add deal is one where the property is acquired below its stabilized value because of some correctable condition. That condition could be deferred maintenance, dated finishes, poor management, below-market rents, vacancy, or a combination of factors. The investor's job is to identify the gap between current condition and stabilized value, accurately estimate the cost to close that gap, and verify that the resulting return justifies the capital and effort required.</p>
+      <p>In Collin County, the most common value-add opportunities fall into a few categories: cosmetic fixers in established neighborhoods, properties with below-market rents that have not been updated in years, small multifamily assets with operational inefficiencies, and estate or distressed seller situations where the property has been neglected rather than intentionally improved.</p>
+
+      <h3>The underwriting framework</h3>
+      <p>Before committing to any value-add acquisition, you need to establish four numbers with confidence: purchase price, all-in rehab cost, stabilized value, and stabilized net operating income. Everything else in the analysis flows from those four figures.</p>
+      <p><strong>Purchase price.</strong> In a market like Collin County, where retail buyers are active and properties move quickly, acquiring at a price that leaves enough margin for a value-add play typically requires going off-market or identifying properties that have been passed over by retail buyers for a specific reason. High days on market, deferred maintenance that scares conventional buyers, estate situations, and motivated seller circumstances are the most consistent sources of entry price advantage.</p>
+      <p><strong>Rehab cost.</strong> This is where most deals fall apart. Investors underestimate scope, miss structural or mechanical issues during due diligence, or fail to account for the current cost of labor and materials in the DFW market. A conservative and itemized rehab budget, ideally verified by a contractor walkthrough before closing, is non-negotiable on any value-add acquisition. Build in a contingency of 10 to 15 percent on top of your base estimate.</p>
+      <p><strong>Stabilized value.</strong> The after-repair value is what the property will appraise for once the improvements are complete and the asset is stabilized. In Collin County, ARV is determined by comparable sales within a tight geographic radius. Pull comps carefully. Buyers and appraisers are not going to credit you for improvements that comparable properties already have as standard. The value you add has to be relative to what the immediate market will support.</p>
+      <p><strong>Stabilized NOI.</strong> If you are holding the property as a rental, the net operating income at stabilization determines your cash-on-cash return and your refinance potential. Gross rent minus vacancy allowance, property management, taxes, insurance, and maintenance reserves equals your NOI. That number needs to support your debt service with margin remaining. If it does not, you are holding a break-even asset that depends entirely on appreciation to produce a return.</p>
+
+      <h3>Collin County specific considerations</h3>
+      <p>Property taxes in Collin County are meaningful and need to be modeled accurately. Texas has no state income tax, which is part of what drives population growth, but property tax rates in Collin County range from roughly 1.5 to 2.5 percent of assessed value depending on the municipality and school district. On a $300,000 property, that is $4,500 to $7,500 per year in taxes alone. Underestimating this line item is a common mistake investors make when entering the DFW market from other states.</p>
+      <p>School district boundaries matter for exit optionality. Properties in Plano ISD, Frisco ISD, and McKinney ISD carry a premium with retail buyers and command stronger rents from tenants with school-age children. If your exit strategy includes a retail sale, the school district your property sits in will directly affect your buyer pool and your achievable sale price.</p>
+      <p>Rental demand is strong but tenant quality varies by submarket. The stronger employment corridors in Collin County attract well-qualified tenants, which supports lower vacancy and stronger rent collections. Submarkets further from major employment centers require a higher vacancy allowance in your underwriting.</p>
+
+      <h3>The deal that works vs. the deal that does not</h3>
+      <p>A value-add deal in Collin County works when: you acquire at a meaningful discount to ARV through an off-market or motivated seller situation, your rehab scope is accurately scoped and conservatively budgeted, the stabilized rents support your debt service with positive cash flow, and your all-in cost leaves enough equity cushion to absorb market fluctuations.</p>
+      <p>A deal does not work when: you pay retail and hope improvements add enough value to justify the acquisition price, you underestimate rehab costs and erode your margin during construction, or the stabilized rents produce break-even cash flow that depends on appreciation to generate a return.</p>
+      <p>The discipline is in the underwriting before you buy, not in the improvements after you close.</p>
+
+      <h3>How I can help</h3>
+      <p>I work with investors sourcing and underwriting value-add opportunities across Collin County and the broader DFW market. My background in finance and direct experience analyzing acquisitions through Elite Offer Group gives me a practical framework for evaluating whether a deal works before capital is committed. If you are looking at value-add opportunities in this market and want a second set of eyes on the numbers, reach out directly.</p>
+    </div>
+    <div class="modal-cta">
+      <p>Looking for value-add opportunities in Collin County?</p>
+      <a href="#contact" onclick="document.getElementById('blog-modal-4').classList.remove('open')">Get in touch</a>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG MODAL 4 -->
+<div class="modal-overlay" id="blog-modal-4" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('blog-modal-4').classList.remove('open')">x</button>
+    <p class="modal-eyebrow">May 2026 · Buyers · DFW Market</p>
+    <h2>First-time homebuyer guide for DFW: the process is simpler than you think</h2>
+    <p class="modal-byline">By Cristian Velez · Licensed Realtor, Corey Simpson & Associates · Principal, Elite Offer Group</p>
+    <div class="modal-body">
+      <p>Most people who have never bought a home before assume the process is complicated. It is not. There are a finite number of steps, they happen in a specific order, and each one is manageable when you know what to expect. What makes it feel overwhelming is not the process itself but the lack of a clear picture of what comes next.</p>
+      <p>This guide walks through the full process from start to close, with context specific to buying in the Dallas-Fort Worth market. If you are considering buying a home in DFW and are not sure where to start, this is where to start.</p>
+
+      <h3>Step 1: Understand what you can actually afford</h3>
+      <p>Before you look at a single property, you need a realistic number. Most first-time buyers either overestimate what they can afford based on wishful thinking or underestimate it because they have not spoken to a lender. Both lead to wasted time.</p>
+      <p>Your purchase price ceiling is determined by three things: your gross monthly income, your existing monthly debt obligations, and your available down payment and closing cost funds. Lenders use these figures to calculate your debt-to-income ratio, which determines how much they will lend you.</p>
+      <p>A general rule of thumb is that your total monthly housing payment, including principal, interest, taxes, and insurance, should not exceed 28 to 31 percent of your gross monthly income. Your total debt including the new housing payment should not exceed 43 to 45 percent. Those are guidelines, not hard limits, and different loan programs have different thresholds.</p>
+      <p>In the DFW market, property taxes are a meaningful part of your monthly payment. Depending on the municipality and school district, effective tax rates range from roughly 1.8 to 2.5 percent of assessed value. A $350,000 home in Plano or McKinney can carry $6,000 to $8,750 per year in property taxes alone. Make sure your lender is factoring accurate local tax rates into your payment estimate.</p>
+
+      <h3>Step 2: Get pre-approved before you start shopping</h3>
+      <p>A pre-approval letter from a lender is not optional in the current DFW market. Sellers in active submarkets like Plano, McKinney, and Frisco will not consider an offer without one. More importantly, it tells you exactly what you are working with before you spend time looking at homes you cannot buy.</p>
+      <p>Pre-approval requires documentation: pay stubs, W-2s or tax returns, bank statements, and identification. The lender pulls your credit, verifies your income and assets, and issues a letter stating the loan amount you qualify for. The process typically takes one to three business days with a responsive lender.</p>
+      <p>Get pre-approved, not just pre-qualified. Pre-qualification is an informal estimate based on self-reported information. Pre-approval involves actual document verification and carries real weight with sellers.</p>
+
+      <h3>Step 3: Work with a buyer's agent</h3>
+      <p>A buyer's agent represents your interests in the transaction. Their compensation is typically covered by the seller as part of the sale, which means you get professional representation at no direct cost to you as a buyer in most standard transactions.</p>
+      <p>What a good buyer's agent actually does: helps you identify properties that fit your criteria, provides comparative market analysis so you know whether a property is priced fairly, structures and submits your offer, negotiates on your behalf, coordinates inspections and due diligence, and manages the transaction through closing. The agent's job is to protect your interests and keep the process moving.</p>
+      <p>Choose an agent who knows the specific submarkets you are targeting. In DFW, neighborhood-level knowledge matters. Pricing dynamics, school district boundaries, HOA structures, and neighborhood trends vary significantly across even short distances in markets like Plano, McKinney, and Garland.</p>
+
+      <h3>Step 4: Find the right property</h3>
+      <p>Once you have your pre-approval and your agent, you start looking at properties. Your agent will set up an MLS search based on your criteria: price range, location, bedroom and bathroom count, and any specific requirements. You will receive notifications as matching properties hit the market.</p>
+      <p>In active DFW submarkets, well-priced properties in the entry-level and mid-range price points move quickly. Going to see a property within one to two days of it listing is often necessary to have a realistic chance at it. If you wait a week to schedule a showing on a well-priced home in Plano ISD or Frisco ISD, it is likely already under contract.</p>
+      <p>Be clear with yourself about what is essential versus what is a preference. First-time buyers sometimes pass on good properties waiting for something perfect that does not exist at their price point. Location, school district, and structural condition are hard to change. Finishes, paint colors, and landscaping are not.</p>
+
+      <h3>Step 5: Make an offer</h3>
+      <p>When you find the right property, your agent will pull comparable sales to determine a fair offer price and structure the offer terms. The offer includes the purchase price, your earnest money deposit, your financing terms, your requested closing date, and any contingencies you want to include.</p>
+      <p>Earnest money is a good-faith deposit that goes into escrow when your offer is accepted. In DFW, earnest money is typically one percent of the purchase price, though it varies. It is applied toward your closing costs at close. If the deal falls apart during the option period, you can typically recover it. If you back out after the option period without a contractual reason, you risk losing it.</p>
+      <p>The option period is a Texas-specific feature of the purchase contract. For a negotiated fee, typically $100 to $500, you purchase an unrestricted right to terminate the contract within a set number of days, usually five to ten. During this window you conduct your inspections and due diligence. It is your safety valve.</p>
+
+      <h3>Step 6: Inspections and due diligence</h3>
+      <p>Once your offer is accepted, you enter the option period. The most important thing you do during this time is hire a licensed home inspector to perform a full inspection of the property. A thorough inspection covers the foundation, roof, HVAC, plumbing, electrical, and all major systems. In Texas, foundation issues are particularly important to identify given the soil conditions common throughout DFW.</p>
+      <p>The inspection report will produce a list of findings ranging from minor maintenance items to significant deficiencies. Your agent will help you assess which items are worth requesting the seller address and which are normal for the age and condition of the property. This is often a negotiation in itself. You can ask the seller to repair specific items, reduce the price, or provide a credit at closing.</p>
+      <p>If the inspection reveals something significant that changes your view of the property, you can terminate the contract during the option period and recover your earnest money.</p>
+
+      <h3>Step 7: Financing, appraisal, and closing</h3>
+      <p>While you are in the option period, your lender is processing your loan. They will order an appraisal of the property to confirm it is worth at least what you are paying. If the appraisal comes in below the purchase price, you have options: negotiate the price down with the seller, pay the difference in cash, or terminate if you have an appraisal contingency in place.</p>
+      <p>The weeks between executed contract and closing involve document requests from your lender. Respond to these quickly. Delays in providing documentation are the most common cause of closing delays on the buyer side.</p>
+      <p>At closing, you sign the loan documents, pay your down payment and closing costs, and receive the keys. Closing costs in Texas typically run two to five percent of the purchase price and include lender fees, title insurance, prepaid taxes and insurance, and various other fees. Your lender will provide a Closing Disclosure three business days before closing that itemizes every cost.</p>
+
+      <h3>The bottom line</h3>
+      <p>The process has more steps than renting but none of them are complicated when you know what to expect. Pre-approval, find a property, make an offer, inspect, close. That is the arc of every residential transaction. The details vary by property and situation, but the sequence does not.</p>
+      <p>If you are thinking about buying a home in the Dallas-Fort Worth area and are not sure where to start, start with a conversation. I work with first-time buyers across DFW, from initial pre-approval guidance through closing, and I can walk you through exactly what the process looks like for your specific situation.</p>
+    </div>
+    <div class="modal-cta">
+      <p>Ready to start the process?</p>
+      <a href="#contact" onclick="document.getElementById('blog-modal-4').classList.remove('open')">Get in touch</a>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG MODAL 5 -->
+<div class="modal-overlay" id="blog-modal-5" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('blog-modal-5').classList.remove('open')">x</button>
+    <p class="modal-eyebrow">June 2026 · Market Insight · Plano</p>
+    <h2>Plano's corporate boom and what it means for real estate in 2026</h2>
+    <p class="modal-byline">By Cristian Velez · Licensed Realtor, Corey Simpson & Associates · Principal, Elite Offer Group</p>
+    <div class="modal-body">
+      <p>I grew up in Plano. I have watched this city grow from a suburban bedroom community into one of the most strategically significant corporate markets in the United States. What is happening here right now is not a cycle. It is a structural shift, and the real estate market is reflecting that in ways that matter for anyone buying, selling, or investing in this submarket.</p>
+      <p>Here is the full picture of what is driving Plano's growth and what it means on the ground for real estate.</p>
+
+      <h3>The corporate relocation story is bigger than most people realize</h3>
+      <p>Dallas-Fort Worth has been the number one metro in the country for corporate headquarters relocations from 2018 through 2024, attracting 100 new corporate headquarters during that period according to CBRE. No other metro in the United States comes close. And within DFW, Plano has been one of the primary landing spots for those relocations.</p>
+      <p>The companies now headquartered in Plano represent a wide cross-section of industries. KFC relocated its US corporate operations to Plano, joining Pizza Hut which was already based there. Sally Beauty is moving its headquarters from Denton to a new facility in Plano. Simpson Strong-Tie, FiberLight, and Assa Abloy Global Solutions have all established Plano operations. Graze Inc., a California-based autonomous technology company, moved its headquarters and research center to Plano's Legacy business park.</p>
+      <p>And in June 2025, Samsung Electronics America announced it will relocate its US headquarters to Plano by the end of 2026, consolidating alongside its existing Plano campus which already employs over 1,000 people. That announcement alone signals the kind of institutional confidence in this market that does not reverse quickly.</p>
+      <p>California accounted for the largest share of companies leaving their home state in 2024, with 12 of 17 California relocations going to Texas. Texas has now won the Site Selection magazine Governor's Cup for most corporate relocations and expansions 13 consecutive times.</p>
+
+      <h3>Why companies keep choosing Plano specifically</h3>
+      <p>The reasons are well documented and they compound on each other. Texas has no corporate income tax and no personal income tax, which matters both for the company's bottom line and for recruiting talent from higher-tax states. The cost of doing business in Texas is meaningfully lower than in California, New York, or New Jersey.</p>
+      <p>Plano specifically offers access to a deep and educated labor pool, proximity to DFW International Airport, a well-developed infrastructure along the 121 and 75 corridors, and a concentration of corporate campuses in the Legacy and Research-Technology Crossroads areas that has created its own gravitational pull. Companies locate near other companies in their sector. That clustering effect is now well established in Plano.</p>
+      <p>The quality of life factor is real too. Plano consistently ranks among the safest and most livable cities in Texas. The school district is strong. The housing stock covers a wide range of price points. For executives relocating from coastal markets, Plano offers a standard of living that is difficult to match at the same cost.</p>
+
+      <h3>What this means for the housing market</h3>
+      <p>Corporate relocations drive housing demand in a specific and sustained way. When a company moves its headquarters to a new city, it brings executives and senior employees who need to buy homes quickly and who typically have the financial capacity to pay market or above-market prices. It also creates downstream demand from mid-level employees who follow the company or who are hired locally and need housing near the new office.</p>
+      <p>That demand profile is different from organic local demand. Relocating buyers are often less price-sensitive, more motivated to close quickly, and less likely to negotiate aggressively. They are buying on a timeline set by their employment, not by market conditions. That dynamic supports pricing in the submarket and compresses days on market for well-located properties.</p>
+      <p>The Legacy corridor and the surrounding neighborhoods in West Plano have seen consistent demand from corporate buyers for exactly this reason. Properties within a reasonable commute of the major corporate campuses along Legacy Drive, the Tollway, and the 121 carry a premium that is directly connected to the employment base in the area.</p>
+
+      <h3>What this means for investors</h3>
+      <p>Corporate growth drives rental demand alongside ownership demand. Not every relocating employee buys immediately. Many rent for six to twelve months while they evaluate neighborhoods, get familiar with the market, and wait for their existing home to sell. That creates sustained rental demand from qualified, high-income tenants in the Plano submarket.</p>
+      <p>For investors, that tenant profile reduces vacancy risk and supports above-average rent collections. Single family rentals and small multifamily properties within the Plano ISD boundary and within reasonable proximity to the Legacy and 121 corridors benefit directly from this dynamic.</p>
+      <p>The challenge for investors in Plano is entry price. The corporate-driven demand that supports long-term hold value also makes it harder to acquire at the margin that traditional value-add investing requires. The deals that work here tend to come from off-market sources, motivated seller situations, or properties with specific condition issues that have priced out retail buyers but can be corrected with focused capital.</p>
+
+      <h3>What this means for sellers</h3>
+      <p>If you own property in Plano and are considering selling, the corporate relocation tailwind is working in your favor. The buyer pool for well-located Plano properties includes a meaningful number of corporate relocatees who are motivated, financially qualified, and operating on defined timelines. That is as favorable a demand environment as a seller can ask for.</p>
+      <p>Pricing strategy still matters. The market rewards correctly priced properties with fast movement and strong offers. Overpriced listings in any market, including Plano, will sit regardless of the broader demand environment. But a well-presented and accurately priced Plano home in the current market has a genuine advantage from the structural demand being created by continued corporate growth.</p>
+
+      <h3>The long view</h3>
+      <p>I have watched Plano's trajectory for a long time. What is happening now is not a short-term spike. It is the result of years of infrastructure investment, business-friendly policy, and geographic positioning that has made North Texas one of the most attractive corporate environments in the country. The Samsung announcement is one data point in a long-running trend that shows no sign of reversing.</p>
+      <p>For anyone buying, selling, or investing in the Plano market, understanding that structural backdrop is part of making informed decisions. If you want to talk through what it means for your specific situation, reach out directly.</p>
+    </div>
+    <div class="modal-cta">
+      <p>Want to talk through the Plano market?</p>
+      <a href="#contact" onclick="document.getElementById('blog-modal-5').classList.remove('open')">Get in touch</a>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG MODAL 6 -->
+<div class="modal-overlay" id="blog-modal-6" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('blog-modal-6').classList.remove('open')">x</button>
+    <p class="modal-eyebrow">June 2026 · Sellers · DFW Market</p>
+    <h2>How to sell a home that needs work in the DFW market</h2>
+    <p class="modal-byline">By Cristian Velez · Licensed Realtor, Corey Simpson & Associates · Principal, Elite Offer Group</p>
+    <div class="modal-body">
+      <p>One of the most common situations I encounter as a listing agent in DFW is a seller who owns a property that needs work and is not sure what to do with it. Maybe the home has deferred maintenance, cosmetic issues, outdated systems, or damage from years of use. Maybe a previous agent told them it was unsellable without a full renovation. Maybe an investor offered them a cash price that felt too low but they did not know if they had other options.</p>
+      <p>The reality is that selling a home that needs work in this market is entirely achievable. The approach matters far more than the condition. Here is how to think through it.</p>
+      <h3>Understand what you are actually working with</h3>
+      <p>Not all deferred maintenance is equal. There is a significant difference between a home with cosmetic issues (dated finishes, worn carpet, chipped paint, pet damage) and a home with structural or mechanical problems like foundation issues, roof failure, or compromised electrical or plumbing systems.</p>
+      <p>Cosmetic issues scare off some buyers but attract others, specifically investors and value-add buyers who are looking for properties priced to account for work. Structural issues require a different strategy because they affect financing. Most conventional lenders will not finance a property with significant foundation or roof problems, which limits your buyer pool to cash buyers or buyers using renovation loan products.</p>
+      <p>Knowing which category you are in before you list determines your pricing strategy, your marketing approach, and which buyer pool you are targeting.</p>
+      <h3>Price it correctly from the start</h3>
+      <p>The most common mistake sellers make with a property that needs work is pricing it as if it were in turnkey condition and then reducing the price after it sits. That sequence hurts you twice. First, buyers who would have been interested at a realistic price never see the property because it is filtered out by their search criteria or dismissed as overpriced. Second, a price reduction signals to the market that something is wrong, which creates additional resistance even after the price comes down.</p>
+      <p>The correct approach is to price the property accurately from day one, accounting for its condition relative to comparable sales in the area. A well-priced home that needs work will attract motivated buyers quickly. An overpriced one will sit, accumulate days on market, and ultimately sell for less than it would have at the right price from the beginning.</p>
+      <h3>Target the right buyers</h3>
+      <p>A property that needs work is not going to appeal to every buyer in the market, and that is fine. The goal is not to appeal to everyone. It is to reach the buyers for whom that property is the right fit.</p>
+      <p>In DFW, there is a consistent and active pool of buyers specifically looking for properties they can improve. Investors looking for rental acquisitions or fix-and-flip opportunities. Owner-occupants who want to build sweat equity. House hackers looking for properties priced below the turnkey market. First-time buyers who cannot afford a move-in ready home in their target neighborhood but can manage a property with light cosmetic work.</p>
+      <p>Reaching those buyers requires marketing that is honest about the property's condition while clearly communicating the opportunity. Trying to hide issues or downplay them wastes everyone's time and creates problems during inspection.</p>
+      <h3>Know what to fix and what to leave alone</h3>
+      <p>Not every repair improves your net proceeds. Some improvements cost more than they return in sale price. Others are genuinely worth doing because they expand your buyer pool or remove financing obstacles.</p>
+      <p>Generally worth addressing before listing: items that will prevent financing, basic safety issues, anything that creates an immediate negative first impression that is inexpensive to correct.</p>
+      <p>Generally not worth doing: full kitchen or bathroom renovations, flooring replacement throughout, or any improvement where your cost approaches or exceeds the likely increase in sale price. The question to ask before any pre-listing repair is whether it will directly increase your sale price by more than it costs or meaningfully expand your buyer pool. If the answer to both is no, save the money.</p>
+      <h3>Consider all your exit options</h3>
+      <p>Listing on the MLS is not the only path for a property that needs work, and in some cases it is not the right one. A cash offer from an investor provides speed and certainty at the cost of price. A traditional listing takes longer but reaches a wider buyer pool and can produce a stronger outcome when the property is priced and positioned correctly.</p>
+      <p>Because I work on both sides, as a listing agent and through Elite Offer Group as a cash buyer, I can give sellers an honest comparison of what each path looks like in their specific situation without pushing toward one outcome or the other.</p>
+      <h3>The bottom line</h3>
+      <p>Condition is a factor in how a property sells. It is not a barrier to selling. Properties in every condition trade in DFW every week. The sellers who get the best outcomes are the ones who price accurately, target the right buyers, make strategic decisions about what to repair, and understand all of their options before committing to a path.</p>
+      <p>If you own a property in DFW that needs work and are trying to figure out the right approach, reach out. I can walk you through what a realistic listing looks like for your specific property and give you an honest read on what it is worth in its current condition.</p>
+    </div>
+    <div class="modal-cta">
+      <p>Own a property that needs work in DFW?</p>
+      <a href="#contact" onclick="document.getElementById('blog-modal-6').classList.remove('open')">Get in touch</a>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG MODAL 7 -->
+<div class="modal-overlay" id="blog-modal-7" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('blog-modal-7').classList.remove('open')">x</button>
+    <p class="modal-eyebrow">June 2026 · Sellers · DFW Market</p>
+    <h2>How to get a cash offer on your DFW home and whether you should take it</h2>
+    <p class="modal-byline">By Cristian Velez · Licensed Realtor, Corey Simpson & Associates · Principal, Elite Offer Group</p>
+    <div class="modal-body">
+      <p>If you have been thinking about selling your home in the Dallas-Fort Worth area, you have probably seen the ads. "We buy houses for cash." "Sell your home in 7 days." "No repairs, no fees, no hassle." The offers are everywhere and they raise a legitimate question: is a cash offer actually a good deal, and how do you get one?</p>
+      <p>I operate on both sides of this transaction. Through Elite Offer Group I buy properties directly from homeowners across DFW. As a licensed agent with Corey Simpson & Associates I also list homes on the MLS and represent sellers in traditional transactions. That dual position gives me a clear-eyed view of when a cash offer makes sense and when it does not.</p>
+
+      <h3>How the cash offer process works</h3>
+      <p>Getting a cash offer is straightforward. A buyer, typically an investor or acquisition company, evaluates your property based on its condition, location, and comparable sales in the area. They make an offer that accounts for the work the property needs, their holding costs, and their margin. The offer is typically below market value for a retail sale but comes with significant advantages in speed and certainty.</p>
+      <p>Once you accept, the process moves quickly. There is no waiting for a buyer to get financing approved, no lender appraisal, and no contingencies that can fall through. A cash transaction in DFW can close in two to three weeks in most cases, sometimes faster depending on the situation.</p>
+      <p>The seller's responsibilities are minimal. You do not need to make repairs, stage the home, or accommodate showings. You agree on a price, sign the contract, and show up at closing.</p>
+
+      <h3>What drives the cash offer number</h3>
+      <p>Understanding how a cash offer is calculated helps you evaluate whether the number you receive is fair. Investors work backward from the after-repair value, which is what the property will be worth once it is fully renovated and ready for a retail buyer.</p>
+      <p>From that number they subtract their estimated renovation costs, their holding costs during the renovation period, their selling costs when they eventually list the property, and their profit margin. What remains is the maximum they can pay and still make the deal work. That is your cash offer.</p>
+      <p>In the current DFW market, cash offers on properties that need work typically land between 65 and 80 percent of after-repair value depending on the scope of work required, the submarket, and the buyer's cost structure. On a property with an ARV of $350,000 that needs $40,000 in work, a cash offer in the $220,000 to $250,000 range is typical.</p>
+
+      <h3>When a cash offer is the right move</h3>
+      <p>A cash offer makes sense in specific situations. If you need to close quickly due to a job relocation, financial pressure, divorce, or an estate situation, the speed of a cash transaction has real value that justifies accepting a lower price. If the property needs significant work that you cannot afford or do not want to manage, a cash offer removes that burden entirely. If you have tried listing the property and it has not sold, a cash offer provides a certain exit instead of continued carrying costs and uncertainty.</p>
+      <p>The common thread in all of these situations is that the seller is trading price for speed, certainty, or convenience. When those things have genuine value in your situation, a cash offer is a legitimate and often smart choice.</p>
+
+      <h3>When you should list instead</h3>
+      <p>If your property is in reasonable condition, you have time to run a proper listing process, and maximizing your net proceeds is the priority, listing on the MLS will almost always produce a higher sale price than a cash offer. The retail buyer pool includes financed buyers who are not pricing in a renovation margin or a profit requirement, which means they can pay more.</p>
+      <p>In active DFW submarkets like Plano, McKinney, and Frisco, well-priced properties in decent condition still move quickly. The gap between a cash offer price and a retail listing price in these markets can be $30,000 to $80,000 or more depending on the property. That gap is worth understanding before you decide.</p>
+
+      <h3>How to get a cash offer on your DFW property</h3>
+      <p>If you want to explore a cash offer, the process starts with a property assessment. I look at the address, the condition, and the comparable sales in the area to put together an offer through Elite Offer Group. There is no obligation and no pressure. The offer gives you a concrete number to work with so you can compare it against what a traditional listing might produce.</p>
+      <p>Because I can show you both numbers, you make your decision with full information rather than guessing whether you are leaving money on the table. Some sellers see the comparison and choose to list. Others see the cash offer and decide the speed and certainty is worth more to them than the price difference. Either outcome is fine because you are making an informed choice.</p>
+      <p>If you own property in DFW and want to know what a cash offer looks like on your specific situation, reach out directly. I can have a number in front of you quickly.</p>
+    </div>
+    <div class="modal-cta">
+      <p>Want a cash offer on your DFW property?</p>
+      <a href="#contact" onclick="document.getElementById('blog-modal-7').classList.remove('open')">Request an offer</a>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG MODAL 8 -->
+<div class="modal-overlay" id="blog-modal-8" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('blog-modal-8').classList.remove('open')">x</button>
+    <p class="modal-eyebrow">June 2026 · Investors · DFW Market</p>
+    <h2>Off-market real estate in DFW: how it actually works</h2>
+    <p class="modal-byline">By Cristian Velez · Licensed Realtor, Corey Simpson & Associates · Principal, Elite Offer Group</p>
+    <div class="modal-body">
+      <p>Every serious real estate investor in DFW has heard about off-market deals. Properties that trade without ever hitting the MLS. Motivated sellers who need to move quickly. Opportunities that never make it to Zillow. The concept is real. But the way most people think about accessing off-market inventory is not.</p>
+      <p>Off-market deals are not a secret handshake or a closed network that only insiders can access. They are a sourcing problem. The investors who consistently find off-market opportunities are the ones who have built systems and relationships that surface those situations before anyone else knows they exist. Here is how it actually works in the DFW market.</p>
+
+      <h3>Why properties end up off-market in the first place</h3>
+      <p>Understanding the supply side of off-market inventory is where most explanations start and stop too early. Properties end up off-market for specific reasons, and knowing those reasons tells you where to look.</p>
+      <p>Motivated seller situations are the most common source. A homeowner going through a divorce who needs to sell quickly and does not want the disruption of a public listing. An executor managing an estate who wants to close efficiently without the complexity of an MLS transaction. A landlord who is tired of managing a rental property and wants out without having to deal with tenants during a showing process. A homeowner facing financial pressure who needs certainty more than they need top dollar.</p>
+      <p>Distressed properties are another consistent source. Properties with deferred maintenance, code violations, foundation issues, or other conditions that make a traditional listing complicated are frequently sold off-market because the seller knows a retail listing will either sit or require significant price reductions to attract financed buyers.</p>
+      <p>Investor-to-investor transactions make up a third category. Experienced investors often prefer to sell to other investors directly, avoiding agent commissions and the retail listing process entirely. These deals circulate through investor networks and rarely reach the public market.</p>
+
+      <h3>How off-market deals are sourced in DFW</h3>
+      <p>There is no single channel for off-market inventory. The investors who find the most opportunities are running multiple sourcing methods simultaneously.</p>
+      <p><strong>Direct mail and outreach.</strong> Targeting specific property types, neighborhoods, or owner profiles with direct communication. Absentee owners, high-equity properties, long-term holds, and properties with code violations are common lists. In DFW, direct outreach to owners in Collin County, southern Dallas, and the inner suburbs produces consistent deal flow for operators running this method at scale.</p>
+      <p><strong>Driving for dollars.</strong> Identifying distressed properties by physically driving target neighborhoods and contacting the owners directly. Properties with overgrown lots, deferred exterior maintenance, or visible neglect are often owned by someone in a situation that makes selling appealing at the right price.</p>
+      <p><strong>Wholesaler networks.</strong> Wholesalers spend significant resources finding motivated sellers and then sell those contracts to end buyers. Building relationships with active wholesalers in DFW gives investors access to a steady stream of pre-screened off-market opportunities without having to run their own sourcing operation.</p>
+      <p><strong>Agent relationships.</strong> Agents who work with distressed sellers, estate attorneys, and investors regularly encounter properties before they hit the market. A seller who calls their agent about a property that needs significant work before deciding whether to list is a potential off-market opportunity for a buyer in that agent's network.</p>
+      <p><strong>Acquisition companies.</strong> Companies like Elite Offer Group run dedicated acquisition operations that generate consistent off-market deal flow through direct seller marketing. Building relationships with active acquisition companies in DFW gives investors access to opportunities that have already been sourced and evaluated.</p>
+
+      <h3>What off-market actually means for pricing</h3>
+      <p>A common misconception is that off-market automatically means below market value. It does not. Off-market means the property did not go through a public listing process. The price is still determined by negotiation between buyer and seller.</p>
+      <p>Some off-market deals offer significant price advantages because the seller is prioritizing speed or certainty over maximum proceeds. Others trade at or near retail value because the seller has other options and is simply choosing to sell privately. The opportunity in off-market sourcing is not automatic discount. It is access to inventory before the competitive retail buyer pool can bid it up.</p>
+      <p>In the current DFW market, where retail inventory has increased significantly, the pricing advantage of off-market deals is real but requires accurate underwriting to capture. Paying off-market prices for retail value properties does not produce investor returns regardless of how the deal was sourced.</p>
+
+      <h3>How to access off-market inventory in DFW</h3>
+      <p>The honest answer is that consistent access to off-market deals requires either building your own sourcing operation or building relationships with people who have already built one. There is no shortcut that produces a steady flow of quality off-market opportunities without real investment in relationships or systems.</p>
+      <p>For investors who are newer to the market or who do not want to run their own acquisition operation, the most efficient path is building relationships with active agents, wholesalers, and acquisition companies who already have deal flow. Being known as a reliable buyer who can close quickly and without contingencies puts you at the front of the line when those operators have something to move.</p>
+      <p>I work with investors at every stage of this process. Through Elite Offer Group I source off-market opportunities directly across DFW, and as a licensed agent I can represent buyers in both off-market and MLS transactions. If you are looking to build access to off-market deal flow in this market, reach out directly. The conversation starts with understanding what you are looking for and making sure the right opportunities get in front of you when they come up.</p>
+    </div>
+    <div class="modal-cta">
+      <p>Looking for off-market opportunities in DFW?</p>
+      <a href="#contact" onclick="document.getElementById('blog-modal-8').classList.remove('open')">Get in touch</a>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG MODAL 9 -->
+<div class="modal-overlay" id="blog-modal-9" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('blog-modal-9').classList.remove('open')">x</button>
+    <p class="modal-eyebrow">June 2026 · Investors · DFW Market</p>
+    <h2>How to buy your first investment property in DFW with limited capital</h2>
+    <p class="modal-byline">By Cristian Velez · Licensed Realtor, Corey Simpson & Associates · Principal, Elite Offer Group</p>
+    <div class="modal-body">
+      <p>One of the most common conversations I have with people interested in real estate investing goes something like this: they understand that real estate builds wealth, they want to get started in the Dallas-Fort Worth market, but they do not have the capital they think they need to make a move. They are waiting for the right moment, the right savings balance, or the right deal to appear before they take action.</p>
+      <p>The problem is that moment rarely arrives on its own. What actually gets people into their first investment property is a clear understanding of the real capital requirements, the right financing structures, and the strategies that work specifically for first-time investors in this market. Here is a practical breakdown of each.</p>
+
+      <h3>What limited capital actually means in DFW real estate</h3>
+      <p>The first thing to calibrate is what counts as limited capital in the context of DFW real estate investing. Most people dramatically overestimate what they need to get started and underestimate how far the right financing structures can stretch available funds.</p>
+      <p>A conventional investment property loan in Texas typically requires 15 to 25 percent down depending on the property type and lender. On a $250,000 property that is $37,500 to $62,500 out of pocket before closing costs. That is a real number that takes time to accumulate, which is why first-time investors often feel stuck before they start.</p>
+      <p>But owner-occupied financing changes that math entirely. If you are willing to live in the property, even temporarily, you access loan programs that require dramatically less capital upfront. That is where most first-time investors in DFW should start.</p>
+
+      <h3>The owner-occupied advantage</h3>
+      <p>FHA loans allow you to purchase a property with as little as 3.5 percent down if you occupy it as your primary residence. On a $250,000 property that is $8,750 down versus $37,500 to $62,500 for a conventional investment loan. Conventional owner-occupied loans go as low as 3 percent down for qualified buyers. VA loans, available to eligible veterans and service members, require zero down payment entirely.</p>
+      <p>The critical detail is that FHA financing allows purchases of up to four units as long as you occupy one of them. That means you can buy a duplex, triplex, or fourplex with 3.5 percent down, live in one unit, and rent the others. The rental income from the other units offsets your mortgage payment while you build equity in a multi-unit investment property using residential financing terms.</p>
+      <p>This is the single most capital-efficient entry point into DFW real estate investing for someone without a large cash reserve. It is how a significant number of serious investors in this market got their first property.</p>
+
+      <h3>House hacking as a first investment strategy in DFW</h3>
+      <p>House hacking, which I covered in detail in an earlier post, is the most accessible first investment strategy for buyers in the DFW market with limited capital. The basic structure: buy a property using owner-occupied financing, live in part of it, rent the rest, and use the rental income to reduce or eliminate your housing cost while building equity.</p>
+      <p>In North DFW submarkets including parts of Garland, Mesquite, Grand Prairie, and select areas of Plano and McKinney, duplexes and properties with accessory dwelling units are available in price ranges where the FHA financing math works. The rental income from the second unit in these markets can cover $800 to $1,400 of your monthly payment depending on the property and current rent levels.</p>
+      <p>After 12 months of owner-occupancy, you can convert the property to a full rental, move into a new primary residence using owner-occupied financing again, and repeat the process. Each cycle adds a rental property to your portfolio with minimal capital outlay relative to what a straight investment purchase would require.</p>
+
+      <h3>The BRRRR strategy for investors with some capital but not a lot</h3>
+      <p>If you have some capital to work with but not enough for a full conventional investment purchase, the BRRRR strategy offers a path to recycling that capital across multiple acquisitions rather than having it tied up in a single property.</p>
+      <p>Buy a distressed property below market value, renovate it, rent it at market rate, refinance based on the improved appraised value, and use the returned capital for the next acquisition. Done correctly, the refinance returns most or all of your initial investment, which you then redeploy into the next deal.</p>
+      <p>In DFW, the properties that make BRRRR work are typically found off-market or through acquisition pipelines rather than on the MLS. Retail-priced properties rarely leave enough margin for the strategy to return your capital through the refinance. The sourcing is where most first-time BRRRR investors struggle, which is why relationships with active acquisition operators in the market matter.</p>
+
+      <h3>Where to find entry-level investment opportunities in DFW</h3>
+      <p>The submarkets that consistently produce viable entry points for first-time investors in DFW right now include southern Garland, Mesquite, Grand Prairie, parts of Fort Worth, and select pockets of South Dallas. These areas offer lower entry prices relative to their rental income potential, which is the fundamental math that makes an investment property work.</p>
+      <p>Collin County properties can also work at the right price point, particularly for house hackers and BRRRR investors who can source below-market entry prices through off-market channels. The appreciation potential and rental demand in Collin County are strong, but entry prices require more discipline to find deals that produce immediate cash flow.</p>
+      <p>The current DFW market, with inventory up significantly from prior years, is actually a more favorable environment for first-time investors than 2021 or 2022 were. There is more to look at, less competition on individual properties, and more room to negotiate. The buyers who move now are entering at a better position than those who waited through the peak.</p>
+
+      <h3>What to do before you start looking</h3>
+      <p>Before you look at a single property, get clarity on three things: how much capital you actually have available including down payment, closing costs, and a reserve for unexpected expenses; what financing programs you qualify for based on your income, credit, and occupancy intentions; and what your target return looks like in terms of monthly cash flow and equity growth.</p>
+      <p>Those three inputs narrow the field from the entire DFW market to the specific property types, price ranges, and submarkets where deals that work for your situation actually exist. Without that clarity, property searches produce noise rather than leads.</p>
+      <p>I work with first-time investors across DFW at every stage of this process, from initial strategy conversations through acquisition. If you are trying to figure out what your first investment property looks like given your current capital position, reach out directly. A 20-minute conversation usually produces more clarity than months of research on your own.</p>
+    </div>
+    <div class="modal-cta">
+      <p>Ready to find your first investment property in DFW?</p>
+      <a href="#contact" onclick="document.getElementById('blog-modal-9').classList.remove('open')">Get in touch</a>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG MODAL 10 -->
+<div class="modal-overlay" id="blog-modal-10" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('blog-modal-10').classList.remove('open')">x</button>
+    <p class="modal-eyebrow">June 2026 · Sellers · Plano · Frisco</p>
+    <h2>Thinking about selling your home in Plano or Frisco? What the market actually looks like right now</h2>
+    <p class="modal-byline">By Cristian Velez · Licensed Realtor, Corey Simpson & Associates · Principal, Elite Offer Group</p>
+    <div class="modal-body">
+      <p>If you own a home in Plano or Frisco in the $400,000 to $700,000 range and are thinking about selling in 2026, you need an accurate picture of the market before you make that decision. Not the version that sounds good in a listing presentation. The actual numbers, what they mean, and what they require from you as a seller to get the outcome you want.</p>
+      <p>This is that picture.</p>
+
+      <h3>What the data actually shows in 2026</h3>
+      <p>The Plano and Frisco markets have shifted meaningfully from the 2021 to 2022 peak. Inventory is up significantly across Collin County, with active listings running well above long-term averages. That increased supply has extended days on market and created more negotiating room for buyers than existed two or three years ago.</p>
+      <p>In Plano, the median sold price sits around $490,000 to $500,000 in 2026, down modestly from $540,000 in 2025. Homes are taking roughly 36 to 43 days to sell on average, up from 25 days last year. The sold-to-list ratio remains strong at 97 to 98 percent, which means correctly priced homes are still transacting close to asking price. The key phrase is correctly priced.</p>
+      <p>In Frisco, the median is around $688,000 with similar dynamics. Days on market have extended and inventory is elevated, but the fundamental demand drivers (corporate employment growth, strong school districts, and continued population inflow) remain intact. The market has corrected from its peak but it has not collapsed.</p>
+      <p>What this data tells a seller in the $400,000 to $700,000 range is clear: the market rewards accurate pricing and penalizes anything above it. That was always true, but it is especially true right now when buyers have more options and less urgency than they did at the peak.</p>
+
+      <h3>Why pricing strategy matters more now than it did in 2022</h3>
+      <p>During the 2021 to 2022 run-up, sellers could price optimistically and still receive multiple offers. Buyers were competing aggressively for limited inventory and accepting prices that stretched the market. That environment is gone.</p>
+      <p>In the current Plano and Frisco market, an overpriced listing does not attract buyers who will negotiate down to a fair number. It attracts no one. Buyers in this price range are informed, they have options, and they are not motivated to chase a listing that is priced above what the data supports. An overpriced home sits, accumulates days on market, and eventually sells for less than it would have if it had been priced correctly from the start. That pattern plays out in this market every week.</p>
+      <p>Pricing correctly means using actual closed comparable sales in your specific neighborhood, your specific ZIP code, and your specific property type. Not median market statistics and not what your neighbor listed their home for three months ago. There is meaningful variation within Plano alone. West Plano ZIP codes like 75093 and 75024 carry medians well above $650,000 while East Plano ZIP codes run closer to $400,000 to $440,000. The right comparable set is critical.</p>
+
+      <h3>What corporate relocation demand means for your price range</h3>
+      <p>One of the most important demand drivers in the Plano and Frisco market right now is corporate relocation. Companies including Toyota, Capital One, JPMorgan Chase, and most recently Samsung have significant operations in this corridor, and the executives and senior employees they bring to the market are consistent buyers in the $400,000 to $700,000 range.</p>
+      <p>Relocation buyers move on employment timelines, not market sentiment. They need to close quickly, they are typically well-qualified financially, and they are less likely to spend months shopping and negotiating than a local buyer who has been watching the market for a year. That buyer profile is a genuine advantage for sellers in this price range, but it only converts on properties that are priced to move. A relocation buyer with a 60-day close deadline is not going to pursue a home that is priced 8 percent above its realistic value.</p>
+
+      <h3>What well-priced listings are doing right now</h3>
+      <p>The data is clear on this point. In Plano, homes that are priced accurately for their condition and location are selling in under 30 days and closing at 97 to 99 percent of list price. Some well-priced listings in competitive Plano neighborhoods are still receiving multiple offers and closing above asking, particularly in West Plano and near the Legacy corridor.</p>
+      <p>The distinction between a listing that moves in three weeks and one that sits for 90 days and takes price reductions is almost always pricing and preparation, not market conditions. The market conditions are the same for both listings. What differs is how accurately the seller and their agent read the data before setting the list price.</p>
+
+      <h3>What sellers in this price range should do before listing</h3>
+      <p>Get a comparative market analysis from an agent who is actively working this market and willing to show you actual closed data rather than optimistic projections. Understand the difference between your home's value and what you want for it. Those are sometimes the same number and sometimes not, and knowing which situation you are in before you list saves significant time and money.</p>
+      <p>Assess condition honestly. In the current market, buyers are conducting thorough inspections and using findings to negotiate. Deferred maintenance and cosmetic issues that buyers might have overlooked in 2022 are now consistent negotiating points. Addressing obvious issues before listing, or pricing to reflect them accurately, produces better outcomes than discovering them during inspection negotiation after you are already under contract.</p>
+      <p>Understand your timeline. If you need to be out of the property by a specific date, that timeline should inform your pricing strategy. A home priced to sell in 30 days looks different from one priced to maximize proceeds over 90 days. Both are legitimate strategies. The mistake is pricing for a 90-day strategy when you have a 30-day timeline.</p>
+
+      <h3>The bottom line for Plano and Frisco sellers in 2026</h3>
+      <p>This market still works for sellers who price accurately, prepare their property appropriately, and understand what the current buyer pool responds to. The sellers who are struggling are the ones approaching 2026 with 2022 expectations. The data does not support those expectations, and the market will tell you that quickly if your list price does not.</p>
+      <p>I work with sellers across Plano, Frisco, and the surrounding North DFW submarkets. If you are thinking about listing in 2026 and want a straight read on what your specific property is worth in the current market and what a realistic selling process looks like, reach out directly. I will show you the actual comparable sales, give you an honest price range, and walk you through what it takes to close at the top of that range.</p>
+    </div>
+    <div class="modal-cta">
+      <p>Thinking about selling in Plano or Frisco?</p>
+      <a href="#contact" onclick="document.getElementById('blog-modal-10').classList.remove('open')">Get in touch</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function navScrollTo(id, btn) {
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+    document.querySelectorAll('.mobile-tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+  }
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.form-submit');
+    btn.textContent = 'Message sent';
+    btn.style.opacity = '0.6';
+    btn.disabled = true;
+  }
+</script>
+
+</body>
+</html>
