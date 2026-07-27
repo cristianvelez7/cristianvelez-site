@@ -3,39 +3,28 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Cristian Velez is a licensed Realtor serving Dallas-Fort Worth with experience in residential representation, investment property acquisitions, and off-market opportunities across DFW." />
-<meta name="keywords" content="Cristian Velez realtor DFW, real estate agent Plano TX, McKinney realtor, investment property Dallas, off-market real estate DFW, buyer agent Collin County, listing agent Plano, Garland realtor" />
-<title>Cristian Velez, Licensed Realtor · Dallas-Fort Worth</title>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9GZKXBCQQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-T9GZKXBCQQ');
-</script>
+<meta name="description" content="Cristian Velez — Licensed Realtor and real estate investor serving Dallas-Fort Worth, Plano, and McKinney. Residential, commercial, investment properties, and off-market deals." />
+<meta name="keywords" content="Cristian Velez, realtor DFW, real estate investor Dallas, Plano realtor, McKinney realtor, investment property DFW, off-market real estate Dallas, cash offer Dallas" />
+<title>Cristian Velez — Real Estate · DFW</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg: #0e0e0c;
-    --bg-card: #161614;
-    --bg-elevated: #1e1e1b;
-    --text: #f0ead8;
-    --text-muted: #9a9488;
-    --text-faint: #5a5650;
-    --gold: #c9a96e;
-    --gold-light: #e8d5a3;
-    --gold-dim: #7a6540;
-    --border: #2a2a26;
-    --border-gold: #3d3526;
-    --serif: 'Cormorant Garamond', Georgia, serif;
-    --sans: 'Montserrat', system-ui, sans-serif;
-    --radius: 8px;
-    --radius-lg: 14px;
+    --bg: #f7f6f2;
+    --bg-card: #ffffff;
+    --text: #141412;
+    --text-muted: #6b6a63;
+    --text-faint: #a8a79f;
+    --border: #e4e2da;
+    --border-strong: #c8c6bc;
+    --accent: #1a1a18;
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+    --radius: 10px;
+    --radius-lg: 16px;
   }
 
   html { scroll-behavior: smooth; }
@@ -44,7 +33,7 @@
     font-family: var(--sans);
     background: var(--bg);
     color: var(--text);
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
@@ -54,250 +43,391 @@
   /* NAV */
   nav {
     position: sticky; top: 0; z-index: 100;
-    background: rgba(14,14,12,0.95);
-    backdrop-filter: blur(16px);
+    background: rgba(247, 246, 242, 0.92);
+    backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
     padding: 0 2rem;
-    height: 62px;
+    height: 60px;
     display: flex; align-items: center; justify-content: space-between;
   }
-  .nav-logo { font-family: var(--serif); font-size: 20px; font-weight: 400; letter-spacing: 0.02em; color: var(--text); }
-  .nav-logo span { color: var(--gold); font-style: italic; }
+  .nav-logo {
+    font-family: var(--serif);
+    font-size: 17px;
+    letter-spacing: 0.01em;
+  }
+  .nav-logo span { color: var(--text-muted); font-family: var(--sans); font-size: 12px; font-weight: 300; margin-left: 8px; letter-spacing: 0.06em; text-transform: uppercase; }
   .nav-links { display: flex; gap: 2rem; }
-  .nav-links a { font-size: 11px; color: var(--text-muted); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; transition: color 0.2s; }
-  .nav-links a:hover { color: var(--gold); }
-  .nav-btn { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 20px; border: 1px solid var(--gold-dim); border-radius: 2px; color: var(--gold); transition: all 0.2s; }
-  .nav-btn:hover { background: var(--gold); color: var(--bg); border-color: var(--gold); }
-
-  /* MOBILE TAB BAR */
-  .mobile-tabs { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200; background: rgba(14,14,12,0.97); border-top: 1px solid var(--border); height: 60px; }
-  .mobile-tabs-inner { display: flex; height: 100%; }
-  .mobile-tab { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; cursor: pointer; color: var(--text-faint); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; transition: color 0.2s; border: none; background: none; }
-  .mobile-tab svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-  .mobile-tab.active, .mobile-tab:hover { color: var(--gold); }
+  .nav-links a { font-size: 13px; color: var(--text-muted); transition: color 0.15s; font-weight: 400; }
+  .nav-links a:hover { color: var(--text); }
+  .nav-btn {
+    font-size: 13px; font-weight: 500;
+    padding: 7px 18px;
+    background: var(--text);
+    color: var(--bg);
+    border-radius: 100px;
+    transition: opacity 0.15s;
+  }
+  .nav-btn:hover { opacity: 0.8; }
 
   /* HERO */
-  .hero { max-width: 1100px; margin: 0 auto; padding: 7rem 2rem 6rem; display: grid; grid-template-columns: 1fr 300px; gap: 5rem; align-items: center; }
-  .hero-eyebrow { display: flex; align-items: center; gap: 12px; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.75rem; font-weight: 600; }
-  .hero-eyebrow::after { content: ''; flex: 1; max-width: 40px; height: 1px; background: var(--gold-dim); }
-  .hero h1 { font-family: var(--serif); font-size: clamp(38px, 4.5vw, 58px); line-height: 1.08; font-weight: 300; margin-bottom: 1.5rem; letter-spacing: 0.01em; }
-  .hero h1 em { font-style: italic; color: var(--gold); }
-  .hero-sub { font-size: 13px; color: var(--text-muted); line-height: 1.9; margin-bottom: 2.5rem; max-width: 460px; font-weight: 300; letter-spacing: 0.03em; }
-  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
-  .btn-gold { padding: 13px 30px; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; background: var(--gold); color: var(--bg); border-radius: 2px; transition: opacity 0.2s; border: 1px solid var(--gold); }
-  .btn-gold:hover { opacity: 0.85; }
-  .btn-ghost { padding: 13px 30px; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid var(--border-gold); border-radius: 2px; color: var(--text-muted); transition: all 0.2s; }
-  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+  .hero {
+    max-width: 1100px; margin: 0 auto;
+    padding: 6rem 2rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 4rem;
+    align-items: center;
+  }
+  .hero-eyebrow {
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--text-faint); margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .hero-eyebrow::before {
+    content: ''; display: inline-block;
+    width: 24px; height: 1px; background: var(--text-faint);
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(36px, 4vw, 52px);
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--text-muted);
+  }
+  .hero-sub {
+    font-size: 16px; color: var(--text-muted);
+    line-height: 1.75; margin-bottom: 2.5rem;
+    max-width: 480px; font-weight: 300;
+  }
+  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn-dark {
+    padding: 12px 28px; font-size: 14px; font-weight: 500;
+    background: var(--text); color: var(--bg);
+    border-radius: 100px; transition: opacity 0.15s;
+  }
+  .btn-dark:hover { opacity: 0.8; }
+  .btn-outline {
+    padding: 12px 28px; font-size: 14px; font-weight: 400;
+    border: 1px solid var(--border-strong);
+    border-radius: 100px; color: var(--text);
+    transition: background 0.15s;
+  }
+  .btn-outline:hover { background: var(--border); }
 
-  .hero-photo { position: relative; }
-  .hero-photo img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: center top; border-radius: var(--radius); display: block; filter: brightness(0.92) contrast(1.05); }
-  .hero-photo::before { content: ''; position: absolute; inset: -1px; border-radius: var(--radius); border: 1px solid var(--border-gold); pointer-events: none; }
-  .hero-photo-badge { position: absolute; bottom: -1px; left: -1px; right: -1px; background: linear-gradient(to top, rgba(14,14,12,0.97) 0%, rgba(14,14,12,0.7) 70%, transparent 100%); border-radius: 0 0 var(--radius) var(--radius); padding: 2rem 1.25rem 1.25rem; }
-  .hero-photo-badge strong { display: block; font-family: var(--serif); font-size: 18px; font-weight: 400; color: var(--text); margin-bottom: 2px; }
-  .hero-photo-badge span { font-size: 10px; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; }
+  .hero-photo {
+    position: relative;
+  }
+  .hero-photo img {
+    width: 100%; aspect-ratio: 3/4;
+    object-fit: cover; object-position: center top;
+    border-radius: var(--radius-lg);
+    display: block;
+  }
+  .hero-photo-badge {
+    position: absolute; bottom: 20px; left: -20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    font-size: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  }
+  .hero-photo-badge strong { display: block; font-size: 13px; font-weight: 500; margin-bottom: 2px; }
+  .hero-photo-badge span { color: var(--text-muted); }
 
   /* DIVIDER */
   .divider { height: 1px; background: var(--border); margin: 0 2rem; }
-  .footer-gold-line { height: 1px; background: linear-gradient(to right, transparent, var(--gold-dim), transparent); max-width: 1100px; margin: 0 auto; }
 
   /* SECTIONS */
-  .section { max-width: 1100px; margin: 0 auto; padding: 5.5rem 2rem; }
-  .section-eyebrow { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; font-weight: 600; }
-  .section-title { font-family: var(--serif); font-size: clamp(28px, 3.2vw, 42px); font-weight: 300; line-height: 1.15; margin-bottom: 1rem; letter-spacing: 0.01em; }
-  .section-intro { font-size: 13px; color: var(--text-muted); line-height: 1.85; max-width: 520px; font-weight: 300; margin-bottom: 3.5rem; letter-spacing: 0.02em; }
+  .section { max-width: 1100px; margin: 0 auto; padding: 5rem 2rem; }
+  .section-eyebrow {
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--text-faint); margin-bottom: 1rem;
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(26px, 3vw, 36px);
+    font-weight: 400; line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  .section-intro {
+    font-size: 15px; color: var(--text-muted);
+    line-height: 1.75; max-width: 540px;
+    font-weight: 300; margin-bottom: 3rem;
+  }
 
   /* SERVICES */
-  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
-  .service-card { background: var(--bg-card); padding: 2rem 1.75rem; transition: background 0.2s; position: relative; }
-  .service-card::after { content: ''; position: absolute; bottom: 0; left: 1.75rem; width: 24px; height: 1px; background: var(--gold-dim); transition: width 0.3s; }
-  .service-card:hover { background: var(--bg-elevated); }
-  .service-card:hover::after { width: 48px; background: var(--gold); }
-  .service-num { font-size: 10px; color: var(--gold-dim); letter-spacing: 0.15em; margin-bottom: 1.25rem; display: block; font-weight: 600; }
-  .service-card h3 { font-family: var(--serif); font-size: 19px; font-weight: 400; margin-bottom: 0.6rem; color: var(--text); }
-  .service-card p { font-size: 12px; color: var(--text-muted); line-height: 1.75; font-weight: 300; letter-spacing: 0.02em; }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+  .service-card {
+    background: var(--bg-card);
+    padding: 2rem;
+    transition: background 0.15s;
+  }
+  .service-card:hover { background: var(--bg); }
+  .service-num {
+    font-size: 11px; color: var(--text-faint);
+    letter-spacing: 0.1em; margin-bottom: 1rem; display: block;
+  }
+  .service-card h3 { font-size: 15px; font-weight: 500; margin-bottom: 0.5rem; }
+  .service-card p { font-size: 13px; color: var(--text-muted); line-height: 1.65; font-weight: 300; }
 
   /* DIFFERENTIATORS */
   .diff-list { display: flex; flex-direction: column; }
-  .diff-row { display: grid; grid-template-columns: 60px 1fr; gap: 2rem; padding: 2rem 0; border-bottom: 1px solid var(--border); align-items: start; }
+  .diff-row {
+    display: grid; grid-template-columns: 48px 1fr;
+    gap: 1.5rem; padding: 1.75rem 0;
+    border-bottom: 1px solid var(--border);
+    align-items: start;
+  }
   .diff-row:last-child { border-bottom: none; }
-  .diff-num { font-family: var(--serif); font-size: 32px; color: var(--gold-dim); font-weight: 300; line-height: 1; }
-  .diff-row h4 { font-family: var(--serif); font-size: 20px; font-weight: 400; margin-bottom: 6px; color: var(--text); }
-  .diff-row p { font-size: 13px; color: var(--text-muted); line-height: 1.8; font-weight: 300; letter-spacing: 0.02em; }
-
-  /* TRANSACTIONS */
-  .transactions-grid { display: flex; flex-direction: column; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
-  .transaction-row { background: var(--bg-card); padding: 1.75rem 2rem; display: grid; grid-template-columns: 180px 80px 1fr; gap: 1.5rem; align-items: start; transition: background 0.15s; }
-  .transaction-row:hover { background: var(--bg-elevated); }
-  .transaction-address { font-family: var(--serif); font-size: 16px; font-weight: 400; color: var(--text); line-height: 1.3; }
-  .transaction-location { font-size: 11px; color: var(--text-faint); margin-top: 3px; letter-spacing: 0.04em; }
-  .transaction-type { display: inline-block; font-size: 9px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border-radius: 2px; white-space: nowrap; }
-  .type-listing { color: var(--gold); border: 1px solid var(--gold-dim); }
-  .type-buyer { color: var(--text-muted); border: 1px solid var(--border); }
-  .transaction-detail { font-size: 12px; color: var(--text-muted); line-height: 1.7; font-weight: 300; letter-spacing: 0.02em; }
-  .transaction-note { font-size: 11px; color: var(--text-faint); margin-top: 5px; letter-spacing: 0.04em; font-style: italic; }
-  .transactions-footer { background: var(--bg-elevated); padding: 1.25rem 2rem; font-size: 12px; color: var(--text-faint); font-weight: 300; letter-spacing: 0.03em; line-height: 1.7; border-top: 1px solid var(--border); }
+  .diff-num { font-size: 11px; color: var(--text-faint); padding-top: 3px; letter-spacing: 0.06em; }
+  .diff-row h4 { font-size: 15px; font-weight: 500; margin-bottom: 5px; }
+  .diff-row p { font-size: 14px; color: var(--text-muted); line-height: 1.65; font-weight: 300; }
 
   /* ABOUT */
-  .about-grid { display: grid; grid-template-columns: 220px 1fr; gap: 5rem; align-items: start; }
-  .about-photo-wrap { position: relative; }
-  .about-photo { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: center top; border-radius: var(--radius); display: block; filter: brightness(0.9) contrast(1.05); }
-  .about-photo-wrap::before { display: none; }
-  .about-content { padding-top: 0.5rem; }
-  .about-content p { font-size: 13px; color: var(--text-muted); line-height: 1.9; font-weight: 300; margin-bottom: 1rem; letter-spacing: 0.02em; }
-  .about-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border); }
-  .about-meta-item label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold); display: block; margin-bottom: 5px; font-weight: 600; }
-  .about-meta-item span { font-size: 12px; color: var(--text-muted); font-weight: 300; }
-  .about-meta-item a { color: var(--text-muted); border-bottom: 1px solid var(--border-gold); padding-bottom: 1px; }
-  .about-meta-item a:hover { color: var(--gold); border-color: var(--gold); }
-  .tags-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.75rem; }
-  .tag-pill { font-size: 10px; padding: 4px 12px; border: 1px solid var(--border-gold); border-radius: 2px; color: var(--text-faint); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; }
-
-  /* INVENTORY */
-  .inventory-placeholder { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 5rem 2rem; text-align: center; }
-  .inventory-badge { display: inline-block; font-size: 9px; padding: 4px 14px; border: 1px solid var(--gold-dim); border-radius: 2px; color: var(--gold); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 1.5rem; font-weight: 600; }
-  .inventory-placeholder h3 { font-family: var(--serif); font-size: 28px; font-weight: 300; margin-bottom: 0.75rem; color: var(--text); }
-  .inventory-placeholder p { font-size: 13px; color: var(--text-muted); font-weight: 300; max-width: 440px; margin: 0 auto 2rem; line-height: 1.8; letter-spacing: 0.02em; }
+  .about-grid {
+    display: grid; grid-template-columns: 260px 1fr;
+    gap: 4rem; align-items: start;
+  }
+  .about-photo {
+    width: 100%; aspect-ratio: 3/4;
+    object-fit: cover; object-position: center top;
+    border-radius: var(--radius-lg);
+    display: block;
+  }
+  .about-content { padding-top: 1rem; }
+  .about-content p { font-size: 15px; color: var(--text-muted); line-height: 1.8; font-weight: 300; margin-bottom: 1rem; }
+  .about-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+  .about-meta-item label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-faint); display: block; margin-bottom: 4px; }
+  .about-meta-item span { font-size: 13px; font-weight: 400; }
+  .tags-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.5rem; }
+  .tag-pill {
+    font-size: 12px; padding: 4px 12px;
+    border: 1px solid var(--border-strong);
+    border-radius: 100px;
+    color: var(--text-muted);
+  }
 
   /* BLOG */
-  .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-  .blog-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: border-color 0.2s, transform 0.2s; cursor: pointer; }
-  .blog-card:hover { border-color: var(--border-gold); transform: translateY(-3px); }
-  .blog-card-body { padding: 1.75rem; }
-  .blog-meta { font-size: 10px; color: var(--gold); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 1rem; font-weight: 600; }
-  .blog-card h3 { font-family: var(--serif); font-size: 22px; font-weight: 400; line-height: 1.3; margin-bottom: 0.75rem; color: var(--text); }
-  .blog-card p { font-size: 12px; color: var(--text-muted); line-height: 1.75; font-weight: 300; margin-bottom: 1.5rem; letter-spacing: 0.02em; }
-  .blog-read-more { font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; gap: 8px; }
-  .blog-read-more::after { content: '→'; transition: transform 0.2s; }
-  .blog-card:hover .blog-read-more::after { transform: translateX(5px); }
-  .blog-coming { background: var(--bg-card); border: 1px dashed var(--border); border-radius: var(--radius-lg); padding: 2.5rem; display: flex; align-items: center; justify-content: center; font-size: 12px; color: var(--text-faint); text-align: center; line-height: 1.7; letter-spacing: 0.06em; }
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  .blog-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: border-color 0.15s, transform 0.15s;
+    cursor: pointer;
+  }
+  .blog-card:hover { border-color: var(--border-strong); transform: translateY(-2px); }
+  .blog-card-body { padding: 1.5rem; }
+  .blog-meta { font-size: 11px; color: var(--text-faint); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.75rem; }
+  .blog-card h3 { font-family: var(--serif); font-size: 20px; font-weight: 400; line-height: 1.3; margin-bottom: 0.75rem; }
+  .blog-card p { font-size: 13px; color: var(--text-muted); line-height: 1.65; font-weight: 300; margin-bottom: 1.25rem; }
+  .blog-read-more { font-size: 13px; font-weight: 500; display: flex; align-items: center; gap: 6px; color: var(--text); }
+  .blog-read-more::after { content: '→'; transition: transform 0.15s; }
+  .blog-card:hover .blog-read-more::after { transform: translateX(4px); }
+  .blog-coming {
+    background: var(--bg);
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; color: var(--text-faint);
+    text-align: center; line-height: 1.6;
+  }
+
+  /* INVENTORY PLACEHOLDER */
+  .inventory-placeholder {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  .inventory-placeholder h3 { font-family: var(--serif); font-size: 22px; font-weight: 400; margin-bottom: 0.75rem; }
+  .inventory-placeholder p { font-size: 14px; color: var(--text-muted); font-weight: 300; max-width: 400px; margin: 0 auto 1.5rem; line-height: 1.7; }
+  .inventory-badge {
+    display: inline-block; font-size: 11px; padding: 4px 12px;
+    background: #f0ede4; border-radius: 100px;
+    color: var(--text-muted); letter-spacing: 0.06em;
+    text-transform: uppercase; margin-bottom: 1.5rem;
+  }
 
   /* CONTACT */
-  .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
-  .contact-left h2 { font-family: var(--serif); font-size: 36px; font-weight: 300; line-height: 1.2; margin-bottom: 1rem; }
-  .contact-left p { font-size: 13px; color: var(--text-muted); line-height: 1.85; font-weight: 300; margin-bottom: 2.5rem; letter-spacing: 0.02em; }
-  .contact-direct { display: flex; flex-direction: column; gap: 10px; }
-  .contact-direct a { display: flex; align-items: center; gap: 14px; font-size: 12px; color: var(--text-muted); padding: 13px 16px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); transition: border-color 0.2s, color 0.2s; letter-spacing: 0.04em; font-weight: 300; }
-  .contact-direct a:hover { border-color: var(--border-gold); color: var(--gold); }
-  .contact-direct svg { width: 15px; height: 15px; stroke: var(--gold-dim); fill: none; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; transition: stroke 0.2s; }
-  .contact-direct a:hover svg { stroke: var(--gold); }
-  .contact-form { display: flex; flex-direction: column; gap: 14px; }
-  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-  .form-group { display: flex; flex-direction: column; gap: 7px; }
-  .form-group label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold); font-weight: 600; }
-  .form-group input, .form-group select, .form-group textarea { font-family: var(--sans); font-size: 13px; font-weight: 300; padding: 11px 14px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-card); color: var(--text); transition: border-color 0.2s; outline: none; width: 100%; letter-spacing: 0.03em; }
-  .form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-faint); }
-  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--gold-dim); }
-  .form-group select option { background: var(--bg-card); }
+  .contact-wrapper {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;
+  }
+  .contact-left h2 { font-family: var(--serif); font-size: 32px; font-weight: 400; line-height: 1.2; margin-bottom: 1rem; }
+  .contact-left p { font-size: 15px; color: var(--text-muted); line-height: 1.75; font-weight: 300; margin-bottom: 2rem; }
+  .contact-direct { display: flex; flex-direction: column; gap: 12px; }
+  .contact-direct a {
+    display: flex; align-items: center; gap: 12px;
+    font-size: 14px; color: var(--text-muted);
+    padding: 12px 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition: border-color 0.15s;
+  }
+  .contact-direct a:hover { border-color: var(--border-strong); color: var(--text); }
+  .contact-direct svg { width: 16px; height: 16px; stroke: var(--text-faint); fill: none; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+  .contact-form { display: flex; flex-direction: column; gap: 12px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-group label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-faint); }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-family: var(--sans);
+    font-size: 14px; font-weight: 300;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-card);
+    color: var(--text);
+    transition: border-color 0.15s;
+    outline: none;
+    width: 100%;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--border-strong); }
   .form-group textarea { height: 110px; resize: vertical; }
-  .form-submit { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; padding: 14px; background: var(--gold); color: var(--bg); border: none; border-radius: 2px; cursor: pointer; transition: opacity 0.2s; margin-top: 4px; }
-  .form-submit:hover { opacity: 0.85; }
+  .form-submit {
+    font-family: var(--sans);
+    font-size: 14px; font-weight: 500;
+    padding: 13px;
+    background: var(--text); color: var(--bg);
+    border: none; border-radius: 100px;
+    cursor: pointer; transition: opacity 0.15s;
+    margin-top: 4px;
+  }
+  .form-submit:hover { opacity: 0.8; }
 
   /* FOOTER */
-  .footer-wrap { border-top: 1px solid var(--border); margin-top: 2rem; }
-  footer { max-width: 1100px; margin: 0 auto; padding: 2.5rem 2rem; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1.5rem; }
-  .footer-left { font-size: 11px; color: var(--text-faint); line-height: 2; font-weight: 300; letter-spacing: 0.04em; }
-  .footer-left strong { color: var(--text-muted); font-weight: 500; }
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2.5rem 2rem;
+    max-width: 1100px; margin: 0 auto;
+    display: flex; justify-content: space-between;
+    align-items: flex-start; flex-wrap: wrap; gap: 1.5rem;
+  }
+  .footer-left { font-size: 12px; color: var(--text-faint); line-height: 2; }
   .footer-left a { color: var(--text-faint); }
-  .footer-left a:hover { color: var(--gold); }
-  .footer-right { font-size: 11px; color: var(--text-faint); letter-spacing: 0.04em; }
+  .footer-left a:hover { color: var(--text); }
+  .footer-right { font-size: 12px; color: var(--text-faint); }
 
-  /* BLOG MODALS */
-  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(8,8,6,0.85); backdrop-filter: blur(8px); z-index: 300; padding: 2rem 1rem; overflow-y: auto; }
+  /* BLOG POST MODAL */
+  .modal-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(20,20,18,0.6);
+    backdrop-filter: blur(4px);
+    z-index: 200; padding: 2rem 1rem;
+    overflow-y: auto;
+  }
   .modal-overlay.open { display: flex; align-items: flex-start; justify-content: center; }
-  .modal { background: var(--bg-card); border: 1px solid var(--border-gold); border-radius: var(--radius-lg); max-width: 680px; width: 100%; padding: 3rem; position: relative; margin: auto; }
-  .modal-close { position: absolute; top: 1.25rem; right: 1.25rem; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 2px; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 14px; color: var(--text-muted); font-family: var(--sans); transition: border-color 0.2s; }
-  .modal-close:hover { border-color: var(--gold-dim); color: var(--gold); }
-  .modal-eyebrow { font-size: 10px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold); margin-bottom: 1rem; font-weight: 600; }
-  .modal h2 { font-family: var(--serif); font-size: 28px; font-weight: 300; line-height: 1.25; margin-bottom: 0.5rem; }
-  .modal-byline { font-size: 11px; color: var(--text-faint); margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); letter-spacing: 0.04em; }
-  .modal-body { font-size: 14px; line-height: 1.9; color: var(--text-muted); font-weight: 300; letter-spacing: 0.02em; }
+  .modal {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    max-width: 680px; width: 100%;
+    padding: 2.5rem;
+    position: relative;
+    margin: auto;
+  }
+  .modal-close {
+    position: absolute; top: 1.25rem; right: 1.25rem;
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 100px; width: 32px; height: 32px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; font-size: 16px; color: var(--text-muted);
+    line-height: 1;
+  }
+  .modal-close:hover { background: var(--border); }
+  .modal-eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-faint); margin-bottom: 1rem; }
+  .modal h2 { font-family: var(--serif); font-size: 28px; font-weight: 400; line-height: 1.25; margin-bottom: 0.5rem; }
+  .modal-byline { font-size: 13px; color: var(--text-faint); margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  .modal-body { font-size: 15px; line-height: 1.85; color: var(--text-muted); font-weight: 300; }
   .modal-body p { margin-bottom: 1.25rem; }
-  .modal-body h3 { font-family: var(--serif); font-size: 22px; font-weight: 400; color: var(--text); margin: 2rem 0 0.75rem; }
+  .modal-body h3 { font-family: var(--serif); font-size: 20px; font-weight: 400; color: var(--text); margin: 2rem 0 0.75rem; }
   .modal-body strong { font-weight: 500; color: var(--text); }
-  .modal-cta { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
-  .modal-cta p { font-size: 13px; color: var(--text-muted); font-weight: 300; }
-  .modal-cta a { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 10px 24px; background: var(--gold); color: var(--bg); border-radius: 2px; }
+  .modal-cta {
+    margin-top: 2rem; padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 1rem;
+  }
+  .modal-cta p { font-size: 14px; color: var(--text-muted); font-weight: 300; }
+  .modal-cta a {
+    font-size: 13px; font-weight: 500;
+    padding: 10px 22px;
+    background: var(--text); color: var(--bg);
+    border-radius: 100px;
+  }
 
   /* RESPONSIVE */
-  @media (max-width: 900px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 768px) {
-    .mobile-tabs { display: flex; }
-    body { padding-bottom: 60px; }
-    nav { padding: 0 1.25rem; }
-    .nav-links, .nav-btn { display: none; }
-    .hero { grid-template-columns: 1fr; gap: 2.5rem; padding: 3rem 1.25rem 4rem; }
-    .hero-content { order: 2; }
-    .hero-photo { order: 1; max-width: 230px; margin: 0 auto; }
-    .hero h1 { font-size: 38px; }
-    .section { padding: 4rem 1.25rem; }
-    .services-grid { grid-template-columns: 1fr; }
-    .transaction-row { grid-template-columns: 1fr; gap: 0.75rem; }
-    .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-    .about-photo { max-width: 220px; aspect-ratio: 1/1; border-radius: 50%; }
-    .contact-wrapper { grid-template-columns: 1fr; gap: 3rem; }
+    .hero { grid-template-columns: 1fr; gap: 2.5rem; padding: 3rem 1.25rem; }
+    .hero-photo { max-width: 300px; margin: 0 auto; }
+    .hero-photo-badge { left: 0; }
+    .about-grid { grid-template-columns: 1fr; }
+    .about-photo { max-width: 260px; }
+    .contact-wrapper { grid-template-columns: 1fr; gap: 2.5rem; }
     .form-row { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+    .section { padding: 3.5rem 1.25rem; }
     .modal { padding: 1.75rem; }
-    .divider { margin: 0 1.25rem; }
-    footer { padding: 2rem 1.25rem; }
   }
 </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
-  <div class="nav-logo">Cristian <span>Velez</span></div>
+  <div class="nav-logo">Cristian Velez <span>Real Estate</span></div>
   <div class="nav-links">
     <a href="#services">Services</a>
-    <a href="#transactions">Transactions</a>
     <a href="#about">About</a>
     <a href="#inventory">Inventory</a>
-    <a href="/blog.html">Insights</a>
+    <a href="#blog">Insights</a>
     <a href="#contact">Contact</a>
   </div>
   <a href="#contact" class="nav-btn">Get in touch</a>
 </nav>
 
-<div class="mobile-tabs">
-  <div class="mobile-tabs-inner">
-    <button class="mobile-tab active" onclick="navScrollTo('#services', this)">
-      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-      Services
-    </button>
-    <button class="mobile-tab" onclick="navScrollTo('#transactions', this)">
-      <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-      Deals
-    </button>
-    <button class="mobile-tab" onclick="navScrollTo('#about', this)">
-      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-      About
-    </button>
-    <button class="mobile-tab" onclick="window.location='/blog.html'">
-      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-      Insights
-    </button>
-    <button class="mobile-tab" onclick="navScrollTo('#contact', this)">
-      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.18 6.18l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      Contact
-    </button>
-  </div>
-</div>
-
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <p class="hero-eyebrow">Licensed Realtor · Dallas-Fort Worth</p>
-    <h1>DFW Real Estate for <em>Buyers, Sellers,</em> and Investors.</h1>
-    <p class="hero-sub">Realtor focused on investment-minded analysis, accurate pricing strategy, and off-market opportunities across the Dallas-Fort Worth market. Licensed with Corey Simpson & Associates. Principal of Elite Offer Group.</p>
+    <p class="hero-eyebrow">Licensed Realtor · DFW · Investor</p>
+    <h1>Real estate for <em>buyers, sellers,</em> and operators.</h1>
+    <p class="hero-sub">I'm a licensed agent and deal operator serving Dallas-Fort Worth. Whether you're buying a home, building a portfolio, or need a creative exit — I bring both agent precision and investor thinking to every transaction.</p>
     <div class="hero-actions">
-      <a href="#contact" class="btn-gold">Start a conversation</a>
-      <a href="#services" class="btn-ghost">What I do</a>
+      <a href="#contact" class="btn-dark">Start a conversation</a>
+      <a href="#services" class="btn-outline">What I do</a>
     </div>
   </div>
   <div class="hero-photo">
-    <img src="cristian-photo.jpeg" alt="Cristian Velez, Licensed Realtor in Dallas-Fort Worth" />
+    <img src="cristian-photo.jpeg" alt="Cristian Velez — Licensed Realtor and Real Estate Investor, DFW" />
     <div class="hero-photo-badge">
       <strong>Cristian Velez</strong>
-      <span>Realtor · Investor · DFW</span>
+      <span>Corey Simpson & Associates</span>
     </div>
   </div>
 </section>
@@ -306,127 +436,79 @@
 
 <!-- SERVICES -->
 <section class="section" id="services">
-  <p class="section-eyebrow">Services</p>
-  <h2 class="section-title">Full-service representation across the DFW market</h2>
-  <p class="section-intro">Residential and investment representation from a licensed agent with hands-on experience across both sides of the market.</p>
+  <p class="section-eyebrow">What I do</p>
+  <h2 class="section-title">Full-spectrum real estate representation</h2>
+  <p class="section-intro">From traditional transactions to off-market acquisitions and capital deployment — I operate across the full deal stack.</p>
   <div class="services-grid">
     <div class="service-card">
       <span class="service-num">01</span>
-      <h3>Buyer Representation</h3>
-      <p>Buyer representation for residential and investment acquisitions. Comparative market analysis, offer strategy, negotiation management, and contract-to-close coordination across DFW.</p>
+      <h3>Buyers & sellers</h3>
+      <p>Residential and commercial representation. Pricing strategy, negotiation, and contract-to-close execution — with an investor's eye on every deal.</p>
     </div>
     <div class="service-card">
       <span class="service-num">02</span>
-      <h3>Seller Representation</h3>
-      <p>Listing representation with accurate pricing strategy, market positioning, and negotiation through closing. Including situations with deferred maintenance, difficult showings, or prior listing history.</p>
+      <h3>Investment acquisitions</h3>
+      <p>BRRRR, house hack, value-add, small multifamily. Underwriting perspective on every acquisition — not just a showing and a comp sheet.</p>
     </div>
     <div class="service-card">
       <span class="service-num">03</span>
-      <h3>Investment Property Advisory</h3>
-      <p>Acquisition analysis for value-add, BRRRR, house hack, and small multifamily strategies. Familiar with investor underwriting, hold analysis, and entry pricing across DFW submarkets.</p>
+      <h3>Off-market sourcing</h3>
+      <p>Distressed, high-DOM, FSBO, and motivated seller opportunities across DFW. Deal flow built through Elite Offer Group's acquisition pipeline.</p>
     </div>
     <div class="service-card">
       <span class="service-num">04</span>
-      <h3>Off-Market Opportunities</h3>
-      <p>Access to off-market and distressed properties through the Elite Offer Group acquisition pipeline. Motivated sellers, high-DOM opportunities, and FSBO sourcing across the Metroplex.</p>
+      <h3>Investor network</h3>
+      <p>Capital partnerships, deal packaging, and buyer-seller matchmaking. Built for operators who move on real numbers, not retail listings.</p>
     </div>
     <div class="service-card">
       <span class="service-num">05</span>
       <h3>Commercial</h3>
-      <p>Commercial property representation and capital deployment on select projects. Investor-grade underwriting applied beyond the residential market.</p>
+      <p>Commercial acquisitions and capital deployment on projects. Investor-grade analysis applied beyond the residential market.</p>
     </div>
     <div class="service-card">
       <span class="service-num">06</span>
-      <h3>Investor Network</h3>
-      <p>Direct access to an active investor network across DFW. Deal flow, buyer-seller introductions, and capital partnership opportunities for qualified operators.</p>
+      <h3>Strategic advisory</h3>
+      <p>Creative deal structuring, financing awareness, and long-term wealth positioning. For buyers who want a strategist, not just an agent.</p>
     </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- TRANSACTIONS -->
-<section class="section" id="transactions">
-  <p class="section-eyebrow">Selected transactions</p>
-  <h2 class="section-title">Closed across DFW</h2>
-  <p class="section-intro">A representative sample of residential and investment transactions closed across the Dallas-Fort Worth market.</p>
-  <div class="transactions-grid">
-
-    <div class="transaction-row">
+<!-- DIFFERENTIATORS -->
+<section class="section" id="about-diff">
+  <p class="section-eyebrow">Why it's different</p>
+  <h2 class="section-title">An agent who thinks like an operator</h2>
+  <p class="section-intro">Most agents know listings. I know deals. There's a difference.</p>
+  <div class="diff-list">
+    <div class="diff-row">
+      <span class="diff-num">01</span>
       <div>
-        <div class="transaction-address">1440 Baffin Bay Dr</div>
-        <div class="transaction-location">Plano, TX · Briarmeade</div>
-      </div>
-      <span class="transaction-type type-listing">Listing</span>
-      <div>
-        <div class="transaction-detail">4 bed, 3 bath, 3,813 sqft. Property needed cosmetic updates and required a creative pricing approach to attract qualified buyers. Executed a VA assumable loan strategy that preserved seller proceeds and expanded the buyer pool beyond conventional financing.</div>
-        <div class="transaction-note">Seller received stronger net proceeds than a cash offer would have produced.</div>
+        <h4>Dual-track market access</h4>
+        <p>MLS and off-market. As principal of Elite Offer Group and a licensed agent under Corey Simpson & Associates, I source deals through both channels — and know which one actually fits your situation.</p>
       </div>
     </div>
-
-    <div class="transaction-row">
+    <div class="diff-row">
+      <span class="diff-num">02</span>
       <div>
-        <div class="transaction-address">2301 Club Creek Ct</div>
-        <div class="transaction-location">Garland, TX · Club Creek</div>
-      </div>
-      <span class="transaction-type type-listing">Listing</span>
-      <div>
-        <div class="transaction-detail">4 bed, 3.5 bath, 3,056 sqft. Property had been listed twice previously within the same year with two separate agents without success. Repositioned the listing with a revised pricing strategy and targeted marketing. Sold and closed.</div>
-        <div class="transaction-note">Third agent to take the listing. Closed where others did not.</div>
+        <h4>Investor-grade underwriting perspective</h4>
+        <p>I analyze acquisitions the way investors do — entry price, exit optionality, rehab scope, and hold potential. Not just comps and days on market.</p>
       </div>
     </div>
-
-    <div class="transaction-row">
+    <div class="diff-row">
+      <span class="diff-num">03</span>
       <div>
-        <div class="transaction-address">640 Three Tee Ct</div>
-        <div class="transaction-location">Grand Prairie, TX</div>
-      </div>
-      <span class="transaction-type type-listing">Listing</span>
-      <div>
-        <div class="transaction-detail">Property had light cosmetic issues that complicated showings and limited buyer interest. Managed a difficult showing process and positioned the property competitively to attract serious buyers. Closed at top dollar for its condition.</div>
-        <div class="transaction-note">Seller had previously considered a cash offer. Listing produced a stronger outcome.</div>
+        <h4>Negotiation-first mindset</h4>
+        <p>Every deal has structure beyond the list price. Terms, contingencies, timelines, and creative financing are all leverage points — and I use them.</p>
       </div>
     </div>
-
-    <div class="transaction-row">
+    <div class="diff-row">
+      <span class="diff-num">04</span>
       <div>
-        <div class="transaction-address">3820 Big Horn Trl</div>
-        <div class="transaction-location">Plano, TX · High Place</div>
-      </div>
-      <span class="transaction-type type-buyer">Buyer</span>
-      <div>
-        <div class="transaction-detail">3 bed, 3 bath, 2,366 sqft mid-century modern in Central Plano. Negotiated below list price with seller concessions on behalf of the buyer. Contract-to-close coordination in the Plano ISD submarket.</div>
-        <div class="transaction-note">Closed below asking with concessions secured for buyer.</div>
+        <h4>Local market depth</h4>
+        <p>Born in Plano, raised in McKinney. I know Collin County and the surrounding DFW submarkets — not as a transplant, but as someone who has watched these neighborhoods move for years.</p>
       </div>
     </div>
-
-    <div class="transaction-row">
-      <div>
-        <div class="transaction-address">303 Swords Bnd</div>
-        <div class="transaction-location">Stafford, TX · Kingsway</div>
-      </div>
-      <span class="transaction-type type-buyer">Buyer</span>
-      <div>
-        <div class="transaction-detail">3 bed, 3.5 bath, 2,301 sqft in the Kingsway community of Stafford. Property went under contract in 1 day and would have sold at list price. Moved quickly with a competitive offer structured below asking, and secured seller concessions before additional interest could develop.</div>
-        <div class="transaction-note">Closed below list with concessions on a property that sold in 1 day.</div>
-      </div>
-    </div>
-
-    <div class="transaction-row">
-      <div>
-        <div class="transaction-address">420 Santa Rosa</div>
-        <div class="transaction-location">Garland, TX</div>
-      </div>
-      <span class="transaction-type type-buyer">Buyer</span>
-      <div>
-        <div class="transaction-detail">First-time homebuyer representation. Navigated the full purchase process for buyers new to real estate transactions. Negotiated a meaningful discount from list price along with seller concessions to reduce out-of-pocket costs at closing.</div>
-        <div class="transaction-note">First-time buyers closed below asking with concessions.</div>
-      </div>
-    </div>
-
-  </div>
-  <div class="transactions-footer">
-    In addition to the transactions listed above, Cristian has been involved in a significant volume of off-market acquisitions, dispositions, and investor transactions across Dallas-Fort Worth as owner and operator of Elite Offer Group and as an acquisitions specialist through Whitecap Holdings.
   </div>
 </section>
 
@@ -436,42 +518,41 @@
 <section class="section" id="about">
   <p class="section-eyebrow">About</p>
   <div class="about-grid">
-    <div class="about-photo-wrap">
-      <img src="cristian-photo.jpeg" alt="Cristian Velez, Licensed Realtor DFW" class="about-photo" />
+    <div>
+      <img src="cristian-photo.jpeg" alt="Cristian Velez" class="about-photo" />
     </div>
     <div class="about-content">
       <h2 class="section-title">Cristian Velez</h2>
-      <p>I'm a licensed Realtor with Corey Simpson & Associates and the principal of Elite Offer Group, a DFW-based real estate acquisition company. I work across both the retail and investment sides of the market, which gives me a practical perspective on pricing, negotiation, and deal structure that most agents operating in one lane don't have.</p>
-      <p>My transaction experience covers buyer and seller representation, pricing strategy, negotiation management, assumable financing, and working through listings that have struggled previously. On the investment side, I have direct experience sourcing and analyzing value-add and off-market opportunities throughout the Metroplex.</p>
-      <p>I grew up in Plano and McKinney. I know Collin County, the surrounding DFW submarkets, and how this market actually moves. That is not a tagline. It is context that shows up in how I price, how I negotiate, and what I know to look for.</p>
-      <p>I hold a finance degree from Texas Tech University and a certification in commercial real estate, which informs how I approach pricing, underwriting, and investment analysis across both residential and commercial transactions.</p>
+      <p>I'm a licensed real estate agent with Corey Simpson & Associates and the principal operator of Elite Offer Group — a DFW-based acquisition and deal sourcing company.</p>
+      <p>I work with buyers, sellers, and investors who want more than a standard transaction. My focus is on well-structured deals — whether that means listing a home at the right price, sourcing an off-market acquisition, or deploying investor capital on a value-add project.</p>
+      <p>I grew up in Plano and McKinney, which means I have real roots in the markets I serve — not just a license and a zip code.</p>
       <div class="about-meta">
-        <div class="about-meta-item">
-          <label>License</label>
-          <span>TX #0833260</span>
-        </div>
         <div class="about-meta-item">
           <label>Brokerage</label>
           <span>Corey Simpson & Associates</span>
         </div>
         <div class="about-meta-item">
-          <label>Markets</label>
-          <span>DFW · Plano · McKinney · Garland · Grand Prairie</span>
+          <label>Also operates</label>
+          <span><a href="https://www.eliteoffergroup.com" style="text-decoration:underline;text-underline-offset:3px;">Elite Offer Group</a></span>
         </div>
         <div class="about-meta-item">
-          <label>Also operates</label>
-          <span><a href="https://www.eliteoffergroup.com" target="_blank">Elite Offer Group</a></span>
+          <label>Markets</label>
+          <span>DFW · Plano · McKinney · Frisco</span>
+        </div>
+        <div class="about-meta-item">
+          <label>LinkedIn</label>
+          <span><a href="https://www.linkedin.com/in/cristianevelez" style="text-decoration:underline;text-underline-offset:3px;">linkedin.com/in/cristianevelez</a></span>
         </div>
       </div>
       <div class="tags-row">
-        <span class="tag-pill">Buyer representation</span>
-        <span class="tag-pill">Seller representation</span>
-        <span class="tag-pill">Investment acquisitions</span>
-        <span class="tag-pill">Off-market</span>
-        <span class="tag-pill">Negotiation</span>
-        <span class="tag-pill">Pricing strategy</span>
-        <span class="tag-pill">Contract-to-close</span>
+        <span class="tag-pill">Residential</span>
         <span class="tag-pill">Commercial</span>
+        <span class="tag-pill">Investment</span>
+        <span class="tag-pill">Off-market</span>
+        <span class="tag-pill">BRRRR</span>
+        <span class="tag-pill">House hack</span>
+        <span class="tag-pill">Capital deployment</span>
+        <span class="tag-pill">Value-add</span>
       </div>
     </div>
   </div>
@@ -481,74 +562,14 @@
 
 <!-- INVENTORY -->
 <section class="section" id="inventory">
-  <p class="section-eyebrow">Market snapshot · June 2026</p>
-  <h2 class="section-title">Dallas-Fort Worth market at a glance</h2>
-  <p class="section-intro">Current figures across the DFW metro. Updated regularly. Data sourced from active market reporting.</p>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:2rem;">
-    <div style="background:var(--bg-card);padding:2rem 1.75rem;">
-      <div style="font-family:var(--serif);font-size:36px;font-weight:300;color:var(--gold);margin-bottom:0.5rem;">$400K</div>
-      <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text);margin-bottom:0.4rem;">Median Home Price</div>
-      <div style="font-size:12px;color:var(--text-faint);font-weight:300;">DFW metro · stabilized from 2022 peak</div>
-    </div>
-    <div style="background:var(--bg-card);padding:2rem 1.75rem;">
-      <div style="font-family:var(--serif);font-size:36px;font-weight:300;color:var(--gold);margin-bottom:0.5rem;">38</div>
-      <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text);margin-bottom:0.4rem;">Median Days on Market</div>
-      <div style="font-size:12px;color:var(--text-faint);font-weight:300;">Well-priced homes still moving in under 2 weeks</div>
-    </div>
-    <div style="background:var(--bg-card);padding:2rem 1.75rem;">
-      <div style="font-family:var(--serif);font-size:36px;font-weight:300;color:var(--gold);margin-bottom:0.5rem;">97.5%</div>
-      <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text);margin-bottom:0.4rem;">Sale-to-List Ratio</div>
-      <div style="font-size:12px;color:var(--text-faint);font-weight:300;">Sellers capturing close to full asking price on average</div>
-    </div>
-    <div style="background:var(--bg-card);padding:2rem 1.75rem;">
-      <div style="font-family:var(--serif);font-size:36px;font-weight:300;color:var(--gold);margin-bottom:0.5rem;">6.25%</div>
-      <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text);margin-bottom:0.4rem;">30-Year Fixed Rate</div>
-      <div style="font-size:12px;color:var(--text-faint);font-weight:300;">As of May 2026 · Freddie Mac</div>
-    </div>
-    <div style="background:var(--bg-card);padding:2rem 1.75rem;">
-      <div style="font-family:var(--serif);font-size:36px;font-weight:300;color:var(--gold);margin-bottom:0.5rem;">+40%</div>
-      <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text);margin-bottom:0.4rem;">Inventory vs. Last Year</div>
-      <div style="font-size:12px;color:var(--text-faint);font-weight:300;">More options for buyers than any point since pre-pandemic</div>
-    </div>
-    <div style="background:var(--bg-card);padding:2rem 1.75rem;">
-      <div style="font-family:var(--serif);font-size:36px;font-weight:300;color:var(--gold);margin-bottom:0.5rem;">#1</div>
-      <div style="font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text);margin-bottom:0.4rem;">Corporate Relocation Metro</div>
-      <div style="font-size:12px;color:var(--text-faint);font-weight:300;">DFW led the US in HQ relocations 2018 to 2024</div>
-    </div>
-  </div>
-  <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem;font-size:12px;color:var(--text-faint);font-weight:300;line-height:1.7;">
-    The current DFW market favors buyers with expanded inventory and stabilized pricing, while correctly priced listings in strong submarkets like Plano, McKinney, and Frisco continue to move quickly and attract competitive offers. Pricing strategy matters more now than it did during the 2021 to 2022 run-up.
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- CASH OFFER -->
-<section class="section" id="cashoffer">
-  <p class="section-eyebrow">Need to sell fast?</p>
-  <h2 class="section-title">Get a cash offer on your DFW property</h2>
-  <p class="section-intro">No repairs, no showings, no waiting on financing. If your situation calls for speed and certainty, I can put a cash offer in front of you directly through Elite Offer Group.</p>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:2.5rem;">
-    <div style="background:var(--bg-card);padding:1.75rem;">
-      <div style="font-size:10px;color:var(--gold);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;margin-bottom:0.75rem;">No repairs needed</div>
-      <p style="font-size:13px;color:var(--text-muted);line-height:1.75;font-weight:300;">Sell in any condition. You do not need to fix anything or clean anything up before we look at it.</p>
-    </div>
-    <div style="background:var(--bg-card);padding:1.75rem;">
-      <div style="font-size:10px;color:var(--gold);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;margin-bottom:0.75rem;">No showings</div>
-      <p style="font-size:13px;color:var(--text-muted);line-height:1.75;font-weight:300;">Skip the listing process entirely. No open houses, no strangers walking through your home, no disruption to your schedule.</p>
-    </div>
-    <div style="background:var(--bg-card);padding:1.75rem;">
-      <div style="font-size:10px;color:var(--gold);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;margin-bottom:0.75rem;">Close on your timeline</div>
-      <p style="font-size:13px;color:var(--text-muted);line-height:1.75;font-weight:300;">We can close in as little as two weeks or on a date that works for your situation. You set the timeline.</p>
-    </div>
-    <div style="background:var(--bg-card);padding:1.75rem;">
-      <div style="font-size:10px;color:var(--gold);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;margin-bottom:0.75rem;">Both options available</div>
-      <p style="font-size:13px;color:var(--text-muted);line-height:1.75;font-weight:300;">As a licensed agent I can also show you what a traditional listing would produce so you can compare both paths before deciding.</p>
-    </div>
-  </div>
-  <div style="display:flex;gap:14px;flex-wrap:wrap;">
-    <a href="#contact" class="btn-gold">Request a cash offer</a>
-    <a href="https://www.eliteoffergroup.com" target="_blank" class="btn-ghost">Visit Elite Offer Group</a>
+  <p class="section-eyebrow">Active inventory</p>
+  <h2 class="section-title">Current opportunities</h2>
+  <p class="section-intro">Investment properties, off-market deals, and active listings across DFW. Check back regularly — inventory moves fast.</p>
+  <div class="inventory-placeholder">
+    <div class="inventory-badge">Coming soon</div>
+    <h3>Active deals posted here</h3>
+    <p>Off-market acquisitions, value-add opportunities, and active listings will be listed in this section. If you're looking for your next deal, get in touch directly — most opportunities never make it to the site.</p>
+    <a href="#contact" class="btn-dark" style="display:inline-block;">Get on the deal list</a>
   </div>
 </section>
 
@@ -557,61 +578,21 @@
 <!-- BLOG -->
 <section class="section" id="blog">
   <p class="section-eyebrow">Insights</p>
-  <h2 class="section-title">Market analysis and practical guidance</h2>
-  <p class="section-intro">Real estate covered plainly. No hype, no generic advice. Written for buyers, sellers, and investors who want to understand the DFW market clearly.</p>
+  <h2 class="section-title">Real estate, straight</h2>
+  <p class="section-intro">No fluff. Market analysis, deal strategy, and practical guidance for DFW buyers, sellers, and investors.</p>
   <div class="blog-grid">
-    <a href="/posts/best-dfw-submarkets-investors-2026.html" class="blog-card" style="display:block;">
+    <div class="blog-card" onclick="document.getElementById('blog-modal').classList.add('open')">
       <div class="blog-card-body">
-        <p class="blog-meta">July 2026 · Investors · DFW Market</p>
-        <h3>Best DFW submarkets for real estate investors in 2026: a practical breakdown</h3>
-        <p>Dallas-Fort Worth ranks number one in PwC and ULI's Emerging Trends in Real Estate 2026 report and continues to lead the country in corporat</p>
+        <p class="blog-meta">May 2025 · Sellers · DFW Market</p>
+        <h3>Should I list or take a cash offer? A DFW agent's honest breakdown</h3>
+        <p>Most sellers frame this as an either/or decision. It doesn't have to be — and understanding both options changes what you can negotiate.</p>
         <span class="blog-read-more">Read more</span>
       </div>
-    </a>
-    <a href="/posts/home-inspection-texas-what-covers.html" class="blog-card" style="display:block;">
-      <div class="blog-card-body">
-        <p class="blog-meta">July 2026 · Buyers · Texas Real Estate</p>
-        <h3>What a home inspection actually covers in Texas and what it does not</h3>
-        <p>One of the most common misconceptions buyers bring into a real estate transaction is that a home inspection is a comprehensive evaluation of</p>
-        <span class="blog-read-more">Read more</span>
-      </div>
-    </a>
-    <a href="/posts/texas-option-period-explained.html" class="blog-card" style="display:block;">
-      <div class="blog-card-body">
-        <p class="blog-meta">July 2026 · Buyers · Texas Real Estate</p>
-        <h3>The Texas option period explained: what it protects you from and how to use it</h3>
-        <p>If you are buying a home in Texas for the first time, the option period is one of the most important features of the purchase contract to un</p>
-        <span class="blog-read-more">Read more</span>
-      </div>
-    </a>
-    <a href="/posts/seller-concessions-negotiate-dfw.html" class="blog-card" style="display:block;">
-      <div class="blog-card-body">
-        <p class="blog-meta">July 2026 · Buyers · DFW Market</p>
-        <h3>What seller concessions actually are and how to negotiate them in the DFW market</h3>
-        <p>Seller concessions are one of the most misunderstood tools in a buyer's negotiating arsenal. During the 2021 to 2022 market peak in DFW, ask</p>
-        <span class="blog-read-more">Read more</span>
-      </div>
-    </a>
-    <a href="/posts/buying-near-plano-legacy-corridor.html" class="blog-card" style="display:block;">
-      <div class="blog-card-body">
-        <p class="blog-meta">July 2026 · Buyers · Plano · Legacy Corridor</p>
-        <h3>Buying near Plano's Legacy corridor: what corporate relocatees need to know</h3>
-        <p>If you are relocating to the Dallas-Fort Worth area for a position with one of the companies based in or near Plano's Legacy corridor, the r</p>
-        <span class="blog-read-more">Read more</span>
-      </div>
-    </a>
-    <a href="/posts/grand-prairie-tx-real-estate-2026.html" class="blog-card" style="display:block;">
-      <div class="blog-card-body">
-        <p class="blog-meta">July 2026 · Buyers · Investors · Grand Prairie</p>
-        <h3>Grand Prairie, TX real estate in 2026: affordable DFW with real upside</h3>
-        <p>Grand Prairie occupies a unique position in the DFW metro. Geographically, it sits almost exactly between Dallas and Fort Worth, with direct</p>
-        <span class="blog-read-more">Read more</span>
-      </div>
-    </a>
+    </div>
     <div class="blog-coming">
       <div>
-        <p style="font-size:11px;margin-bottom:12px;font-weight:600;color:var(--text-muted);letter-spacing:0.1em;text-transform:uppercase;">21 posts and growing</p>
-        <a href="/blog.html" style="font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:8px;">View all insights &rarr;</a>
+        <p style="font-size:13px;margin-bottom:4px;font-weight:500;color:var(--text-muted);">More coming soon</p>
+        <p>Market analysis, investment strategy,<br>and DFW-specific deal insights.</p>
       </div>
     </div>
   </div>
@@ -625,7 +606,7 @@
   <div class="contact-wrapper">
     <div class="contact-left">
       <h2>Let's talk about your situation</h2>
-      <p>Buying, selling, investing, or looking for off-market deal flow, tell me what you are working with and I will give you a straight answer on how I can help.</p>
+      <p>Whether you're buying, selling, investing, or exploring options — tell me what you're working with and I'll give you a straight answer on how I can help.</p>
       <div class="contact-direct">
         <a href="tel:9453499179">
           <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.18 6.18l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -645,22 +626,30 @@
         </a>
       </div>
     </div>
-    <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
-      <input type="hidden" name="form-name" value="contact" />
-      <p style="position:absolute;left:-9999px;" aria-hidden="true">
-        <label>Leave this field blank <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
-      </p>
+    <form class="contact-form" onsubmit="handleSubmit(event)">
       <div class="form-row">
-        <div class="form-group"><label>First name</label><input type="text" name="first-name" placeholder="First name" required /></div>
-        <div class="form-group"><label>Last name</label><input type="text" name="last-name" placeholder="Last name" required /></div>
+        <div class="form-group">
+          <label>First name</label>
+          <input type="text" placeholder="First name" required />
+        </div>
+        <div class="form-group">
+          <label>Last name</label>
+          <input type="text" placeholder="Last name" required />
+        </div>
       </div>
       <div class="form-row">
-        <div class="form-group"><label>Phone</label><input type="tel" name="phone" placeholder="Your number" /></div>
-        <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="Your email" required /></div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" placeholder="Your number" />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="Your email" required />
+        </div>
       </div>
       <div class="form-group">
         <label>I'm looking to...</label>
-        <select name="inquiry-type">
+        <select>
           <option>Buy a home</option>
           <option>Sell a property</option>
           <option>Find an investment deal</option>
@@ -671,52 +660,68 @@
       </div>
       <div class="form-group">
         <label>Tell me about your situation</label>
-        <textarea name="message" placeholder="Property address, timeline, what you're trying to accomplish..."></textarea>
+        <textarea placeholder="Property address, timeline, what you're trying to accomplish..."></textarea>
       </div>
       <button type="submit" class="form-submit">Send message</button>
     </form>
   </div>
 </section>
 
-<div class="footer-wrap">
-  <div class="footer-gold-line"></div>
-  <footer>
-    <div class="footer-left">
-      <strong>Cristian Velez</strong><br>
-      Licensed Realtor · TX License #0833260<br>
-      Corey Simpson & Associates · Dallas-Fort Worth, TX<br>
-      <a href="mailto:cris@eliteoffergroup.com">cris@eliteoffergroup.com</a> · <a href="tel:9453499179">(945) 349-9179</a><br>
-      <a href="https://www.eliteoffergroup.com" target="_blank">eliteoffergroup.com</a>
+<footer>
+  <div class="footer-left">
+    <strong style="font-size:13px;color:var(--text);font-weight:500;">Cristian Velez</strong><br>
+    Licensed Realtor · Corey Simpson & Associates<br>
+    <a href="mailto:cris@eliteoffergroup.com">cris@eliteoffergroup.com</a> · <a href="tel:9453499179">(945) 349-9179</a><br>
+    <a href="https://www.eliteoffergroup.com">eliteoffergroup.com</a> · Dallas-Fort Worth, TX
+  </div>
+  <div class="footer-right">© 2025 Cristian Velez. All rights reserved.</div>
+</footer>
+
+<!-- BLOG POST MODAL -->
+<div class="modal-overlay" id="blog-modal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('blog-modal').classList.remove('open')">✕</button>
+    <p class="modal-eyebrow">May 2025 · Sellers · DFW Market</p>
+    <h2>Should I list or take a cash offer? A DFW agent's honest breakdown</h2>
+    <p class="modal-byline">By Cristian Velez · Licensed Realtor, Corey Simpson & Associates · Principal, Elite Offer Group</p>
+    <div class="modal-body">
+      <p>If you're a homeowner in the Dallas-Fort Worth area thinking about selling, you've probably been approached by a cash buyer — or seen the ads. "We buy houses fast." "No repairs, no showings, close in two weeks." At the same time, you've probably heard that listing on the MLS will get you top dollar.</p>
+      <p>So which one is right? The honest answer: it depends on your situation. And most people giving you that advice are only selling you one of the two options. I do both — which means I can give you a straight comparison.</p>
+
+      <h3>What a cash offer actually means</h3>
+      <p>A cash offer from an investor or acquisition company is designed for speed and certainty. You skip the showings, the repairs, the negotiations with retail buyers, and the 30-to-45-day escrow process. You get a set number, and you close — often in two to three weeks.</p>
+      <p>The tradeoff is price. Cash buyers are pricing in their risk, their rehab costs, and their profit margin. In most DFW submarkets right now, a cash offer will come in <strong>10 to 25 percent below what a well-priced listing could fetch</strong>. That gap is the cost of convenience and certainty.</p>
+      <p>Cash offers make sense when: you need to move fast, the property needs significant work, you're dealing with a difficult personal situation (divorce, foreclosure, inherited property), or the carrying costs of holding the property outweigh the potential upside of listing.</p>
+
+      <h3>What listing on the MLS actually means</h3>
+      <p>A traditional listing, done right, gets your property in front of the widest possible buyer pool — including financed buyers who can often pay more than investors because they're not factoring in a rehab margin or a flip profit.</p>
+      <p>In strong Collin County submarkets like Plano, McKinney, and Frisco, a well-priced, well-presented listing can still move in days and attract multiple offers. The process takes longer — typically 45 to 60 days from list to close — and requires some preparation: repairs, staging, photography, showings.</p>
+      <p>Listing makes sense when: the property is in decent condition, you have time to run the process properly, and maximizing net proceeds is the primary goal.</p>
+
+      <h3>The option most sellers don't know they have</h3>
+      <p>Because I operate on both sides — as a licensed agent and as a cash buyer through Elite Offer Group — I can give sellers something most people in this market can't: a genuine side-by-side comparison with no agenda.</p>
+      <p>In some cases, the right answer is a hybrid: get a cash offer number to anchor your floor, then list and see what the market brings. If the MLS produces strong offers, you take the best one. If it doesn't, you have a cash offer ready to go. You're never stuck.</p>
+      <p>In other cases, the cash offer is legitimately the smarter move — either because the property needs too much work to list effectively, or because the seller's timeline doesn't allow for a traditional process.</p>
+
+      <h3>The bottom line</h3>
+      <p>There's no universally right answer. What matters is understanding your actual options, the real numbers behind each one, and what your specific situation requires. If you're in the DFW area and thinking about selling — in any condition, on any timeline — I'm happy to walk through both paths with you and give you an honest take on which one makes more sense.</p>
+      <p>No pressure, no pitch. Just a straight conversation about your situation.</p>
     </div>
-    <div class="footer-right">2026 Cristian Velez. All rights reserved.</div>
-  </footer>
+    <div class="modal-cta">
+      <p>Ready to talk through your options?</p>
+      <a href="#contact" onclick="document.getElementById('blog-modal').classList.remove('open')">Get in touch</a>
+    </div>
+  </div>
 </div>
 
 <script>
-  function navScrollTo(id, btn) {
-    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
-    document.querySelectorAll('.mobile-tab').forEach(t => t.classList.remove('active'));
-    btn.classList.add('active');
-  }
-  function handleSubmit(e) {
-    e.preventDefault();
-    const form = e.target;
-    const btn = form.querySelector('.form-submit');
-    const data = new FormData(form);
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(data).toString()
-    }).then(() => {
-      btn.textContent = 'Message sent';
-      btn.style.opacity = '0.6';
-      btn.disabled = true;
-      form.reset();
-    }).catch(() => {
-      btn.textContent = 'Something went wrong, call or email instead';
-      btn.style.opacity = '0.6';
-    });
-  }
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.form-submit');
+  btn.textContent = 'Message sent';
+  btn.style.opacity = '0.6';
+  btn.disabled = true;
+}
 </script>
 
 </body>
