@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Connect with Cristian Velez, licensed Realtor serving Dallas-Fort Worth. Call, text, search homes, or get your home value in seconds." />
+<title>Connect with Cristian Velez · DFW Realtor</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9GZKXBCQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T9GZKXBCQQ');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0e0e0c;
+    --bg-card: #161614;
+    --bg-elevated: #1e1e1b;
+    --text: #f0ead8;
+    --text-muted: #9a9488;
+    --text-faint: #5a5650;
+    --gold: #c9a96e;
+    --gold-light: #e8d5a3;
+    --gold-dim: #7a6540;
+    --border: #2a2a26;
+    --border-gold: #3d3526;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Montserrat', system-ui, sans-serif;
+    --radius: 8px;
+    --radius-lg: 14px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: 76px; /* room for sticky mobile bar */
+  }
+
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+
+  /* TOP BAR */
+  .topbar {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(14,14,12,0.95);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 1.25rem;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .topbar-logo { font-family: var(--serif); font-size: 19px; font-weight: 400; letter-spacing: 0.02em; color: var(--text); }
+  .topbar-logo span { color: var(--gold); font-style: italic; }
+  .topbar-link { font-size: 10px; color: var(--text-muted); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; }
+  .topbar-link:hover { color: var(--gold); }
+
+  /* HERO */
+  .hero { max-width: 560px; margin: 0 auto; padding: 3rem 1.5rem 2.5rem; text-align: center; }
+  .hero-photo-wrap { width: 132px; height: 132px; margin: 0 auto 1.5rem; position: relative; }
+  .hero-photo-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 50%; filter: brightness(0.94) contrast(1.05); }
+  .hero-photo-wrap::before { content: ''; position: absolute; inset: -4px; border-radius: 50%; border: 1px solid var(--border-gold); }
+
+  .hero-eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.9rem; font-weight: 600; }
+  .hero-eyebrow::before, .hero-eyebrow::after { content: ''; width: 20px; height: 1px; background: var(--gold-dim); }
+
+  .hero h1 { font-family: var(--serif); font-size: clamp(34px, 9vw, 46px); line-height: 1.05; font-weight: 400; margin-bottom: 0.6rem; letter-spacing: 0.01em; }
+  .hero-sub { font-size: 12px; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; margin-bottom: 1.25rem; }
+  .hero-value { font-size: 14px; color: var(--text-muted); line-height: 1.8; font-weight: 300; letter-spacing: 0.02em; max-width: 420px; margin: 0 auto 2.25rem; }
+
+  /* PRIMARY ACTIONS */
+  .actions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; max-width: 460px; margin: 0 auto; }
+  .action-btn {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+    padding: 1.3rem 0.75rem;
+    border-radius: var(--radius);
+    font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+    transition: opacity 0.2s, transform 0.15s;
+  }
+  .action-btn:active { transform: scale(0.97); }
+  .action-btn svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  .action-primary { background: var(--gold); color: var(--bg); border: 1px solid var(--gold); grid-column: span 1; }
+  .action-primary:hover { opacity: 0.88; }
+  .action-secondary { background: var(--bg-card); color: var(--text); border: 1px solid var(--border-gold); }
+  .action-secondary:hover { border-color: var(--gold); color: var(--gold); }
+
+  /* DIVIDER */
+  .divider { height: 1px; background: var(--border); margin: 0 1.5rem; }
+  .footer-gold-line { height: 1px; background: linear-gradient(to right, transparent, var(--gold-dim), transparent); max-width: 1100px; margin: 0 auto; }
+
+  /* SECTIONS */
+  .section { max-width: 640px; margin: 0 auto; padding: 3.5rem 1.5rem; }
+  .section-eyebrow { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.9rem; font-weight: 600; text-align: center; }
+  .section-title { font-family: var(--serif); font-size: clamp(26px, 6vw, 34px); font-weight: 300; line-height: 1.15; margin-bottom: 1rem; letter-spacing: 0.01em; text-align: center; }
+  .section-intro { font-size: 13px; color: var(--text-muted); line-height: 1.85; font-weight: 300; margin: 0 auto 2.5rem; text-align: center; letter-spacing: 0.02em; }
+
+  /* ABOUT */
+  .about-body { font-size: 13.5px; color: var(--text-muted); line-height: 1.95; font-weight: 300; letter-spacing: 0.02em; }
+  .about-body strong { color: var(--text); font-weight: 500; }
+
+  /* SERVICES */
+  .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
+  .service-card { background: var(--bg-card); padding: 1.6rem 1.25rem; position: relative; }
+  .service-card::after { content: ''; position: absolute; bottom: 0; left: 1.25rem; width: 24px; height: 1px; background: var(--gold-dim); }
+  .service-num { font-size: 10px; color: var(--gold-dim); letter-spacing: 0.15em; margin-bottom: 1rem; display: block; font-weight: 600; }
+  .service-card h3 { font-family: var(--serif); font-size: 17px; font-weight: 400; margin-bottom: 0.5rem; color: var(--text); }
+  .service-card p { font-size: 11.5px; color: var(--text-muted); line-height: 1.7; font-weight: 300; letter-spacing: 0.02em; }
+
+  /* FEATURED LISTINGS */
+  .listings-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+  .listing-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+  .listing-photo { width: 100%; aspect-ratio: 4/3; background: var(--bg-elevated); display: flex; align-items: center; justify-content: center; color: var(--text-faint); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; }
+  .listing-body { padding: 1.1rem 1.25rem 1.3rem; }
+  .listing-body .placeholder-line { height: 10px; background: var(--border); border-radius: 2px; margin-bottom: 8px; width: 70%; }
+  .listing-body .placeholder-line.short { width: 40%; }
+  .listings-note { font-size: 11px; color: var(--text-faint); text-align: center; margin-top: 1.5rem; font-weight: 300; letter-spacing: 0.02em; }
+
+  /* TESTIMONIALS */
+  .testimonial-track { display: flex; gap: 1rem; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 0.5rem; -webkit-overflow-scrolling: touch; }
+  .testimonial-track::-webkit-scrollbar { display: none; }
+  .testimonial-card { flex: 0 0 85%; scroll-snap-align: start; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.4rem; }
+  .stars { display: flex; gap: 3px; margin-bottom: 0.9rem; }
+  .stars svg { width: 14px; height: 14px; fill: var(--gold); stroke: none; }
+  .testimonial-quote { font-size: 13px; color: var(--text-muted); line-height: 1.8; font-weight: 300; font-style: italic; margin-bottom: 1rem; min-height: 60px; }
+  .testimonial-name { font-size: 11px; color: var(--text); letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; }
+  .testimonial-dots { display: flex; justify-content: center; gap: 6px; margin-top: 1rem; }
+  .testimonial-dots span { width: 5px; height: 5px; border-radius: 50%; background: var(--border-gold); }
+
+  /* SELLER CTA */
+  .seller-card {
+    background: linear-gradient(160deg, var(--bg-elevated) 0%, var(--bg-card) 100%);
+    border: 1px solid var(--border-gold);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 1.75rem;
+    text-align: center;
+  }
+  .seller-card h2 { font-family: var(--serif); font-size: clamp(26px, 6vw, 32px); font-weight: 300; margin-bottom: 0.75rem; }
+  .seller-card p { font-size: 13px; color: var(--text-muted); line-height: 1.8; font-weight: 300; margin-bottom: 1.75rem; letter-spacing: 0.02em; }
+  .btn-gold-lg { display: inline-block; padding: 15px 38px; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; background: var(--gold); color: var(--bg); border-radius: 2px; transition: opacity 0.2s; border: 1px solid var(--gold); }
+  .btn-gold-lg:hover { opacity: 0.87; }
+
+  /* FOOTER */
+  footer { max-width: 1100px; margin: 0 auto; padding: 3rem 1.5rem 2rem; text-align: center; }
+  .footer-name { font-family: var(--serif); font-size: 20px; margin-bottom: 0.4rem; }
+  .footer-name span { color: var(--gold); font-style: italic; }
+  .footer-line { font-size: 11.5px; color: var(--text-muted); letter-spacing: 0.03em; line-height: 2; font-weight: 300; }
+  .footer-line a:hover { color: var(--gold); }
+  .footer-social { display: flex; justify-content: center; gap: 1.1rem; margin: 1.25rem 0; }
+  .footer-social a { width: 34px; height: 34px; border: 1px solid var(--border-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-muted); transition: all 0.2s; }
+  .footer-social a:hover { border-color: var(--gold); color: var(--gold); }
+  .footer-social svg { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 1.5; }
+  .footer-license { font-size: 10px; color: var(--text-faint); margin-top: 1.25rem; letter-spacing: 0.04em; }
+
+  /* MOBILE STICKY BAR */
+  .mobile-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 200; background: rgba(14,14,12,0.98); border-top: 1px solid var(--border); height: 68px; backdrop-filter: blur(16px); }
+  .mobile-bar-inner { display: flex; height: 100%; max-width: 640px; margin: 0 auto; }
+  .mobile-bar-btn { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: var(--text-muted); font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; border: none; background: none; }
+  .mobile-bar-btn svg { width: 19px; height: 19px; stroke: currentColor; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  .mobile-bar-btn.gold { color: var(--gold); }
+
+  @media (min-width: 560px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .listings-grid { grid-template-columns: repeat(2, 1fr); }
+    .testimonial-card { flex: 0 0 60%; }
+  }
+  @media (min-width: 860px) {
+    body { padding-bottom: 0; }
+    .mobile-bar { display: none; }
+    .hero { max-width: 720px; padding-top: 4.5rem; }
+    .services-grid { grid-template-columns: repeat(4, 1fr); }
+    .listings-grid { grid-template-columns: repeat(3, 1fr); }
+    .section { max-width: 860px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-logo">Cristian<span>Velez</span></div>
+  <a class="topbar-link" href="https://cristianvelez.com">cristianvelez.com</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-photo-wrap">
+    <img src="/cristian-photo.jpeg" alt="Cristian Velez, Realtor" />
+  </div>
+  <div class="hero-eyebrow">Licensed Realtor</div>
+  <h1>Cristian Velez</h1>
+  <p class="hero-sub">REALTOR® &middot; Investor &middot; Dallas-Fort Worth</p>
+  <p class="hero-value">Helping buyers, sellers, and investors make confident real estate decisions across DFW.</p>
+
+  <div class="actions">
+    <a class="action-btn action-primary" href="tel:9453499179" onclick="gtag('event','call_click',{'method':'hero'})">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call Me
+    </a>
+    <a class="action-btn action-primary" href="sms:9453499179" onclick="gtag('event','text_click',{'method':'hero'})">
+      <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Text Me
+    </a>
+    <!-- No dedicated Zillow agent profile yet: linking to a general DFW search for now. Swap in the agent profile URL once it's set up. -->
+    <a class="action-btn action-secondary" href="https://www.zillow.com/dallas-fort-worth-tx/" target="_blank" rel="noopener" onclick="gtag('event','search_homes_click')">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Search Homes
+    </a>
+    <a class="action-btn action-secondary" href="#home-value" onclick="gtag('event','home_value_click',{'method':'hero'})">
+      <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Home Value
+    </a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section class="section">
+  <div class="section-eyebrow">About</div>
+  <h2 class="section-title">Local. Direct. Experienced.</h2>
+  <p class="about-body">
+    I grew up in Plano and McKinney, so I know DFW streets, schools, and submarkets firsthand, not from a spreadsheet.
+    Beyond representing buyers and sellers, I invest in real estate myself, which means I understand numbers, risk, and deal structure the way an investor does.
+    I negotiate hard for my clients and track results, not just transactions closed.
+    I give straightforward guidance: what a property is really worth, what to fix, and what to walk away from.
+    I am licensed with <strong>Corey Simpson & Associates</strong> and serve as principal of <strong>Elite Offer Group</strong>.
+  </p>
+</section>
+
+<div class="divider"></div>
+
+<!-- SERVICES -->
+<section class="section">
+  <div class="section-eyebrow">Services</div>
+  <h2 class="section-title">How I can help</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-num">01</span>
+      <h3>Buy a Home</h3>
+      <p>Guided search, private showings, and offer strategy built around your budget and timeline.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-num">02</span>
+      <h3>Sell Your Home</h3>
+      <p>Pricing strategy, marketing, and negotiation focused on getting you the best net outcome.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-num">03</span>
+      <h3>Investment Properties</h3>
+      <p>Acquisition support for rental and flip properties, including cash flow and comp analysis.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-num">04</span>
+      <h3>Off-Market Deals</h3>
+      <p>Access to opportunities before they hit the open market through direct broker and investor relationships.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FEATURED LISTINGS -->
+<!--
+  Placeholder listing cards only. No listings are fabricated here.
+  Live MLS data requires a separate IDX integration (RESO Web API or an IDX
+  vendor such as SimplyRETS, Bridge Interactive, Spark API, or Realtyna),
+  authorized through the brokerage, Corey Simpson & Associates.
+  Once IDX access is set up, replace the placeholder blocks below with
+  real listing data (photo, address, price, beds/baths, status).
+-->
+<section class="section">
+  <div class="section-eyebrow">Listings</div>
+  <h2 class="section-title">Featured properties</h2>
+  <div class="listings-grid">
+    <div class="listing-card">
+      <div class="listing-photo">Listing photo</div>
+      <div class="listing-body">
+        <div class="placeholder-line"></div>
+        <div class="placeholder-line short"></div>
+      </div>
+    </div>
+    <div class="listing-card">
+      <div class="listing-photo">Listing photo</div>
+      <div class="listing-body">
+        <div class="placeholder-line"></div>
+        <div class="placeholder-line short"></div>
+      </div>
+    </div>
+    <div class="listing-card">
+      <div class="listing-photo">Listing photo</div>
+      <div class="listing-body">
+        <div class="placeholder-line"></div>
+        <div class="placeholder-line short"></div>
+      </div>
+    </div>
+  </div>
+  <p class="listings-note">Live inventory coming soon. Text me for current listings that match what you are looking for.</p>
+</section>
+
+<div class="divider"></div>
+
+<!-- TESTIMONIALS -->
+<!--
+  Testimonial carousel structure only. No reviews are fabricated here.
+  Drop real Google reviews into each .testimonial-card block:
+  replace the star count if needed, set .testimonial-quote text,
+  and set .testimonial-name to the reviewer's name (e.g. "Jane D.").
+-->
+<section class="section">
+  <div class="section-eyebrow">Reviews</div>
+  <h2 class="section-title">What clients say</h2>
+  <div class="testimonial-track">
+    <div class="testimonial-card">
+      <div class="stars">
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+      </div>
+      <p class="testimonial-quote">Review coming soon.</p>
+      <div class="testimonial-name">&nbsp;</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+      </div>
+      <p class="testimonial-quote">Review coming soon.</p>
+      <div class="testimonial-name">&nbsp;</div>
+    </div>
+    <div class="testimonial-card">
+      <div class="stars">
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+      </div>
+      <p class="testimonial-quote">Review coming soon.</p>
+      <div class="testimonial-name">&nbsp;</div>
+    </div>
+  </div>
+  <div class="testimonial-dots"><span></span><span></span><span></span></div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SELLER CTA -->
+<section class="section" id="home-value">
+  <div class="seller-card">
+    <h2>Thinking about selling?</h2>
+    <p>Find out what your home could sell for in today's market.</p>
+    <a class="btn-gold-lg" href="tel:9453499179" onclick="gtag('event','call_click',{'method':'seller_cta'})">Get My Home Value</a>
+  </div>
+</section>
+
+<div class="footer-gold-line"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-name">Cristian<span>Velez</span></div>
+  <p class="footer-line">
+    <a href="tel:9453499179">(945) 349-9179</a><br />
+    <a href="mailto:cris@eliteoffergroup.com">cris@eliteoffergroup.com</a><br />
+    Corey Simpson & Associates<br />
+    <a href="https://cristianvelez.com">cristianvelez.com</a>
+  </p>
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/in/cristianevelez/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61590103604586" target="_blank" rel="noopener" aria-label="Facebook">
+      <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+    </a>
+    <!-- No TikTok profile provided yet. This slot links to a digital business card (Blinq) so visitors can save contact info directly. -->
+    <a href="https://blinq.me/1OlZfL1Drpr2AJHZKCEs?bs=db" target="_blank" rel="noopener" aria-label="Save My Contact">
+      <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg>
+    </a>
+  </div>
+  <p class="footer-license">TX License #0833260</p>
+</footer>
+
+<!-- MOBILE STICKY BAR -->
+<div class="mobile-bar">
+  <div class="mobile-bar-inner">
+    <a class="mobile-bar-btn gold" href="tel:9453499179" onclick="gtag('event','call_click',{'method':'sticky_bar'})">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call
+    </a>
+    <a class="mobile-bar-btn" href="sms:9453499179" onclick="gtag('event','text_click',{'method':'sticky_bar'})">
+      <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      Text
+    </a>
+    <a class="mobile-bar-btn" href="https://www.zillow.com/dallas-fort-worth-tx/" target="_blank" rel="noopener" onclick="gtag('event','search_homes_click',{'method':'sticky_bar'})">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Search
+    </a>
+    <a class="mobile-bar-btn" href="#home-value" onclick="gtag('event','home_value_click',{'method':'sticky_bar'})">
+      <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Home Value
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
