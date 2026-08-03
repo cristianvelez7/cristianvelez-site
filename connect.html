@@ -6,18 +6,27 @@
 <meta name="description" content="Connect with Cristian Velez, licensed Realtor serving Dallas-Fort Worth. Call, text, search homes, or get your home value in seconds." />
 <title>Connect with Cristian Velez · DFW Realtor</title>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9GZKXBCQQ"></script>
+<!-- Google tag (gtag.js) - loaded after page load to keep it off the critical rendering path -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-T9GZKXBCQQ');
+
+  function loadGtag() {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-T9GZKXBCQQ';
+    document.head.appendChild(s);
+    window.removeEventListener('load', loadGtag);
+  }
+  window.addEventListener('load', loadGtag);
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
 
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -194,6 +203,7 @@
   <a class="topbar-link" href="https://cristianvelez.com">cristianvelez.com</a>
 </div>
 
+<main>
 <!-- HERO -->
 <section class="hero">
   <div class="hero-photo-wrap">
@@ -370,6 +380,7 @@
     <a class="btn-gold-lg" href="tel:9453499179" onclick="gtag('event','call_click',{'method':'seller_cta'})">Get My Home Value</a>
   </div>
 </section>
+</main>
 
 <div class="footer-gold-line"></div>
 
