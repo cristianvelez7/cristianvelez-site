@@ -1,1 +1,13 @@
 https://www.cristianvelez.com/* https://cristianvelez.com/:splat 301!
+
+# Force extensionless URLs to redirect to their canonical .html version.
+# Netlify serves these as 200s by default (no extension), which Google was
+# indexing as separate duplicate pages alongside the real .html URLs.
+/what-to-expect-at-closing-in-texas /what-to-expect-at-closing-in-texas.html 301!
+/grand-prairie-tx-real-estate-2026 /grand-prairie-tx-real-estate-2026.html 301!
+/relocating-from-california-to-dfw /relocating-from-california-to-dfw.html 301!
+/garland-tx-real-estate-2026 /garland-tx-real-estate-2026.html 301!
+/what-makes-a-home-sell-fast-dfw-2026 /what-makes-a-home-sell-fast-dfw-2026.html 301!
+/brrrr-strategy-dfw-2026 /brrrr-strategy-dfw-2026.html 301!
+/planos-corporate-boom-real-estate-2026 /planos-corporate-boom-real-estate-2026.html 301!
+/best-dfw-submarkets-investors-2026 /best-dfw-submarkets-investors-2026.html 301!
