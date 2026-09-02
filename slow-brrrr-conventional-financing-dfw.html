@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Most BRRRR content is written for cash buyers. Here is how to execute the strategy using conventional financing in DFW, including seasoning requirements, refinance math, and where the numbers work." />
+<title>The slow BRRRR: how to execute the strategy using conventional financing in DFW &middot; Cristian Velez</title>
+<link rel="canonical" href="https://cristianvelez.com/slow-brrrr-conventional-financing-dfw.html" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The slow BRRRR: how to execute the strategy using conventional financing in DFW" />
+<meta property="og:description" content="Most BRRRR content is written for cash buyers. Here is how to execute the strategy using conventional financing in DFW, including seasoning requirements, refinance math, and where the numbers work." />
+<meta property="og:url" content="https://cristianvelez.com/slow-brrrr-conventional-financing-dfw.html" />
+<meta property="og:image" content="https://cristianvelez.com/cristian-photo.jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The slow BRRRR: how to execute the strategy using conventional financing in DFW" />
+<meta name="twitter:description" content="Most BRRRR content is written for cash buyers. Here is how to execute the strategy using conventional financing in DFW, including seasoning requirements, refinance math, and where the numbers work." />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9GZKXBCQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T9GZKXBCQQ');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0e0e0c;
+    --bg-card: #161614;
+    --bg-elevated: #1e1e1b;
+    --text: #f0ead8;
+    --text-muted: #9a9488;
+    --text-faint: #5a5650;
+    --gold: #c9a96e;
+    --gold-light: #e8d5a3;
+    --gold-dim: #7a6540;
+    --border: #2a2a26;
+    --border-gold: #3d3526;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Montserrat', system-ui, sans-serif;
+    --radius: 8px;
+    --radius-lg: 14px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(14,14,12,0.95);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    height: 62px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-logo { font-family: var(--serif); font-size: 20px; font-weight: 400; letter-spacing: 0.02em; color: var(--text); }
+  .nav-logo span { color: var(--gold); font-style: italic; }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a { font-size: 11px; color: var(--text-muted); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-btn { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 20px; border: 1px solid var(--gold-dim); border-radius: 2px; color: var(--gold); transition: all 0.2s; }
+  .nav-btn:hover { background: var(--gold); color: var(--bg); border-color: var(--gold); }
+
+  /* MOBILE TAB BAR */
+  .mobile-tabs { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200; background: rgba(14,14,12,0.97); border-top: 1px solid var(--border); height: 60px; }
+  .mobile-tabs-inner { display: flex; height: 100%; }
+  .mobile-tab { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; cursor: pointer; color: var(--text-muted); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; transition: color 0.2s; border: none; background: none; }
+  .mobile-tab svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  .mobile-tab.active, .mobile-tab:hover { color: var(--gold); }
+
+  /* HERO */
+  .hero { max-width: 1100px; margin: 0 auto; padding: 7rem 2rem 6rem; display: grid; grid-template-columns: 1fr 300px; gap: 5rem; align-items: center; }
+  .hero-eyebrow { display: flex; align-items: center; gap: 12px; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.75rem; font-weight: 600; }
+  .hero-eyebrow::after { content: ''; flex: 1; max-width: 40px; height: 1px; background: var(--gold-dim); }
+  .hero h1 { font-family: var(--serif); font-size: clamp(38px, 4.5vw, 58px); line-height: 1.08; font-weight: 300; margin-bottom: 1.5rem; letter-spacing: 0.01em; }
+  .hero h1 em { font-style: italic; color: var(--gold); }
+  .hero-sub { font-size: 13px; color: var(--text-muted); line-height: 1.9; margin-bottom: 2.5rem; max-width: 460px; font-weight: 300; letter-spacing: 0.03em; }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn-gold { padding: 13px 30px; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; background: var(--gold); color: var(--bg); border-radius: 2px; transition: opacity 0.2s; border: 1px solid var(--gold); }
+  .btn-gold:hover { opacity: 0.85; }
+  .btn-ghost { padding: 13px 30px; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid var(--border-gold); border-radius: 2px; color: var(--text-muted); transition: all 0.2s; }
+  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+  .hero-photo { position: relative; }
+  .hero-photo img { width: 100%; height: auto; aspect-ratio: 3/4; object-fit: cover; object-position: center top; border-radius: var(--radius); display: block; filter: brightness(0.92) contrast(1.05); }
+  .hero-photo::before { content: ''; position: absolute; inset: -1px; border-radius: var(--radius); border: 1px solid var(--border-gold); pointer-events: none; }
+  .hero-photo-badge { position: absolute; bottom: -1px; left: -1px; right: -1px; background: linear-gradient(to top, rgba(14,14,12,0.97) 0%, rgba(14,14,12,0.7) 70%, transparent 100%); border-radius: 0 0 var(--radius) var(--radius); padding: 2rem 1.25rem 1.25rem; }
+  .hero-photo-badge strong { display: block; font-family: var(--serif); font-size: 18px; font-weight: 400; color: var(--text); margin-bottom: 2px; }
+  .hero-photo-badge span { font-size: 10px; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; }
+
+  /* DIVIDER */
+  .divider { height: 1px; background: var(--border); margin: 0 2rem; }
+  .footer-gold-line { height: 1px; background: linear-gradient(to right, transparent, var(--gold-dim), transparent); max-width: 1100px; margin: 0 auto; }
+
+  /* SECTIONS */
+  .section { max-width: 1100px; margin: 0 auto; padding: 5.5rem 2rem; }
+  .section-eyebrow { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; font-weight: 600; }
+  .section-title { font-family: var(--serif); font-size: clamp(28px, 3.2vw, 42px); font-weight: 300; line-height: 1.15; margin-bottom: 1rem; letter-spacing: 0.01em; }
+  .section-intro { font-size: 13px; color: var(--text-muted); line-height: 1.85; max-width: 520px; font-weight: 300; margin-bottom: 3.5rem; letter-spacing: 0.02em; }
+
+  /* BLOG */
+  .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+  .blog-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: border-color 0.2s, transform 0.2s; cursor: pointer; }
+  .blog-card:hover { border-color: var(--border-gold); transform: translateY(-3px); }
+  .blog-card-body { padding: 1.75rem; }
+  .blog-meta { font-size: 10px; color: var(--gold); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 1rem; font-weight: 600; }
+  .blog-card h3 { font-family: var(--serif); font-size: 22px; font-weight: 400; line-height: 1.3; margin-bottom: 0.75rem; color: var(--text); }
+  .blog-card p { font-size: 12px; color: var(--text-muted); line-height: 1.75; font-weight: 300; margin-bottom: 1.5rem; letter-spacing: 0.02em; }
+  .blog-read-more { font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; gap: 8px; }
+  .blog-read-more::after { content: '→'; transition: transform 0.2s; }
+  .blog-card:hover .blog-read-more::after { transform: translateX(5px); }
+
+  /* FOOTER */
+  .footer-wrap { border-top: 1px solid var(--border); margin-top: 2rem; }
+  footer { max-width: 1100px; margin: 0 auto; padding: 2.5rem 2rem; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1.5rem; }
+  .footer-left { font-size: 11px; color: var(--text-faint); line-height: 2; font-weight: 300; letter-spacing: 0.04em; }
+  .footer-left strong { color: var(--text-muted); font-weight: 500; }
+  .footer-left a { color: var(--text-faint); }
+  .footer-left a:hover { color: var(--gold); }
+  .footer-right { font-size: 11px; color: var(--text-faint); letter-spacing: 0.04em; }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .mobile-tabs { display: flex; }
+    body { padding-bottom: 60px; }
+    nav { padding: 0 1.25rem; }
+    .nav-links, .nav-btn { display: none; }
+    .section { padding: 4rem 1.25rem; }
+    .divider { margin: 0 1.25rem; }
+    footer { padding: 2rem 1.25rem; }
+  }
+
+  /* POST PAGE */
+  .post-wrap { max-width: 680px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+  .post-back { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); display: inline-flex; align-items: center; gap: 8px; margin-bottom: 2.5rem; }
+  .post-back::before { content: '\2190'; }
+  .post-eyebrow { font-size: 10px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--gold); margin-bottom: 1rem; font-weight: 600; }
+  .post-wrap h1 { font-family: var(--serif); font-size: clamp(30px, 4vw, 42px); font-weight: 300; line-height: 1.2; margin-bottom: 1.25rem; letter-spacing: 0.01em; }
+  .post-byline { font-size: 11px; color: var(--text-faint); margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); letter-spacing: 0.04em; }
+  .post-body { font-size: 15px; line-height: 1.9; color: var(--text-muted); font-weight: 300; letter-spacing: 0.02em; }
+  .post-body p { margin-bottom: 1.25rem; }
+  .post-body h3 { font-family: var(--serif); font-size: 24px; font-weight: 400; color: var(--text); margin: 2.5rem 0 0.85rem; }
+  .post-body strong { font-weight: 500; color: var(--text); }
+  .post-cta { margin-top: 3rem; padding: 2rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.25rem; }
+  .post-cta p { font-size: 14px; color: var(--text-muted); font-weight: 300; }
+  .post-cta a { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 12px 26px; background: var(--gold); color: var(--bg); border-radius: 2px; white-space: nowrap; }
+  @media (max-width: 768px) { .post-wrap { padding: 2.5rem 1.25rem 4rem; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><a href="/">Cristian <span>Velez</span></a></div>
+  <div class="nav-links">
+    <a href="/#services">Services</a>
+    <a href="/#transactions">Transactions</a>
+    <a href="/#about">About</a>
+    <a href="/#inventory">Inventory</a>
+    <a href="/blog.html">Insights</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <a href="/#contact" class="nav-btn">Get in touch</a>
+</nav>
+
+<div class="mobile-tabs">
+  <div class="mobile-tabs-inner">
+    <button class="mobile-tab" onclick="window.location='/#services'">
+      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      Services
+    </button>
+    <button class="mobile-tab" onclick="window.location='/#transactions'">
+      <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      Deals
+    </button>
+    <button class="mobile-tab" onclick="window.location='/#about'">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      About
+    </button>
+    <button class="mobile-tab active" onclick="window.location='/blog.html'">
+      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      Insights
+    </button>
+    <button class="mobile-tab" onclick="window.location='/#contact'">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.18 6.18l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Contact
+    </button>
+  </div>
+</div>
+
+
+<div class="post-wrap">
+  <a href="/blog.html" class="post-back">All insights</a>
+  <p class="post-eyebrow">September 2026 · Investors · DFW Market</p>
+  <h1>The slow BRRRR: how to execute the strategy using conventional financing in DFW</h1>
+  <p class="post-byline">By Cristian Velez · Licensed Realtor, Corey Simpson & Associates · Principal, Elite Offer Group</p>
+  <div class="post-body">
+<p>Most BRRRR content is written for cash buyers. Buy distressed, fund the rehab with hard money or private capital, refinance out fast, repeat. That model works, but it requires a level of capital access and deal volume that most first and second-time investors in DFW do not have.</p>
+<p>There is a slower version of the same strategy that is more accessible, more forgiving, and still produces real results. It uses conventional financing on the front end, accepts a longer seasoning period before the refinance, and prioritizes building a stable rental portfolio over rapid capital recycling. It is not as efficient as the cash-heavy version, but it is achievable for investors operating with standard W-2 income and a moderate capital base.</p>
+<p>Here is how the slow BRRRR actually works in the current DFW market.</p>
+
+      <h3>The core difference from traditional BRRRR</h3>
+      <p>Traditional <a href="/brrrr-strategy-dfw-2026.html" style="color:#c9a96e;text-decoration:underline;">BRRRR strategy</a> is designed to return most or all of your capital through the refinance so you can redeploy it immediately into the next acquisition. The speed of that cycle is what makes it powerful at scale. Cash buyers can sometimes refinance within 30 to 90 days using delayed financing exceptions or DSCR products with minimal seasoning requirements.</p>
+      <p>The slow BRRRR accepts that the capital return will be partial and the timeline will be longer. You use conventional financing to acquire, which means lower upfront capital requirements but a 6-month seasoning requirement before you can do a cash-out refinance. You hold through the seasoning period, stabilize with a tenant, then pull out what equity the numbers support. You keep the property, hold it as a rental, and save toward the next acquisition rather than fully recycling capital.</p>
+      <p>The result is a smaller, slower portfolio build that does not require cash buyer speed or hard money access. The tradeoff is time. The advantage is that you can execute it with a standard income, conventional loan qualification, and a modest reserve.</p>
+
+      <h3>The financing structure</h3>
+      <p>Conventional investment property loans require a minimum of 15 to 25 percent down depending on the property and lender. For a single-family rental, most conventional lenders require 15 to 20 percent down. For a 2 to 4 unit property, expect 20 to 25 percent.</p>
+      <p>You purchase with conventional financing, complete any planned improvements, and place a tenant. Then you wait. Conventional lenders require 6 months of ownership from the deed recording date before approving a cash-out refinance. This is the seasoning requirement that defines the slow BRRRR timeline. DSCR lenders, by comparison, typically only require 3 to 6 months of seasoning depending on the lender, which is worth knowing if you want a hybrid path once the property is stabilized.</p>
+      <p>After 6 months, you can do a conventional cash-out refinance at a maximum of 75 percent LTV on a single-family rental or 70 percent LTV on a 2 to 4 unit property. Full income verification is required, and conforming loan limits apply, which sit around $806,500 in most DFW markets in 2026.</p>
+      <p>The refinance pulls out equity based on the new appraised value. If you bought a property at $220,000 that appraised at $280,000 after improvements, a 75 percent LTV cash-out refinance on the $280,000 appraisal produces a $210,000 loan. If your original purchase plus rehab was $240,000, you recover $210,000 — not all of your capital, but a meaningful portion that reduces your out-of-pocket exposure going forward.</p>
+
+      <h3>What the numbers need to look like</h3>
+      <p>The slow BRRRR requires the same fundamental underwriting discipline as the cash version, even though the execution is slower.</p>
+      <p>Your all-in cost — purchase price plus rehab plus holding costs — needs to stay below the 75 percent LTV threshold on the stabilized appraised value. If you cannot refinance out enough to cover your original investment plus maintain positive cash flow on the resulting loan, the deal does not work regardless of how patient you are willing to be.</p>
+      <p>In DFW, the markets where this math is most achievable right now are among the <a href="/best-dfw-submarkets-investors-2026.html" style="color:#c9a96e;text-decoration:underline;">best submarkets for investors</a> I track closely: South Garland, Mesquite, Grand Prairie, parts of South Dallas, and select Fort Worth submarkets. Properties in the $150,000 to $250,000 acquisition range with $20,000 to $50,000 in rehab scope, stabilizing at ARVs in the $220,000 to $320,000 range, can produce refinance numbers that return a meaningful portion of invested capital while leaving the property cash-flow positive.</p>
+      <p>Collin County properties are harder to make work at current prices. The entry prices are higher, the rehab costs are similar, and the resulting refinance math leaves more capital tied up in the deal. The slow BRRRR is generally a better fit for the more affordable DFW submarkets where the spread between acquisition cost and stabilized value is wider.</p>
+
+      <h3>The cash flow requirement</h3>
+      <p>One element the slow BRRRR shares with every hold strategy is the cash flow test. After the refinance, the property's rental income needs to cover the new loan payment plus taxes, insurance, property management, vacancy reserve, and maintenance reserve, with something left over. A deal that breaks even on cash flow after refinancing is not a performing asset — it is a capital trap with a mortgage attached.</p>
+      <p>In the current DFW market with rates where they are, achieving positive cash flow after a conventional cash-out refinance requires either a strong rent-to-value ratio, a meaningful down payment that limits the refinanced loan amount, or both. This is where the affordable submarket focus matters. At a $180,000 acquisition in Mesquite with $30,000 in rehab and a $240,000 ARV, a 75 percent LTV refinance produces a $180,000 loan. At current rates, that payment is manageable against market rents in that submarket. The same math at a $350,000 Plano acquisition is much harder to make positive.</p>
+
+      <h3>How to think about the slow BRRRR as a portfolio strategy</h3>
+      <p>The slow BRRRR is not a get-rich-quick approach. It is a method for building a rental portfolio incrementally using conventional financing and patience rather than cash capital and speed. Each deal takes 9 to 12 months from acquisition through stabilization and refinance. Each refinance returns partial capital that reduces your exposure without fully funding the next deal. You are building equity and cash flow simultaneously, just more slowly than the aggressive version of the strategy.</p>
+      <p>For investors who have W-2 income, conventional loan qualification, and a moderate capital reserve, this is often the most realistic path into real estate investment in DFW. The deals exist. The financing is accessible. The timeline requires patience. The outcome is a growing portfolio of cash-flowing properties built without hard money, private capital, or cash buyer speed.</p>
+      <p>If you are evaluating whether a specific property in DFW works for a conventional BRRRR approach, reach out directly. I can run the numbers with you on the acquisition, the rehab scope, the stabilized value, and the refinance outcome before you commit capital.</p>
+  </div>
+  <div class="post-cta">
+    <p>Evaluating a BRRRR deal on conventional financing?</p>
+    <a href="/#contact">Get in touch</a>
+  </div>
+</div>
+
+<div class="footer-wrap">
+  <div class="footer-gold-line"></div>
+  <footer>
+    <div class="footer-left">
+      <strong>Cristian Velez</strong><br>
+      Licensed Realtor &middot; TX License #0833260<br>
+      Corey Simpson &amp; Associates &middot; Dallas-Fort Worth, TX<br>
+      <a href="mailto:cris@eliteoffergroup.com">cris@eliteoffergroup.com</a> &middot; <a href="tel:9453499179">(945) 349-9179</a><br>
+      <a href="https://www.eliteoffergroup.com" target="_blank">eliteoffergroup.com</a>
+    </div>
+    <div class="footer-right">2026 Cristian Velez. All rights reserved.</div>
+  </footer>
+</div>
+
+
+</body>
+</html>
