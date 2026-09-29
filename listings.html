@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Active, sold, and commercial real estate listings from Cristian Velez, licensed Texas Realtor serving Dallas-Fort Worth." />
+<title>Listings &middot; Cristian Velez &middot; Dallas-Fort Worth Realtor</title>
+<link rel="canonical" href="https://cristianvelez.com/listings.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Listings &middot; Cristian Velez &middot; Dallas-Fort Worth Realtor" />
+<meta property="og:description" content="Active, sold, and commercial real estate listings from Cristian Velez, licensed Texas Realtor serving Dallas-Fort Worth." />
+<meta property="og:url" content="https://cristianvelez.com/listings.html" />
+<meta property="og:image" content="https://cristianvelez.com/cristian-photo.jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Listings &middot; Cristian Velez &middot; Dallas-Fort Worth Realtor" />
+<meta name="twitter:description" content="Active, sold, and commercial real estate listings from Cristian Velez, licensed Texas Realtor serving Dallas-Fort Worth." />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9GZKXBCQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T9GZKXBCQQ');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0e0e0c;
+    --bg-card: #161614;
+    --bg-elevated: #1e1e1b;
+    --text: #f0ead8;
+    --text-muted: #9a9488;
+    --text-faint: #5a5650;
+    --gold: #c9a96e;
+    --gold-light: #e8d5a3;
+    --gold-dim: #7a6540;
+    --steel: #7d93a8;
+    --border: #2a2a26;
+    --border-gold: #3d3526;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Montserrat', system-ui, sans-serif;
+    --radius: 8px;
+    --radius-lg: 14px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(14,14,12,0.95);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    height: 62px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-logo { font-family: var(--serif); font-size: 20px; font-weight: 400; letter-spacing: 0.02em; color: var(--text); }
+  .nav-logo span { color: var(--gold); font-style: italic; }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a { font-size: 11px; color: var(--text-muted); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-links a.active { color: var(--gold); }
+  .nav-btn { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 20px; border: 1px solid var(--gold-dim); border-radius: 2px; color: var(--gold); transition: all 0.2s; }
+  .nav-btn:hover { background: var(--gold); color: var(--bg); border-color: var(--gold); }
+
+  /* MOBILE TAB BAR */
+  .mobile-tabs { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200; background: rgba(14,14,12,0.97); border-top: 1px solid var(--border); height: 60px; }
+  .mobile-tabs-inner { display: flex; height: 100%; }
+  .mobile-tab { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; cursor: pointer; color: var(--text-muted); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; transition: color 0.2s; border: none; background: none; }
+  .mobile-tab svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  .mobile-tab.active, .mobile-tab:hover { color: var(--gold); }
+
+  /* DIVIDER */
+  .divider { height: 1px; background: var(--border); margin: 0 2rem; }
+  .footer-gold-line { height: 1px; background: linear-gradient(to right, transparent, var(--gold-dim), transparent); max-width: 1100px; margin: 0 auto; }
+
+  /* SECTIONS */
+  .section { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; }
+  .section-eyebrow { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; font-weight: 600; }
+  .section-title { font-family: var(--serif); font-size: clamp(28px, 3.2vw, 42px); font-weight: 300; line-height: 1.15; margin-bottom: 2.5rem; letter-spacing: 0.01em; }
+
+  /* PAGE HEADER */
+  .listings-hero { max-width: 1100px; margin: 0 auto; padding: 4.5rem 2rem 1rem; text-align: center; }
+  .listings-hero h1 { font-family: var(--serif); font-size: clamp(34px, 4.5vw, 52px); font-weight: 300; letter-spacing: 0.01em; margin-bottom: 0.75rem; }
+  .listings-hero p { font-size: 13px; color: var(--text-muted); letter-spacing: 0.04em; font-weight: 300; max-width: 520px; margin: 0 auto; }
+
+  /* LISTINGS GRID */
+  .listings-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.75rem; }
+  .listing-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; display: flex; flex-direction: column; transition: border-color 0.2s; }
+  .listing-card:hover { border-color: var(--border-gold); }
+  .listing-card-image { height: 180px; background: var(--bg-elevated); border-bottom: 1px solid var(--border-gold); display: flex; align-items: center; justify-content: center; }
+  .listing-card-image.placeholder span { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-faint); font-weight: 600; }
+  .listing-card-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .listing-card-body { padding: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem; flex: 1; }
+  .listing-address { font-family: var(--serif); font-size: 21px; font-weight: 400; letter-spacing: 0.01em; color: var(--text); }
+  .listing-meta { font-size: 12px; color: var(--text-muted); letter-spacing: 0.03em; font-weight: 300; }
+  .listing-price { font-size: 13px; color: var(--text); font-weight: 500; letter-spacing: 0.02em; }
+  .listing-badge { display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin: 0.25rem 0 0.5rem; }
+  .badge-active { color: var(--gold); }
+  .badge-sold { color: var(--text-muted); }
+  .badge-lease { color: var(--steel); }
+  .listing-view { margin-top: auto; padding-top: 0.75rem; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); border-top: 1px solid var(--border); }
+  .listing-view.disabled { color: var(--text-faint); cursor: default; }
+  .listing-view:not(.disabled):hover { opacity: 0.8; }
+
+  /* CTA */
+  .listings-cta { max-width: 680px; margin: 0 auto; padding: 1rem 2rem 6rem; text-align: center; }
+  .listings-cta p { font-family: var(--serif); font-size: clamp(22px, 3vw, 30px); font-weight: 300; line-height: 1.35; margin-bottom: 2rem; color: var(--text); }
+  .btn-gold { padding: 13px 30px; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; background: var(--gold); color: var(--bg); border-radius: 2px; transition: opacity 0.2s; border: 1px solid var(--gold); display: inline-block; }
+  .btn-gold:hover { opacity: 0.85; }
+
+  /* FOOTER */
+  .footer-wrap { border-top: 1px solid var(--border); margin-top: 2rem; }
+  footer { max-width: 1100px; margin: 0 auto; padding: 2.5rem 2rem; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1.5rem; }
+  .footer-left { font-size: 11px; color: var(--text-faint); line-height: 2; font-weight: 300; letter-spacing: 0.04em; }
+  .footer-left strong { color: var(--text-muted); font-weight: 500; }
+  .footer-left a { color: var(--text-faint); }
+  .footer-left a:hover { color: var(--gold); }
+  .footer-right { font-size: 11px; color: var(--text-faint); letter-spacing: 0.04em; }
+
+  /* RESPONSIVE */
+  @media (max-width: 980px) {
+    .listings-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .mobile-tabs { display: flex; }
+    body { padding-bottom: 60px; }
+    nav { padding: 0 1.25rem; }
+    .nav-links, .nav-btn { display: none; }
+    .section { padding: 3rem 1.25rem; }
+    .listings-hero { padding: 3rem 1.25rem 0.5rem; }
+    .divider { margin: 0 1.25rem; }
+    footer { padding: 2rem 1.25rem; }
+    .listings-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><a href="/">Cristian <span>Velez</span></a></div>
+  <div class="nav-links">
+    <a href="/#services">Services</a>
+    <a href="/#transactions">Transactions</a>
+    <a href="/about.html">About</a>
+    <a href="/listings.html" class="active">Listings</a>
+    <a href="/blog.html">Insights</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <a href="/#contact" class="nav-btn">Get in touch</a>
+</nav>
+
+<div class="mobile-tabs">
+  <div class="mobile-tabs-inner">
+    <button class="mobile-tab" onclick="window.location='/#services'">
+      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      Services
+    </button>
+    <button class="mobile-tab" onclick="window.location='/about.html'">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      About
+    </button>
+    <button class="mobile-tab active" onclick="window.location='/listings.html'">
+      <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Listings
+    </button>
+    <button class="mobile-tab" onclick="window.location='/blog.html'">
+      <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      Insights
+    </button>
+    <button class="mobile-tab" onclick="window.location='/#contact'">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.18 6.18l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Contact
+    </button>
+  </div>
+</div>
+
+<main>
+
+<div class="listings-hero">
+  <h1>Listings</h1>
+  <p>Active, sold, and upcoming commercial listings represented by Cristian Velez across Dallas-Fort Worth.</p>
+</div>
+
+<!-- ACTIVE LISTINGS -->
+<section class="section">
+  <p class="section-eyebrow">Active Listings</p>
+  <div class="listings-grid">
+
+    <div class="listing-card">
+      <div class="listing-card-image placeholder"><span>Photo unavailable</span></div>
+      <div class="listing-card-body">
+        <div class="listing-address">7409 Retreat Blvd</div>
+        <div class="listing-meta">Cleburne, TX 76033 &middot; Land, 0.28 Acres</div>
+        <div class="listing-price">$25,000</div>
+        <span class="listing-badge badge-active">Active</span>
+        <a href="https://www.har.com/homedetail/7409-retreat-blvd-cleburne-tx-76033/8044567" class="listing-view" target="_blank" rel="noopener">View Listing &rarr;</a>
+      </div>
+    </div>
+
+    <div class="listing-card">
+      <div class="listing-card-image placeholder"><span>Photo unavailable</span></div>
+      <div class="listing-card-body">
+        <div class="listing-address">7028 Muirfield Dr</div>
+        <div class="listing-meta">Cleburne, TX 76033 &middot; Land, 0.67 Acres</div>
+        <div class="listing-price">$50,000</div>
+        <span class="listing-badge badge-active">Active</span>
+        <a href="https://www.har.com/homedetail/7028-muirfield-dr-cleburne-tx-76033/7712513" class="listing-view" target="_blank" rel="noopener">View Listing &rarr;</a>
+      </div>
+    </div>
+
+    <div class="listing-card">
+      <div class="listing-card-image placeholder"><span>Photo unavailable</span></div>
+      <div class="listing-card-body">
+        <div class="listing-address">4801 Elm Ridge Ln</div>
+        <div class="listing-meta">Garland, TX 75044 &middot; 3 bed, 2 bath &middot; 1,572 sqft</div>
+        <div class="listing-price">$360,000</div>
+        <span class="listing-badge badge-active">Active</span>
+        <a href="https://www.har.com/homedetail/4801-elm-ridge-ln-garland-tx-75044/9344974" class="listing-view" target="_blank" rel="noopener">View Listing &rarr;</a>
+      </div>
+    </div>
+
+    <div class="listing-card">
+      <div class="listing-card-image placeholder"><span>Photo unavailable</span></div>
+      <div class="listing-card-body">
+        <div class="listing-address">4307 Quail Hollow Rd</div>
+        <div class="listing-meta">Dallas, TX 75287 &middot; 4 bed, 3 bath &middot; 2,512 sqft</div>
+        <div class="listing-price">$600,000</div>
+        <span class="listing-badge badge-active">Active</span>
+        <a href="https://www.har.com/homedetail/4307-quail-hollow-rd-dallas-tx-75287/22081" class="listing-view" target="_blank" rel="noopener">View Listing &rarr;</a>
+      </div>
+    </div>
+
+    <div class="listing-card">
+      <div class="listing-card-image placeholder"><span>Photo unavailable</span></div>
+      <div class="listing-card-body">
+        <div class="listing-address">109 Clove Ln</div>
+        <div class="listing-meta">Euless, TX 76039 &middot; 3 bed, 2.5 bath &middot; 2,024 sqft</div>
+        <div class="listing-price">$440,000</div>
+        <span class="listing-badge badge-active">Active</span>
+        <a href="https://www.har.com/homedetail/109-clove-ln-euless-tx-76039/9178836" class="listing-view" target="_blank" rel="noopener">View Listing &rarr;</a>
+      </div>
+    </div>
+
+    <div class="listing-card">
+      <div class="listing-card-image placeholder"><span>Photo unavailable</span></div>
+      <div class="listing-card-body">
+        <div class="listing-address">3304 Townsend Dr</div>
+        <div class="listing-meta">Dallas, TX 75229 &middot; 4 bed, 4.4 bath &middot; 5,072 sqft</div>
+        <div class="listing-price">$1,795,000</div>
+        <span class="listing-badge badge-lease">Under Contract</span>
+        <a href="https://www.har.com/homedetail/3304-townsend-dr-dallas-tx-75229/1407790" class="listing-view" target="_blank" rel="noopener">View Listing &rarr;</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SOLD LISTINGS -->
+<section class="section">
+  <p class="section-eyebrow">Sold Listings</p>
+  <div class="listings-grid">
+
+    <div class="listing-card">
+      <div class="listing-card-image placeholder"><span>Photo unavailable</span></div>
+      <div class="listing-card-body">
+        <div class="listing-address">517 Hanover Dr</div>
+        <div class="listing-meta">Allen, TX 75002 &middot; 3 bed, 2 bath &middot; 1,426 sqft</div>
+        <div class="listing-price">Listed $309,900</div>
+        <span class="listing-badge badge-sold">Sold</span>
+        <a href="https://www.har.com/homedetail/517-hanover-dr-allen-tx-75002/1020424" class="listing-view" target="_blank" rel="noopener">View Listing &rarr;</a>
+      </div>
+    </div>
+
+    <div class="listing-card">
+      <div class="listing-card-image placeholder"><span>Photo unavailable</span></div>
+      <div class="listing-card-body">
+        <div class="listing-address">1440 Baffin Bay Dr</div>
+        <div class="listing-meta">Plano, TX 75075 &middot; 4 bed, 2.5 bath &middot; 3,813 sqft</div>
+        <div class="listing-price">Listed $510,000</div>
+        <span class="listing-badge badge-sold">Sold</span>
+        <a href="https://www.har.com/homedetail/1440-baffin-bay-dr-plano-tx-75075/10166517" class="listing-view" target="_blank" rel="noopener">View Listing &rarr;</a>
+      </div>
+    </div>
+
+    <div class="listing-card">
+      <div class="listing-card-image placeholder"><span>Photo unavailable</span></div>
+      <div class="listing-card-body">
+        <div class="listing-address">3820 Big Horn Trl</div>
+        <div class="listing-meta">Plano, TX 75075 &middot; 3 bed, 3 bath &middot; 2,366 sqft</div>
+        <div class="listing-price">Listed $539,900</div>
+        <span class="listing-badge badge-sold">Sold</span>
+        <a href="https://www.har.com/homedetail/3820-big-horn-trl-plano-tx-75075/35931" class="listing-view" target="_blank" rel="noopener">View Listing &rarr;</a>
+      </div>
+    </div>
+
+    <div class="listing-card">
+      <div class="listing-card-image placeholder"><span>Photo unavailable</span></div>
+      <div class="listing-card-body">
+        <div class="listing-address">2301 Club Creek Ct</div>
+        <div class="listing-meta">Garland, TX 75043 &middot; 4 bed, 3.5 bath &middot; 3,056 sqft</div>
+        <div class="listing-price">Listed $484,999</div>
+        <span class="listing-badge badge-sold">Sold</span>
+        <a href="https://www.har.com/homedetail/2301-club-creek-ct-garland-tx-75043/8151066" class="listing-view" target="_blank" rel="noopener">View Listing &rarr;</a>
+      </div>
+    </div>
+
+    <div class="listing-card">
+      <div class="listing-card-image placeholder"><span>Photo unavailable</span></div>
+      <div class="listing-card-body">
+        <div class="listing-address">640 Three Tee Ct</div>
+        <div class="listing-meta">Grand Prairie, TX 75052 &middot; 3 bed, 2 bath &middot; 2,474 sqft</div>
+        <div class="listing-price">Listed $385,000</div>
+        <span class="listing-badge badge-sold">Sold</span>
+        <a href="https://www.har.com/homedetail/640-three-tee-ct-grand-prairie-tx-75052/7843126" class="listing-view" target="_blank" rel="noopener">View Listing &rarr;</a>
+      </div>
+    </div>
+
+    <div class="listing-card">
+      <div class="listing-card-image placeholder"><span>Photo unavailable</span></div>
+      <div class="listing-card-body">
+        <div class="listing-address">420 Santa Rosa Dr</div>
+        <div class="listing-meta">Garland, TX 75043 &middot; 3 bed, 2.5 bath &middot; 1,607 sqft</div>
+        <div class="listing-price">Listed $249,900</div>
+        <span class="listing-badge badge-sold">Sold</span>
+        <a href="https://www.har.com/homedetail/420-santa-rosa-dr-garland-tx-75043/8145891" class="listing-view" target="_blank" rel="noopener">View Listing &rarr;</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- COMMERCIAL -->
+<section class="section">
+  <p class="section-eyebrow">Commercial</p>
+  <div class="listings-grid">
+
+    <div class="listing-card">
+      <div class="listing-card-image placeholder"><span>Photo unavailable</span></div>
+      <div class="listing-card-body">
+        <div class="listing-address">Coming Soon</div>
+        <div class="listing-meta">Dallas-Fort Worth &middot; Warehouse</div>
+        <span class="listing-badge badge-lease">For Lease</span>
+        <span class="listing-view disabled">View Listing (coming soon)</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="listings-cta">
+  <p>Looking for something that isn't listed yet? Off-market opportunities move fast.</p>
+  <a href="/#contact" class="btn-gold">Get in touch</a>
+</div>
+
+</main>
+
+<div class="footer-wrap">
+  <div class="footer-gold-line"></div>
+  <footer>
+    <div class="footer-left">
+      <strong>Cristian Velez</strong><br>
+      Licensed Realtor &middot; TX License #0833260<br>
+      Corey Simpson &amp; Associates &middot; Dallas-Fort Worth, TX<br>
+      <a href="mailto:cris@eliteoffergroup.com">cris@eliteoffergroup.com</a> &middot; <a href="tel:9453499179">(945) 349-9179</a><br>
+      <a href="https://www.eliteoffergroup.com" target="_blank">eliteoffergroup.com</a>
+    </div>
+    <div class="footer-right">2026 Cristian Velez. All rights reserved.</div>
+  </footer>
+</div>
+
+</body>
+</html>
