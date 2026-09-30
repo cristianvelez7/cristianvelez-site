@@ -296,5 +296,31 @@
   </footer>
 </div>
 
+<style>
+.floating-cta {
+  display: none;
+  position: fixed;
+  bottom: 28px;
+  right: 24px;
+  background: #0e0e0c;
+  color: #c9a96e;
+  border: 1px solid #c9a96e;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 20px;
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .floating-cta {
+    display: block;
+  }
+}
+</style>
+<a href="/#contact" class="floating-cta">Let's Talk</a>
+
 </body>
 </html>
