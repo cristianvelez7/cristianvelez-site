@@ -717,14 +717,16 @@
         </a>
       </div>
     </div>
-    <form class="contact-form" onsubmit="handleSubmit(event)" data-aos="fade-left" data-aos-duration="700" data-aos-delay="150">
+    <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleSubmit(event)" data-aos="fade-left" data-aos-duration="700" data-aos-delay="150">
+      <input type="hidden" name="form-name" value="contact" />
+      <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
       <div class="form-row">
-        <div class="form-group"><label for="lead-first-name">First name</label><input id="lead-first-name" type="text" placeholder="First name" required /></div>
-        <div class="form-group"><label for="lead-last-name">Last name</label><input id="lead-last-name" type="text" placeholder="Last name" required /></div>
+        <div class="form-group"><label for="lead-first-name">First name</label><input id="lead-first-name" name="first_name" type="text" placeholder="First name" required /></div>
+        <div class="form-group"><label for="lead-last-name">Last name</label><input id="lead-last-name" name="last_name" type="text" placeholder="Last name" required /></div>
       </div>
       <div class="form-row">
-        <div class="form-group"><label for="lead-phone">Phone</label><input id="lead-phone" type="tel" placeholder="Your number" /></div>
-        <div class="form-group"><label for="lead-email">Email</label><input id="lead-email" type="email" placeholder="Your email" required /></div>
+        <div class="form-group"><label for="lead-phone">Phone</label><input id="lead-phone" name="phone" type="tel" placeholder="Your number" /></div>
+        <div class="form-group"><label for="lead-email">Email</label><input id="lead-email" name="email" type="email" placeholder="Your email" required /></div>
       </div>
       <div class="form-group">
         <label for="lead-intent">I'm looking to...</label>
@@ -739,7 +741,7 @@
       </div>
       <div class="form-group">
         <label for="lead-situation">Tell me about your situation</label>
-        <textarea id="lead-situation" placeholder="Property address, timeline, what you're trying to accomplish..."></textarea>
+        <textarea id="lead-situation" name="message" placeholder="Property address, timeline, what you're trying to accomplish..."></textarea>
       </div>
       <button type="submit" class="form-submit">Send message</button>
     </form>
@@ -823,10 +825,26 @@
   }
   function handleSubmit(e) {
     e.preventDefault();
-    const btn = e.target.querySelector('.form-submit');
-    btn.textContent = 'Message sent';
-    btn.style.opacity = '0.6';
+    const form = e.target;
+    const btn = form.querySelector('.form-submit');
+    const originalText = btn.textContent;
+    btn.textContent = 'Sending...';
     btn.disabled = true;
+    const data = new URLSearchParams(new FormData(form)).toString();
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: data
+    })
+      .then(() => {
+        btn.textContent = 'Message sent';
+        btn.style.opacity = '0.6';
+        form.reset();
+      })
+      .catch(() => {
+        btn.textContent = 'Something went wrong, please call or email instead';
+        btn.disabled = false;
+      });
   }
 </script>
 
