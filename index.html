@@ -156,7 +156,7 @@
   .section-intro { font-size: 13px; color: var(--text-muted); line-height: 1.85; max-width: 520px; font-weight: 300; margin-bottom: 3.5rem; letter-spacing: 0.02em; }
 
   /* SERVICES */
-  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; border-top: 2px solid var(--gold-dim); padding-top: 2rem; }
   .service-card { background: var(--bg-card); padding: 2rem 1.75rem; transition: background 0.2s; position: relative; }
   .service-card::after { content: ''; position: absolute; bottom: 0; left: 1.75rem; width: 24px; height: 1px; background: var(--gold-dim); transition: width 0.3s; }
   .service-card:hover { background: var(--bg-elevated); }
@@ -301,6 +301,11 @@
     .divider { margin: 0 1.25rem; }
     footer { padding: 2rem 1.25rem; }
   }
+
+  .section-band { background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .section-band-warm { background: #131210; border-top: 1px solid var(--border-gold); border-bottom: 1px solid var(--border-gold); }
+  .hero-wrap { position: relative; overflow: hidden; }
+  .hero-wrap::before { content: ''; position: absolute; top: -120px; right: -80px; width: 600px; height: 600px; background: radial-gradient(ellipse at center, rgba(201,169,110,0.07) 0%, transparent 70%); pointer-events: none; }
 </style>
 </head>
 <body>
@@ -355,6 +360,7 @@
 
 <main>
 <!-- HERO -->
+<div class="hero-wrap">
 <section class="hero">
   <div class="hero-content">
     <p class="hero-eyebrow">Licensed Realtor · Dallas-Fort Worth</p>
@@ -362,7 +368,7 @@
     <p class="hero-sub">Realtor focused on investment-minded analysis, accurate pricing strategy, and off-market opportunities across the Dallas-Fort Worth market. Licensed with Corey Simpson & Associates.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn-gold">Start a conversation</a>
-      <a href="#services" class="btn-ghost">What I do</a>
+      <a href="/listings.html" class="btn-ghost">View listings</a>
     </div>
   </div>
   <div class="hero-photo">
@@ -373,10 +379,12 @@
     </div>
   </div>
 </section>
+</div>
 
 <div class="divider"></div>
 
 <!-- SERVICES -->
+<div class="section-band">
 <section class="section" id="services">
   <p class="section-eyebrow" data-aos="fade-up" data-aos-duration="600">Services</p>
   <h2 class="section-title" data-aos="fade-up" data-aos-duration="600">Full-service representation across the DFW market</h2>
@@ -414,10 +422,12 @@
     </div>
   </div>
 </section>
+</div>
 
 <div class="divider"></div>
 
 <!-- TRANSACTIONS -->
+<div class="section-band-warm">
 <section class="section" id="transactions">
   <p class="section-eyebrow" data-aos="fade-up" data-aos-duration="600">Selected transactions</p>
   <h2 class="section-title" data-aos="fade-up" data-aos-duration="600">Closed across DFW</h2>
@@ -501,6 +511,7 @@
     In addition to the transactions listed above, Cristian has been involved in a significant volume of off-market acquisitions, dispositions, and investor transactions across Dallas-Fort Worth as owner and operator of Elite Offer Group and as an acquisitions specialist through Whitecap Holdings.
   </div>
 </section>
+</div>
 
 <div class="divider"></div>
 
@@ -692,6 +703,7 @@
 <div class="divider"></div>
 
 <!-- CONTACT -->
+<div class="section-band">
 <section class="section" id="contact">
   <p class="section-eyebrow">Contact</p>
   <div class="contact-wrapper">
@@ -747,6 +759,7 @@
     </form>
   </div>
 </section>
+</div>
 
 <div class="divider"></div>
 
