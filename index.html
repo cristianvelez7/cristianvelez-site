@@ -852,6 +852,7 @@
         btn.textContent = 'Message sent';
         btn.style.opacity = '0.6';
         form.reset();
+        if (window.gtag) gtag('event', 'generate_lead', { form_name: 'contact' });
       })
       .catch(() => {
         btn.textContent = 'Something went wrong, please call or email instead';

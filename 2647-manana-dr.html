@@ -406,5 +406,13 @@
   </footer>
 </div>
 
+<script>
+  (function () {
+    var f = document.querySelector('form[name="manana-inquiry"]');
+    if (f && window.gtag) f.addEventListener('submit', function () {
+      gtag('event', 'generate_lead', { form_name: 'manana-inquiry', transport_type: 'beacon' });
+    });
+  })();
+</script>
 </body>
 </html>
